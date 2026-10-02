@@ -1,11 +1,11 @@
 {
-  "results_version": "2026-10-02T13:17:08.124031+00:00",
-  "results_sha256": "f560aaa291e553a66fe61460c832201e34c44d4c865b97615e215fb8b6088107",
-  "verified_at": "2026-10-02T14:12:09.414165+00:00",
+  "results_version": "2026-10-02T14:39:27.073613+00:00",
+  "results_sha256": "67e4fb89e51e132e32042fde3c3e0d9af631f5fa3863143b792d0b3ebd0ba7aa",
+  "verified_at": "2026-10-02T14:45:42.265010+00:00",
   "artifact_sha256": {
-    "output/research_report.html": "38788cad92c4c9beb6f8fa0d84fd2294a8c8f8761f5ab73087f3e206c84b9d59",
-    "output/pdf/credit_memo.pdf": "40549e645559405f3489bb3ff7db585b271bd9b2ef7a06958c5e65a36d6d9231",
-    "output/outputs/credit_research/cashflow_workbook.xlsx": "ce67ebf1ba79c877e5c7c4c23a02bd1285c18392275c46096fab3251441fa8ea"
+    "output/research_report.html": "0b8ffd516849648f972a295e16da882b44ed34eb91c12dbd07962251ebc729db",
+    "output/pdf/credit_memo.pdf": "d0e6c529826ee6fefc93f67af8bbc704e21e918ccf7cf3a6c5844f597e22c836",
+    "output/outputs/credit_research/cashflow_workbook.xlsx": "0830539987445127e11cd8b697bb2a31498762d7efe92d2739a80b0986bf89b1"
   },
   "cached_formulas": 3280,
   "missing_formula_caches": 0,
@@ -58,10 +58,10 @@
   "negative_tests_left_outputs_unchanged": true,
   "independent_numerical_checks": {
     "input": "output\\platform_results.json",
-    "results_sha256": "f560aaa291e553a66fe61460c832201e34c44d4c865b97615e215fb8b6088107",
-    "generated_at": "2026-10-02T13:17:08.124031+00:00",
+    "results_sha256": "67e4fb89e51e132e32042fde3c3e0d9af631f5fa3863143b792d0b3ebd0ba7aa",
+    "generated_at": "2026-10-02T14:39:27.073613+00:00",
     "valuation_date": "2026-09-15",
-    "output_sha256": "ce67ebf1ba79c877e5c7c4c23a02bd1285c18392275c46096fab3251441fa8ea",
+    "output_sha256": "0830539987445127e11cd8b697bb2a31498762d7efe92d2739a80b0986bf89b1",
     "run_status": "SUCCESS",
     "independent_pv_and_repaid_wal_verified": true,
     "terminal_arrears_verified": true,
@@ -85,7 +85,7 @@
     "output": "C:\\Users\\perso\\Documents\\GitHub\\structured-credit-research\\output\\outputs\\credit_research\\cashflow_workbook.xlsx"
   },
   "native_excel_invoked": false,
-  "visual_review": "Fresh rebuilt dashboard reviewed at 1280px desktop and 390px phone widths, including corrected validation labels and enlarged mobile chart text; both newly rendered memo pages inspected with no clipped content. The unchanged workbook byte version retains the prior all-nine-sheet visual review, with Summary rechecked this review.",
+  "visual_review": "Fresh presentation-refresh artifacts inspected: all nine workbook sheet previews and Audit control preview, both newly rendered memo pages, and rebuilt dashboard at 1280px desktop and 390px phone widths. No clipped values or layout overlaps found. Financial/model/source/gate/scenario fields exactly match the prior research generation; fitted model cache bytes remain unchanged.",
   "browser_checks": {
     "severe_note_loss": "82.5M USD",
     "central_D_value_at_8pct": 93.22,

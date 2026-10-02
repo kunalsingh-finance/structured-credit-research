@@ -1,6 +1,6 @@
 # Portable research release
 
-The portable release is intended for a hiring reviewer who wants to inspect the
+The portable release lets readers inspect the
 analysis before installing a research environment. It preserves the saved
 development research status and every unresolved financial gate. Packaging does
 not change the project's completion criteria or cure source discrepancies.
@@ -9,7 +9,7 @@ not change the project's completion criteria or cure source discrepancies.
 
 Extract `output/releases/structured_credit_research.zip` into any local folder.
 Open `structured-credit-research/START_HERE.html` in a browser. Its links open the
-interactive dashboard, Excel model, two-page memo and interview guide from the
+interactive dashboard, Excel model and two-page memo from the
 extracted directory. Extract the whole archive rather than opening a single file
 inside a ZIP viewer.
 
@@ -98,13 +98,10 @@ compression. The supplemental reference inventory is separate. Acquisition
 requires network access and can take substantial time.
 
 The existing workbook builder uses `@oai/artifact-tool` through the Codex bundled
-artifact runtime. That runtime is not distributed in this release. A reviewer
+artifact runtime. That runtime is not distributed in this release. Readers
 can inspect and recalculate the delivered Excel file without it; exact workbook
 re-authoring requires access to that runtime. The Python HTML/PDF builder needs
 the documented Python dependencies and matching saved research results, but no
 raw panel solely to rebuild those two saved-output artifacts. The full artifact
 verifier additionally requires manual review records from a fresh inspection;
 those records are not inferred or manufactured from the shipped ZIP.
-
-No public publication, employer contact, cloud upload or job application is part
-of this package build.

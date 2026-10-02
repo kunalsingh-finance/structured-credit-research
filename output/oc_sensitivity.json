@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T13:19:52.676254+00:00",
+  "generated_at": "2026-10-02T14:41:25.193798+00:00",
   "status": "CONDITIONAL_SENSITIVITY_COMPLETED",
   "input_sha256": {
-    "output/platform_results.json": "f560aaa291e553a66fe61460c832201e34c44d4c865b97615e215fb8b6088107",
-    "output/platform_run_status.json": "54aef00e4c212e50e830ffd4c1f7bdb1ebb860a8f59fe4b5afa3276559c8023e",
+    "output/platform_results.json": "67e4fb89e51e132e32042fde3c3e0d9af631f5fa3863143b792d0b3ebd0ba7aa",
+    "output/platform_run_status.json": "c0894faf860207a745cabdcb371cd8684247248b0e2dfbbdc34f8fb891d352a0",
     "data/actual_certificates.json": "9d748039fa803452dcedae74f15852acacd8e09096baf1d9008c0d7c977968af",
     "data/source_manifest.json": "ffbb882ed39d0ebbb0c7f4f46d972b29bdefd86001a9cdb3a0803db09b110166",
     "data/raw/legal/d943115dex991.htm.gz": "1c8c7fb95d58cd7929087b5174bf6629fa097a743471dca38d29a7034fd10283",
@@ -20,9 +20,9 @@
     "credit_research/waterfall.py": "b88b643d6f461115b7d8302f6d5840f52741490fd5c027662c187a4096ca9524",
     "credit_research/__init__.py": "402288d4727b53fd8008dfcb4863dda4f708d089d8a620b0544338d7e65a381f",
     "scripts/run_platform.py": "81f733d6e1aac634dca379434c3e26a21291a677fb5a45cf058ef78bfd31409c",
-    "scripts/run_research.py": "1315ab0e8f0f73d9b6569ed65f33f0675047a6f698335f1004c74b02931be912"
+    "scripts/run_research.py": "e805498dc334d0357f982ee634d6e0fde7205079bda1b7e1d9daa39aaac44eaf"
   },
-  "primary_generated_at": "2026-10-02T13:17:08.124031+00:00",
+  "primary_generated_at": "2026-10-02T14:39:27.073613+00:00",
   "legal_evidence": {
     "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525111714/d943115dex991.htm",
     "accession": "0001193125-25-111714",

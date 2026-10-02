@@ -52,5 +52,5 @@ Use expanding time splits, development-only fitting and a frozen later test. Wit
 
 A completed research release needs consecutive real-data ingestion, resolved or explicitly bounded legal rules, independent later-month replay, a separately evaluated credit model, an auditable scenario engine and a memo whose conclusions match the evidence.
 
-Until then, use development status and state exactly which pieces work. Do not claim production readiness, an official rating, investment alpha or guaranteed hiring outcomes.
+Until then, use development status and state exactly which pieces work. Do not claim production readiness, an official rating or investment alpha.
 

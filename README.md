@@ -1,6 +1,6 @@
 # Structured Credit Risk and Cash-Flow Platform
 
-An inspectable auto-ABS research project connecting public loan disclosures, borrower-event models, executed payment priorities and bond-level stress results. The case study is CarMax Auto Owner Trust 2025-2, with the older 2024-2 deal used for model development.
+An independent public auto-ABS research project connecting public loan disclosures, borrower-event models, executed payment priorities and bond-level stress results. The case study is CarMax Auto Owner Trust 2025-2, with the older 2024-2 deal used for model development.
 
 **Research status: development with unresolved source exceptions.** The platform runs on 3,825,715 actual loan-month observations across 46 consecutive deal-months. All 322 certificate accounting identities pass. Exact loan-tape cash reconciliation and contractual replay do not fully pass; the dashboard and strict gate preserve those differences.
 
@@ -10,12 +10,11 @@ An inspectable auto-ABS research project connecting public loan disclosures, bor
 - `output/research_report.html`: interactive collateral, forecast, waterfall, stress and source review.
 - `output/outputs/credit_research/cashflow_workbook.xlsx`: formula-based payment valuation, WAL, scenario/class selection and audit schedules.
 - `output/pdf/credit_memo.pdf`: two-page credit research memo with results and material limitations.
-- [Interview guide](docs/interview_guide.md): project walkthrough, questions and defensible claims.
 - [Validation record](docs/VALIDATION.md), [research gates](docs/RESEARCH_DESIGN.md), [data dictionary](docs/DATA_DICTIONARY.md) and [cash-flow mechanics](docs/CASHFLOW_ENGINE.md).
 - [Supplemental model study](docs/SUPPLEMENTAL_VALIDATION.md) and [rate/amendment review](docs/RATE_AND_AMENDMENT_REVIEW.md): additional evidence, with retrospective and finite-search limits stated.
 - [Conditional OC sensitivity](docs/OC_SENSITIVITY.md): exact historical reproduction and state-propagated consequences of the reported-target alternative under identical collateral paths.
 
-## What a reviewer can test
+## Methods and controls
 
 The source pipeline archives and hashes SEC originals, streams ABS-EE XML into SQLite, retains missing versus zero values and separates first-accepted versions from amendments. Public filing times control feature availability. A regularized multinomial model estimates conditional first-observed default disclosure and prepayment risk, with separate calibration and chronological/unseen-deal holdouts.
 
@@ -80,5 +79,5 @@ Do not run the old runner into the main `output` directory after building the fu
 
 [Final prospectus](https://www.sec.gov/Archives/edgar/data/2063979/000119312525099841/d30805d424b5.htm), [executed sale/servicing agreement](https://www.sec.gov/Archives/edgar/data/1259380/000119312525111714/d943115dex991.htm) and [executed indenture](https://www.sec.gov/Archives/edgar/data/1259380/000119312525111714/d943115dex41.htm). Every machine output includes provenance to the relevant SEC filings.
 
-This is an independent portfolio research project built with Codex assistance. It does not represent employment experience, issuer affiliation, an official rating or demonstrated investment alpha. The candidate should understand and reproduce the work before claiming personal mastery.
+This independent research project was built with Codex assistance. It has no issuer affiliation and does not claim an official rating or demonstrated investment alpha.
 

@@ -1,6 +1,6 @@
 {
   "status": "REVIEW REQUIRED",
-  "generated_at": "2026-10-02T06:46:49.203212+00:00",
+  "generated_at": "2026-10-02T14:41:55.544101+00:00",
   "arithmetic_summary": {
     "PASS": 14,
     "FAIL": 0,
@@ -906,16 +906,17 @@
   "original_source_hashes": null,
   "normalized_fixture_sha256": "48d93d6e6c47c4e306565b826e64fc5d583eed0971e4b64f2ba8442b67725fe2",
   "evidence_type": "Manually extracted development samples; observed-cash replay; not a forecast or a holdout.",
-  "source_manifest_sha256": "0e6bbb70516c13ac495d4e2e5cb450b401069389e31e2ba32abb2b97b02a042a",
+  "source_manifest_sha256": "06c7667e0a771c823338a4bb551a3e5688698e55b5236df38f402c0afb8a7462",
   "code_sha256": {
     "credit_research/__init__.py": "402288d4727b53fd8008dfcb4863dda4f708d089d8a620b0544338d7e65a381f",
     "credit_research/cash_validation.py": "9ece8efc73bb2d7d9cf9837d8f8a4f9480d10abe0cb4950dc478e34ccb617463",
-    "credit_research/cashflows.py": "f2f5eddde4186eb8a49d7a8ef7f564b3fb8bbb595940f7e176dc775cd3fc685c",
+    "credit_research/cashflows.py": "b0b4f90c213d4260a881e5a2b888df6985ba43e08356900b4791281f1449d2b8",
     "credit_research/credit_models.py": "b2e32cae92edd843d8e4be43ddab67550508576b3e472c07909b7a266902a4e2",
+    "credit_research/extended_validation.py": "0e996a7cdce279248af383a7060b3732518b828e19b83f9ded5fb2879823e55e",
     "credit_research/ingest.py": "d06ca03aa7584c47809bf755286ea1d34e74f5d47d3eccb42c98cc898477cf64",
     "credit_research/projections.py": "6ff7407567fbac4334c216afeea6d6af0c4e03fffdbd3b701a87999794fd3521",
     "credit_research/reconcile.py": "40621a0e45a8358d4b4b1a6c41ef8a6c613d75ab098c2530ebd044345dff636b",
     "credit_research/waterfall.py": "b88b643d6f461115b7d8302f6d5840f52741490fd5c027662c187a4096ca9524",
-    "scripts/run_research.py": "1315ab0e8f0f73d9b6569ed65f33f0675047a6f698335f1004c74b02931be912"
+    "scripts/run_research.py": "e805498dc334d0357f982ee634d6e0fde7205079bda1b7e1d9daa39aaac44eaf"
   }
 }

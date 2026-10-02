@@ -18,7 +18,7 @@ Forecast-origin tests perturb unfiled loan balances/defaults and later actual ca
 
 The full platform run succeeds locally. Its strict exact-reconciliation option raises exit2 after saving the development evidence. Cache identity includes panel SHA, source/protocol/certificate identities, model code, cash-validation code and projection code. Release hashes identify every Python research module and runner.
 
-The old offline two-certificate fixture remains isolated in `output/bounded_fixture`: 14/14 arithmetic checks pass, with 14 related replay differences. It is not substituted for the full data run. GitHub Actions is configured on Windows/Linux but has not run remotely.
+The old offline two-certificate fixture remains isolated in `output/bounded_fixture`: 14/14 arithmetic checks pass, with 14 related replay differences. It is not substituted for the full data run. At the recorded published commit `9939129`, [GitHub Actions run 37019426223](https://github.com/kunalsingh-finance/structured-credit-research/actions/runs/37019426223) passed 113 tests and the bounded fixture on Windows and Linux.
 
 ## Source and contractual controls
 
@@ -69,5 +69,5 @@ The portable ZIP preserves the saved research status and excludes the large raw 
 
 ## Authorship
 
-Codex assisted with research, implementation, validation and documentation. The work is a portfolio research project. It does not claim candidate mastery, production ownership, employment experience or fully passed research gates.
+Codex assisted with research, implementation, validation and documentation. This independent research implementation retains unresolved source and contractual gates.
 

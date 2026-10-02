@@ -1,8 +1,8 @@
 # Completion audit against the original design
 
-Audit date: October 2, 2026; main results inspected at their 13:17:08 UTC
+Audit date: October 2, 2026; main results inspected at their 14:39:27 UTC
 generation, with supplemental diagnostics completed at 08:11:28 UTC.
-The reference is the preserved
+The reference is the initial
 [INITIAL_RESEARCH_DESIGN.md](INITIAL_RESEARCH_DESIGN.md), not a revised scope.
 This audit does not waive a requirement because the implementation is useful,
 the data is public, or a model improves one score.
@@ -32,16 +32,16 @@ gates; their evidence is bound to the current results version.
 | Public post-execution amendment inventory | Four filer inventories contain 444 record occurrences; 171 unique primary documents were archived and screened. No subsequent transaction amendment was identified within the documented finite scope. The sponsor's standalone submissions endpoint returned HTTP 404; private documents, other filers and later filings are outside that conclusion. All 177 supplemental original/archive hash chains pass separately from the frozen performance corpus. |
 | Auditable scenarios | Executed payment priorities, reserve support, interest arrears, maturity failure, explicit acceleration/cleanup branches, class loss, paid-principal WAL and a reverse-stress grid. Central/Downside/Severe each pass cash, pool, note-principal and reserve conservation and horizon closure. Unsupported or externally elected states are explicit. |
 | Conditional legal-input sensitivity | All sixteen primary historical ledgers and the three full scenario ledgers reproduce exactly. Verified executed sources and independent rational A2 arithmetic support the calculation. The reported-dollar OC alternative changes Central aggregate note PV by $7.89624870 at 8%; Downside and Severe cash flows are unchanged. Terminal principal losses, unpaid-interest claims and maturity flags are unchanged at both endpoints. This conditional path analysis does not resolve the governing rule or bound arbitrary paths. |
-| Professional deliverables | HTML research interface, formula-based XLSX workbook, two-page PDF memo and interview guide match the current results version. Saved workbook has 3,280 cached formulas and no formula errors; five stale-input rejection cases leave outputs unchanged. All nine rebuilt workbook previews, both PDF pages, browser controls and the OC evidence card were inspected; browser errors are absent. Acceptance is recorded separately in artifact_verification.json. |
-| Current-state research documentation | README, validation record, data dictionary, cash-flow mechanics and supplemental-study records describe the real-data implementation and its limitations. The original design is preserved independently. New diagnostics are explicitly identified as supplemental studies specified after primary-test inspection. |
+| Research deliverables | HTML research interface, formula-based XLSX workbook and two-page PDF memo match the current results version. Saved workbook has 3,280 cached formulas and no formula errors; five stale-input rejection cases leave outputs unchanged. All nine rebuilt workbook previews, both PDF pages, browser controls and the OC evidence card were inspected; browser errors are absent. Acceptance is recorded separately in artifact_verification.json. |
+| Current-state research documentation | README, validation record, data dictionary, cash-flow mechanics and supplemental-study records describe the real-data implementation and its limitations. The initial research scope and financial acceptance gates are documented independently. New diagnostics are explicitly identified as supplemental studies specified after primary-test inspection. |
 
-The JSON inspected was generated at `2026-10-02T13:17:08.124031+00:00`;
+The JSON inspected was generated at `2026-10-02T14:39:27.073613+00:00`;
 its SHA-256 is
-`f560aaa291e553a66fe61460c832201e34c44d4c865b97615e215fb8b6088107`.
+`67e4fb89e51e132e32042fde3c3e0d9af631f5fa3863143b792d0b3ebd0ba7aa`.
 Its eleven recorded research-code hashes matched the corresponding local files.
 Both supplemental outputs and their content hashes are embedded in the main
 pack. Its original strict source/replay gates remain `FAIL`.
-Build success means generation succeeded, not that research gates passed.
+This generation reuses the unchanged fitted-model cache; financial results, assumptions and research gates are unchanged. Build success means generation succeeded, not that research gates passed.
 
 ## Internal research and delivery checks closed
 
@@ -136,14 +136,14 @@ deliverables are reviewable research work, not a completed fully validated
 release under the original design, an official rating or verified investment
 alpha.
 
-## Current public dependency recheck
+## Historical public dependency recheck
 
 At `2026-10-02T13:24:57.533894+00:00`, the
 [separate dependency recheck](../output/release_dependency_recheck.json)
 retrieved the four covered SEC submissions inventories, the target EX-103 and
 the latest target servicing certificate. All six returned exactly the same
 original bytes as the frozen review sources. No new accession appeared in
-those four current inventories. The sponsor endpoint again returned HTTP 404;
+those four inventories at that check. The sponsor endpoint again returned HTTP 404;
 its inventory remains a scope gap. The newly retrieved bytes are archived
 separately with original and compressed hashes.
 
@@ -152,8 +152,12 @@ establish that no other public or private allocation evidence exists. A unique
 exact cash bridge has not been established from the archived disclosed fields;
 issuer/servicer allocation records, corrected disclosures or an authoritative
 public bridge remain necessary to close the original financial gates. The
-independent follow-up audit confirmed the current results hash and all eleven
-recorded research-code hashes. The A2 correctness fix and conditional OC study
+independent follow-up audit confirmed the prior `2026-10-02T13:17:08.124031+00:00`
+results generation's hash and all eleven recorded research-code hashes. The
+dependency recheck record is bound to that prior generation. The later
+presentation refresh leaves sources, financial results and gates unchanged;
+it includes no new endpoint verification. The A2 correctness fix and
+conditional OC study
 close internal calculation and consequence-analysis omissions; they supply no
 issuer allocation ledger, corrected disclosure or authoritative OC explanation.
 

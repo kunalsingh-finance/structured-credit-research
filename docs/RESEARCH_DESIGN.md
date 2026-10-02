@@ -1,12 +1,12 @@
 # Research design and acceptance gates
 
-The original scope and gates are preserved verbatim in [INITIAL_RESEARCH_DESIGN.md](INITIAL_RESEARCH_DESIGN.md). This document records the implementation against that scope; it does not relax a failed control.
+The initial research scope and financial acceptance gates are documented in [INITIAL_RESEARCH_DESIGN.md](INITIAL_RESEARCH_DESIGN.md). This document records the implementation against that scope; it does not relax a failed control.
 
 ## Decision and deliverables
 
 Research question: under documented borrower-performance and funding assumptions, which auto-ABS classes remain protected, how long is principal outstanding, and how does assumed purchase price change value?
 
-The deliverables are a two-page credit memo, an inspectable cash-flow workbook, a local interactive report, source manifests, reproducible Python/SQL analysis and an interview guide. The platform is a development research implementation. An executable investment recommendation requires market prices and stronger aggregate cash forecasting.
+The deliverables are a two-page credit memo, an inspectable cash-flow workbook, a local interactive report, source manifests and reproducible Python/SQL analysis. The platform is a development research implementation. An executable investment recommendation requires market prices and stronger aggregate cash forecasting.
 
 ## Evidence separated
 

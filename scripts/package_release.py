@@ -172,11 +172,11 @@ def start_page(version: dict) -> bytes:
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>Structured Credit Research — start here</title>
 <style>body{{max-width:850px;margin:60px auto;padding:0 24px;background:#f7f5ef;color:#17293a;font:18px/1.6 system-ui,sans-serif}}h1{{font-size:38px;line-height:1.15}}a{{color:#075e76}}li{{margin:12px 0}}.status{{padding:20px;background:#fff3dd;border-left:5px solid #ac7616}}small{{color:#536472}}</style>
 <p>KUNAL SINGH / INDEPENDENT AUTO-ABS RESEARCH</p><h1>Structured Credit Risk and Cash-Flow Platform</h1>
-<p class="status"><strong>{status}.</strong> Internal cash and accounting controls are implemented, but exact tape/certificate cash reconciliation and contractual replay retain material source-definition exceptions. This is a portfolio research demonstration, not a validated investment forecast.</p>
+<p class="status"><strong>{status}.</strong> Internal cash and accounting controls are implemented, but exact tape/certificate cash reconciliation and contractual replay retain material source-definition exceptions. These scenarios are illustrative research, not validated investment forecasts.</p>
 <ul><li><a href="output/research_report.html">Open the interactive research dashboard</a></li>
 <li><a href="output/outputs/credit_research/cashflow_workbook.xlsx">Open the formula-based Excel cash-flow workbook</a></li>
 <li><a href="output/pdf/credit_memo.pdf">Read the two-page credit memo</a></li>
-<li><a href="docs/interview_guide.md">Read the interview walkthrough and technical questions</a></li>
+<li><a href="docs/RESEARCH_DESIGN.md">Read the research design and acceptance gates</a></li>
 <li><a href="docs/COMPLETION_AUDIT.md">Inspect the completion audit and unresolved gates</a></li>
 <li><a href="docs/RELEASE.md">View integrity, reproduction and delivery instructions</a></li></ul>
 <p>Extract the complete ZIP before opening these files. The dashboard embeds its data and code, so it works locally without the 1.19 GB loan panel, source archive, Python, Node or an internet connection. External SEC and New York Fed source links require internet access. The Excel file requires a compatible spreadsheet application.</p>

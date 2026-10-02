@@ -30,7 +30,7 @@ def fixture(root):
         "output/platform_results.json": raw,
         "output/platform_run_status.json": release.json_bytes({"status": "SUCCESS", "results_sha256": release.digest(raw), "built_at": pack["generated_at"]}),
         "output/artifact_verification.json": release.json_bytes({"results_sha256": release.digest(raw), "results_version": pack["generated_at"], "artifact_sha256": {name: release.digest(value) for name, value in artifacts.items()}}),
-        "credit_research/model.py": b"model code", "docs/interview_guide.md": b"Interview",
+        "credit_research/model.py": b"model code", "docs/RESEARCH_DESIGN.md": b"Research design",
         "docs/COMPLETION_AUDIT.md": b"Full validation remains unresolved",
         "docs/RELEASE.md": b"Delivery instructions", **artifacts}
     legal_sources = []
