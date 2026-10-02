@@ -210,7 +210,10 @@ def build_html(pack, output, oc_sensitivity=None):
     gates_rows = []
     for label, gate in pack.get("research_gates", {}).items():
         detail = gate.get("evidence") or "; ".join(f'{key.replace("_", " ")}: {value}' for key, value in gate.items() if key != "status")
-        gates_rows.append(f'<tr><td>{escape(label.replace("_", " "))}</td><td>{escape(gate.get("status", "Unavailable"))}</td><td>{escape(detail)}</td></tr>')
+        status = gate.get("status", "Unavailable")
+        display_status = {"IMPLEMENTED_WITH_LIMITATIONS": "Qualified", "ASSUMPTION_ONLY": "Assumed"}.get(status, status)
+        status_description = status.replace("_", " ").capitalize()
+        gates_rows.append(f'<tr><td>{escape(label.replace("_", " "))}</td><td title="{escape(status_description, quote=True)}">{escape(display_status)}</td><td>{escape(detail)}</td></tr>')
     gates_section = f'<article class="card"><h3>Research gates</h3><p class="muted">A successful build preserves results and exceptions. The financial validation gates below retain their own status.</p><div class="table-scroll"><table class="gates-table"><thead><tr><th>Research gate</th><th>Status</th><th>Evidence</th></tr></thead><tbody>{"".join(gates_rows)}</tbody></table></div></article>' if gates_rows else ''
     supplemental_section = supplemental_html(pack)
     oc_section = oc_sensitivity_html(oc_sensitivity)

@@ -3,4 +3,5 @@ details summary{cursor:pointer;font-size:13px;font-weight:700;margin:0}details[o
 #forecast-evidence td:first-child{white-space:normal;max-width:230px}#forecast-evidence td:last-child{white-space:normal;font-size:10px}#forecast-evidence{overflow-x:auto}
 #forecast-evidence{max-height:370px}.evidence-grid>.card{min-height:440px}#scenario>.note{margin-bottom:28px}
 
-.gates-table{table-layout:fixed;width:100%}.gates-table th:nth-child(1){width:25%}.gates-table th:nth-child(2){width:15%}.gates-table td:last-child,.gates-table th:last-child{text-align:left;white-space:normal;overflow-wrap:anywhere}.gates-table td:first-child{white-space:normal}
+.gates-table{table-layout:fixed;width:100%}.gates-table th:nth-child(1){width:28%}.gates-table th:nth-child(2){width:27%}.gates-table td:last-child,.gates-table th:last-child{text-align:left;white-space:normal;overflow-wrap:anywhere}.gates-table td:first-child{white-space:normal;overflow-wrap:anywhere}.gates-table td:nth-child(2),.gates-table th:nth-child(2){text-align:left;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:650px){.axis,.legend{font-size:18px}}
