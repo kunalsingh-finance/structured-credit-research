@@ -7,9 +7,11 @@ import csv
 import hashlib
 import html
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -62,8 +64,16 @@ def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
         writer.writerows(rows)
 
 
-def render(pack: dict) -> str:
+def render(pack: dict, output_dir: Path | None = None) -> str:
     escape = html.escape
+    destination = (output_dir or ROOT / "output").resolve()
+    # Links must follow the selected report folder, including the documented
+    # nested fixture directory and paths containing spaces or URL characters.
+    def project_link(relative: str) -> str:
+        return quote(Path(os.path.relpath(ROOT / relative, destination)).as_posix(), safe="/")
+
+    scope_link = project_link("README.md")
+    design_link = project_link("docs/RESEARCH_DESIGN.md")
     checks = pack["arithmetic_summary"]
     differences = pack["replay_difference_count"]
     oc_differences = sorted({row["residual_cents"] for record in pack["certificates"]
@@ -106,7 +116,7 @@ def render(pack: dict) -> str:
 <section><h2>Prospectus-based replay</h2><p class="small">These are development comparisons. They are neither withheld-month mechanical validation nor forecast backtesting.</p><div class="table-wrap"><table><thead><tr><th>Period</th><th>Calculated quantity</th><th>Calculated</th><th>Reported</th><th>Difference</th></tr></thead><tbody>{''.join(replay_rows)}</tbody></table></div></section>
 <section><h2>Source exceptions</h2><ul>{exceptions}</ul></section>
 <section><h2>Build toward a credit decision</h2><ol><li>Archive original filings, ingest consecutive certificates, and review executed terms and amendments.</li><li>Validate contractual cash flows on subsequent months withheld from development.</li><li>Reconcile post-close loan tapes and build a point-in-time credit panel.</li><li>Estimate and test default, prepayment and recovery behaviour against transparent baselines.</li><li>Stress bond cash flows, loss exposure and principal timing, then write a supported credit memo.</li></ol></section>
-<footer><p><a href="../README.md">Project scope</a> · <a href="../docs/RESEARCH_DESIGN.md">Method and release gates</a> · <a href="research_results.json">Machine-readable evidence</a> · <a href="replay_comparison.csv">Replay comparison CSV</a></p><p class="small">Manual numeric extraction from SEC HTML; original source bytes and source hashes unavailable. Local fixture SHA-256: <code>{pack['normalized_fixture_sha256']}</code>. No loan-level model, market quote, investment conclusion or predictive holdout exists yet.</p><p class="small">Generated {escape(pack['generated_at'])}</p></footer></main></body></html>'''
+<footer><p><a href="{escape(scope_link, quote=True)}">Project scope</a> · <a href="{escape(design_link, quote=True)}">Method and release gates</a> · <a href="research_results.json">Machine-readable evidence</a> · <a href="replay_comparison.csv">Replay comparison CSV</a></p><p class="small">Manual numeric extraction from SEC HTML; original source bytes and source hashes unavailable. Local fixture SHA-256: <code>{pack['normalized_fixture_sha256']}</code>. No loan-level model, market quote, investment conclusion or predictive holdout exists yet.</p><p class="small">Generated {escape(pack['generated_at'])}</p></footer></main></body></html>'''
 
 
 ZERO_ASSUMPTIONS = ("finance_charge_repurchases", "simple_interest_advances", "unreimbursed_advances", "other_fees", "interest_arrears")
@@ -233,7 +243,7 @@ def main() -> int:
         write_csv(output / "reconciliation_checks.csv", arithmetic, ["collection_period", "check_id", "name", "status", "computed_cents", "reported_cents", "residual_cents", "formula"])
         write_csv(output / "replay_comparison.csv", replay_rows, ["collection_period", "name", "status", "computed_cents", "reported_cents", "residual_cents"])
         (output / "research_results.json").write_text(json.dumps(pack, indent=2) + "\n", encoding="utf-8")
-        report_path.write_text(render(pack), encoding="utf-8")
+        report_path.write_text(render(pack, output), encoding="utf-8")
         (output / "run_status.json").write_text(json.dumps({"status": pack["status"], "generated_at": pack["generated_at"], "original_sources_archived": False}, indent=2) + "\n", encoding="utf-8")
         print(f"{pack['status']}: {pack['arithmetic_summary']['PASS']}/{pack['arithmetic_summary']['total']} arithmetic checks pass; {pack['replay_difference_count']} replay differences.")
         print(f"Report: {report_path}")
