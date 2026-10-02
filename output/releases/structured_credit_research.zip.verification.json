@@ -1,0 +1,57 @@
+{
+  "zip": "C:\\Users\\perso\\Documents\\GitHub\\structured-credit-research\\output\\releases\\structured_credit_research.zip",
+  "zip_sha256": "621acb86e551010099cf8f8e36ec49c1b251cd6ba2d18d2bdf5645111f55a9f5",
+  "zip_bytes": 1953521,
+  "files_verified": 92,
+  "local_links_verified": 20,
+  "version": {
+    "results_version": "2026-10-02T13:17:08.124031+00:00",
+    "results_sha256": "f560aaa291e553a66fe61460c832201e34c44d4c865b97615e215fb8b6088107",
+    "research_status": "DEVELOPMENT RESEARCH WITH UNRESOLVED SOURCE EXCEPTIONS",
+    "research_gates": {
+      "consecutive_real_data": {
+        "status": "PASS",
+        "periods": 46
+      },
+      "certificate_internal_accounting": {
+        "status": "PASS",
+        "checks": 322
+      },
+      "tape_to_certificate": {
+        "status": "FAIL",
+        "unresolved": 287
+      },
+      "exact_contractual_replay": {
+        "status": "FAIL",
+        "differences": 118,
+        "periods": 16
+      },
+      "credit_model": {
+        "status": "IMPLEMENTED_WITH_LIMITATIONS",
+        "evidence": "Frozen chronological/unseen-deal primary model; separate after-look cohort, fixed-segment and four expanding-time diagnostics; economic default timing and source allocations remain qualified"
+      },
+      "cash_forecast": {
+        "status": "MIXED",
+        "evidence": "Seven target months per deal; default and interest improve while principal and ending-pool errors worsen"
+      },
+      "scenario_conservation": {
+        "status": "PASS"
+      },
+      "valuation": {
+        "status": "ASSUMPTION_ONLY",
+        "evidence": "September15,2026 origin; common8% annual discount rate; no executable market quote"
+      },
+      "observed_floating_coupons": {
+        "status": "PASS",
+        "matches": 17,
+        "evidence": "Official New York Fed30-day compounded averages plus executed69bp spread; issuer date labels remain erroneous"
+      }
+    },
+    "release_model_code_files_checked": 11,
+    "executed_source_hash_chains_checked": [
+      "data/raw/legal/d943115dex991.htm.gz",
+      "data/raw/legal/d943115dex41.htm.gz"
+    ]
+  },
+  "verification_scope": "Saved file integrity and delivery; financial gates unchanged"
+}

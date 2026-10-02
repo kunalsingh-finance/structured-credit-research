@@ -1,0 +1,1031 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-02T13:19:52.676254+00:00",
+  "status": "CONDITIONAL_SENSITIVITY_COMPLETED",
+  "input_sha256": {
+    "output/platform_results.json": "f560aaa291e553a66fe61460c832201e34c44d4c865b97615e215fb8b6088107",
+    "output/platform_run_status.json": "54aef00e4c212e50e830ffd4c1f7bdb1ebb860a8f59fe4b5afa3276559c8023e",
+    "data/actual_certificates.json": "9d748039fa803452dcedae74f15852acacd8e09096baf1d9008c0d7c977968af",
+    "data/source_manifest.json": "ffbb882ed39d0ebbb0c7f4f46d972b29bdefd86001a9cdb3a0803db09b110166",
+    "data/raw/legal/d943115dex991.htm.gz": "1c8c7fb95d58cd7929087b5174bf6629fa097a743471dca38d29a7034fd10283",
+    "data/raw/legal/d943115dex41.htm.gz": "6be838a5b566509598f55a444a9c69110053b628356316f3f76bc7dc5cdbb32c",
+    "scripts/analyze_oc_sensitivity.py": "9569af2994676247eb023c67b8e404d41a0f913ba29abc98cd9945da797c42a1",
+    "credit_research/cashflows.py": "b0b4f90c213d4260a881e5a2b888df6985ba43e08356900b4791281f1449d2b8",
+    "credit_research/cash_validation.py": "9ece8efc73bb2d7d9cf9837d8f8a4f9480d10abe0cb4950dc478e34ccb617463",
+    "credit_research/credit_models.py": "b2e32cae92edd843d8e4be43ddab67550508576b3e472c07909b7a266902a4e2",
+    "credit_research/extended_validation.py": "0e996a7cdce279248af383a7060b3732518b828e19b83f9ded5fb2879823e55e",
+    "credit_research/ingest.py": "d06ca03aa7584c47809bf755286ea1d34e74f5d47d3eccb42c98cc898477cf64",
+    "credit_research/projections.py": "6ff7407567fbac4334c216afeea6d6af0c4e03fffdbd3b701a87999794fd3521",
+    "credit_research/reconcile.py": "40621a0e45a8358d4b4b1a6c41ef8a6c613d75ab098c2530ebd044345dff636b",
+    "credit_research/waterfall.py": "b88b643d6f461115b7d8302f6d5840f52741490fd5c027662c187a4096ca9524",
+    "credit_research/__init__.py": "402288d4727b53fd8008dfcb4863dda4f708d089d8a620b0544338d7e65a381f",
+    "scripts/run_platform.py": "81f733d6e1aac634dca379434c3e26a21291a677fb5a45cf058ef78bfd31409c",
+    "scripts/run_research.py": "1315ab0e8f0f73d9b6569ed65f33f0675047a6f698335f1004c74b02931be912"
+  },
+  "primary_generated_at": "2026-10-02T13:17:08.124031+00:00",
+  "legal_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525111714/d943115dex991.htm",
+    "accession": "0001193125-25-111714",
+    "original_sha256": "44ffa079e28c6a38fd77e3aaba48ed017665abac8febbd517d34dd3350f339aa",
+    "archive_sha256": "1c8c7fb95d58cd7929087b5174bf6629fa097a743471dca38d29a7034fd10283",
+    "location": "Appendix A, Overcollateralization Target Amount",
+    "formula": "0.75% of Pool Balance as of Cutoff Date",
+    "independently_located_in_verified_original": true,
+    "aggregate_a2_allocation": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525111714/d943115dex41.htm",
+      "accession": "0001193125-25-111714",
+      "location": "Section 2.8(d)",
+      "original_sha256": "2ddeb0a23b15f64eb76658dffd0d53309beb04ea0994eade6e7252471ab4bf3c",
+      "archive_sha256": "6be838a5b566509598f55a444a9c69110053b628356316f3f76bc7dc5cdbb32c",
+      "independently_located_in_verified_original": true,
+      "rule": "Aggregate distribution principal across the five tiers; A2a and A2b share their class allocation ratably.",
+      "rounding_convention": "Half-up to A2a once on the cumulative aggregate amount, with the remainder to A2b; the clause does not separately specify a fractional-cent convention."
+    }
+  },
+  "target_comparison": {
+    "initial_pool_cents": 141057942174,
+    "executed_fraction": "0.0075",
+    "executed_formula_target_cents": 1057934566,
+    "reported_target_cents": 1057942174,
+    "difference_cents": 7608,
+    "counterfactual_equivalent_fraction": "0.0075000539331205513804889061815103634818179663656490454991684628657398635616083477"
+  },
+  "historical_reset_sensitivity": {
+    "method": "Separate single-period comparisons reset to each certificate's reported opening note and reserve balances; no state propagation.",
+    "period_count": 16,
+    "later_month_count": 7,
+    "primary_difference_count": 118,
+    "counterfactual_difference_count": 0,
+    "periods": [
+      {
+        "collection_period_end": "2025-05-31",
+        "distribution_date": "2025-06-16",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000010/a2025-2ex991061625.htm",
+        "source_sha256": "6876cfe953ee14ba5eed2e83c2d53947a985a53a9701bc5b4c34d68f3acaee65",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 6,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 0,
+          "a2a_cents": 0,
+          "a2b_cents": 0,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-06-30",
+        "distribution_date": "2025-07-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000015/a2025-2ex991071525.htm",
+        "source_sha256": "57ef3cb02efa2bd1b9cb02d88c48e0a04664c87ebd2b643f4da63f3133fc8bd8",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 6,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 0,
+          "a2a_cents": 0,
+          "a2b_cents": 0,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-07-31",
+        "distribution_date": "2025-08-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000020/a2025-2ex991081525.htm",
+        "source_sha256": "320d73aacc4e870363f0af89eeb3980c8f52b4c5ba20429a7a1293bd128e000f",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 6,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 0,
+          "a2a_cents": 0,
+          "a2b_cents": 0,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-08-31",
+        "distribution_date": "2025-09-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000025/a2025-2ex991091525.htm",
+        "source_sha256": "f6520fb59ad7c339ea8924465f57264ea2a68d1e4a981aff524d923069530de4",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 6,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 0,
+          "a2a_cents": 0,
+          "a2b_cents": 0,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-09-30",
+        "distribution_date": "2025-10-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000030/a2025-2ex991101525.htm",
+        "source_sha256": "031c0eed3ae4339809aac653e89658fff08c8350039ac832bce0af754e77f4f3",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 6,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 0,
+          "a2a_cents": 0,
+          "a2b_cents": 0,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-10-31",
+        "distribution_date": "2025-11-17",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000035/a2025-2ex991111725.htm",
+        "source_sha256": "f478623eaa97734978e7a800386859dfe6fa2b8ce90058fc97165e048434b28d",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3337815714,
+          "a2a_cents": 2283895720,
+          "a2b_cents": 1053919994,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-11-30",
+        "distribution_date": "2025-12-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000040/a2025-2ex991121525.htm",
+        "source_sha256": "f79d9cdaeb2e71f18535bffb5162c0d1bec30000ddb9de8de05eff19bd157b87",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3782848704,
+          "a2a_cents": 2588408919,
+          "a2b_cents": 1194439785,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2025-12-31",
+        "distribution_date": "2026-01-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000005/a2025-2ex991011526.htm",
+        "source_sha256": "658227d5b1b8ce7973237eb37aba14c5ee93ad6ea4b71b09df9e5135dfdf2495",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3755522253,
+          "a2a_cents": 2569710834,
+          "a2b_cents": 1185811419,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-01-31",
+        "distribution_date": "2026-02-17",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000010/a2025-2ex991021726.htm",
+        "source_sha256": "f99874b3204ddb981cbe895435feb4c6fab58495736e0c4062a867300b7aa9e3",
+        "later_month": false,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3736387489,
+          "a2a_cents": 2556617898,
+          "a2b_cents": 1179769591,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-02-28",
+        "distribution_date": "2026-03-16",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000015/a2025-2ex991031626.htm",
+        "source_sha256": "d66f1a847e2a7eafe8f59e2fd2958cde622529ad98a522b4e59da454bc2cccf2",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3371931664,
+          "a2a_cents": 2307239511,
+          "a2b_cents": 1064692153,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-03-31",
+        "distribution_date": "2026-04-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000020/a2025-2ex991041526.htm",
+        "source_sha256": "d1c1ae6adf9ec614fddca5c06317d5d0b48dc0cc9e1df2ccbd27fd9aecda37d2",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3832188935,
+          "a2a_cents": 2622169903,
+          "a2b_cents": 1210019032,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-04-30",
+        "distribution_date": "2026-05-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000025/a2025-2ex991051526.htm",
+        "source_sha256": "e991aef168ccd27a6b5348af26f60ca11f49d2e9e47c64f32678b3d32b6b3cda",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3490416581,
+          "a2a_cents": 2388312650,
+          "a2b_cents": 1102103931,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-05-31",
+        "distribution_date": "2026-06-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000032/a2025-2ex991061526.htm",
+        "source_sha256": "844c6695e8398d76d02459ca95afdcdd8ff74e493db4d75c27c3414f450b6e8b",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3362768896,
+          "a2a_cents": 2300969900,
+          "a2b_cents": 1061798996,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-06-30",
+        "distribution_date": "2026-07-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000037/a2025-2ex991071526.htm",
+        "source_sha256": "13be25cced1d15dc4e2d8c29d0dccc4fe939257c790bbed357abb4d931994717",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3186269218,
+          "a2a_cents": 2180200243,
+          "a2b_cents": 1006068975,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-07-31",
+        "distribution_date": "2026-08-17",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000042/a2025-2ex991081726.htm",
+        "source_sha256": "45450222f8c6c6142632bc6ccf9eb3bae87c397f75d2b759217b3f06fde465f7",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3303568687,
+          "a2a_cents": 2260462240,
+          "a2b_cents": 1043106447,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      },
+      {
+        "collection_period_end": "2026-08-31",
+        "distribution_date": "2026-09-15",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000047/a2025-2ex991091526.htm",
+        "source_sha256": "1894601bc3e05e1b34c2f75b4a13596fefbb8c4ce1a9a22d67e28769b88d4ba4",
+        "later_month": true,
+        "primary_ledger_reproduced_exactly": true,
+        "regular_principal_due_delta_cents": 7608,
+        "total_principal_paid_delta_cents": 7608,
+        "residual_distribution_delta_cents": -7608,
+        "primary_difference_count": 8,
+        "counterfactual_difference_count": 0,
+        "counterfactual_remaining_differences": [],
+        "independent_aggregate_a2_principal": {
+          "total_cents": 3081147617,
+          "a2a_cents": 2108270935,
+          "a2b_cents": 972876682,
+          "matches_engine": true
+        },
+        "counterfactual_conservation": {
+          "cash_conservation": true,
+          "principal_conservation": true,
+          "pool_conservation": true,
+          "reserve_conservation": true
+        }
+      }
+    ]
+  },
+  "propagated_fixed_scenarios": [
+    {
+      "name": "Central",
+      "period_count": 61,
+      "fixed_collateral_path_sha256": "26c19394b8746dabc629d5ced49f38b7e722f5ed8c9cd6ed72497f253ddc5e7d",
+      "primary_monthly_ledger_reproduced_exactly": true,
+      "independent_pv_and_wal_agree": true,
+      "discount_rate": "0.08",
+      "aggregate_note_pv_delta_usd": "7.89624870",
+      "note_cash_delta_cents": -1430,
+      "residual_distribution_delta_cents": -6215,
+      "reserve_release_delta_cents": 7645,
+      "primary_checks": {
+        "cash_conservation": true,
+        "principal_conservation": true,
+        "pool_conservation": true,
+        "reserve_conservation": true,
+        "horizon_closed": true,
+        "future_recoveries_declared_complete": true,
+        "terminal_principal_losses_cents": 0,
+        "unresolved_principal_cents": 0,
+        "maturity_failures": []
+      },
+      "counterfactual_checks": {
+        "cash_conservation": true,
+        "principal_conservation": true,
+        "pool_conservation": true,
+        "reserve_conservation": true,
+        "horizon_closed": true,
+        "future_recoveries_declared_complete": true,
+        "terminal_principal_losses_cents": 0,
+        "unresolved_principal_cents": 0,
+        "maturity_failures": []
+      },
+      "tranches": [
+        {
+          "name": "A1",
+          "opening_balance_cents": 0,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": null,
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": null
+        },
+        {
+          "name": "A2a",
+          "opening_balance_cents": 8833741247,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -100,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.64525328",
+          "price_per_100_delta": "0.000000730442",
+          "contractual_wal_delta_years": "-0.000000243620",
+          "repaid_principal_wal_delta_years": "-0.000000243620"
+        },
+        {
+          "name": "A2b",
+          "opening_balance_cents": 4076392995,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -45,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.30875698",
+          "price_per_100_delta": "0.000000757427",
+          "contractual_wal_delta_years": "-0.000000243645",
+          "repaid_principal_wal_delta_years": "-0.000000243645"
+        },
+        {
+          "name": "A3",
+          "opening_balance_cents": 45210000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -742,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "4.70118100",
+          "price_per_100_delta": "0.000001039854",
+          "contractual_wal_delta_years": "-0.000000364898",
+          "repaid_principal_wal_delta_years": "-0.000000364898"
+        },
+        {
+          "name": "A4",
+          "opening_balance_cents": 8900000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -209,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "1.09862851",
+          "price_per_100_delta": "0.000001234414",
+          "contractual_wal_delta_years": "-0.000000505527",
+          "repaid_principal_wal_delta_years": "-0.000000505527"
+        },
+        {
+          "name": "B",
+          "opening_balance_cents": 2892000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -126,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.50080928",
+          "price_per_100_delta": "0.000001731706",
+          "contractual_wal_delta_years": "-0.000000857095",
+          "repaid_principal_wal_delta_years": "-0.000000857095"
+        },
+        {
+          "name": "C",
+          "opening_balance_cents": 2116000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -98,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.36240096",
+          "price_per_100_delta": "0.000001712670",
+          "contractual_wal_delta_years": "-0.000000895790",
+          "repaid_principal_wal_delta_years": "-0.000000895790"
+        },
+        {
+          "name": "D",
+          "opening_balance_cents": 1411000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": -110,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.27921871",
+          "price_per_100_delta": "0.000001978871",
+          "contractual_wal_delta_years": "-0.000001358129",
+          "repaid_principal_wal_delta_years": "-0.000001358129"
+        }
+      ]
+    },
+    {
+      "name": "Downside",
+      "period_count": 64,
+      "fixed_collateral_path_sha256": "48bd9acc963fedb22f0890cd5dd61a8b3331c7549e1d338a0f96edb180d74758",
+      "primary_monthly_ledger_reproduced_exactly": true,
+      "independent_pv_and_wal_agree": true,
+      "discount_rate": "0.08",
+      "aggregate_note_pv_delta_usd": "0.00000000",
+      "note_cash_delta_cents": 0,
+      "residual_distribution_delta_cents": 0,
+      "reserve_release_delta_cents": 0,
+      "primary_checks": {
+        "cash_conservation": true,
+        "principal_conservation": true,
+        "pool_conservation": true,
+        "reserve_conservation": true,
+        "horizon_closed": true,
+        "future_recoveries_declared_complete": true,
+        "terminal_principal_losses_cents": 0,
+        "unresolved_principal_cents": 0,
+        "maturity_failures": []
+      },
+      "counterfactual_checks": {
+        "cash_conservation": true,
+        "principal_conservation": true,
+        "pool_conservation": true,
+        "reserve_conservation": true,
+        "horizon_closed": true,
+        "future_recoveries_declared_complete": true,
+        "terminal_principal_losses_cents": 0,
+        "unresolved_principal_cents": 0,
+        "maturity_failures": []
+      },
+      "tranches": [
+        {
+          "name": "A1",
+          "opening_balance_cents": 0,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": null,
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": null
+        },
+        {
+          "name": "A2a",
+          "opening_balance_cents": 8833741247,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "A2b",
+          "opening_balance_cents": 4076392995,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "A3",
+          "opening_balance_cents": 45210000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "A4",
+          "opening_balance_cents": 8900000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "B",
+          "opening_balance_cents": 2892000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "C",
+          "opening_balance_cents": 2116000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "D",
+          "opening_balance_cents": 1411000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Severe",
+      "period_count": 67,
+      "fixed_collateral_path_sha256": "059fb2e5b2476584f6ea0eee720c2914f00318ab96e6fa036e2087b1c2393b49",
+      "primary_monthly_ledger_reproduced_exactly": true,
+      "independent_pv_and_wal_agree": true,
+      "discount_rate": "0.08",
+      "aggregate_note_pv_delta_usd": "0.00000000",
+      "note_cash_delta_cents": 0,
+      "residual_distribution_delta_cents": 0,
+      "reserve_release_delta_cents": 0,
+      "primary_checks": {
+        "cash_conservation": true,
+        "principal_conservation": true,
+        "pool_conservation": true,
+        "reserve_conservation": true,
+        "horizon_closed": true,
+        "future_recoveries_declared_complete": true,
+        "terminal_principal_losses_cents": 8251759951,
+        "unresolved_principal_cents": 0,
+        "maturity_failures": [
+          "A4",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "counterfactual_checks": {
+        "cash_conservation": true,
+        "principal_conservation": true,
+        "pool_conservation": true,
+        "reserve_conservation": true,
+        "horizon_closed": true,
+        "future_recoveries_declared_complete": true,
+        "terminal_principal_losses_cents": 8251759951,
+        "unresolved_principal_cents": 0,
+        "maturity_failures": [
+          "A4",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "tranches": [
+        {
+          "name": "A1",
+          "opening_balance_cents": 0,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": null,
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": null
+        },
+        {
+          "name": "A2a",
+          "opening_balance_cents": 8833741247,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "A2b",
+          "opening_balance_cents": 4076392995,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "A3",
+          "opening_balance_cents": 45210000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 0,
+          "counterfactual_principal_loss_cents": 0,
+          "base_maturity_failure": false,
+          "counterfactual_maturity_failure": false,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": "0.000000000000",
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "A4",
+          "opening_balance_cents": 8900000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 1832759951,
+          "counterfactual_principal_loss_cents": 1832759951,
+          "base_maturity_failure": true,
+          "counterfactual_maturity_failure": true,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": "0.000000000000"
+        },
+        {
+          "name": "B",
+          "opening_balance_cents": 2892000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 2892000000,
+          "counterfactual_principal_loss_cents": 2892000000,
+          "base_maturity_failure": true,
+          "counterfactual_maturity_failure": true,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": null
+        },
+        {
+          "name": "C",
+          "opening_balance_cents": 2116000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 2116000000,
+          "counterfactual_principal_loss_cents": 2116000000,
+          "base_maturity_failure": true,
+          "counterfactual_maturity_failure": true,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": null
+        },
+        {
+          "name": "D",
+          "opening_balance_cents": 1411000000,
+          "principal_paid_delta_cents": 0,
+          "interest_paid_delta_cents": 0,
+          "terminal_principal_loss_delta_cents": 0,
+          "unpaid_interest_claim_delta_cents": 0,
+          "base_principal_loss_cents": 1411000000,
+          "counterfactual_principal_loss_cents": 1411000000,
+          "base_maturity_failure": true,
+          "counterfactual_maturity_failure": true,
+          "pv_delta_usd": "0.00000000",
+          "price_per_100_delta": "0.000000000000",
+          "contractual_wal_delta_years": null,
+          "repaid_principal_wal_delta_years": null
+        }
+      ]
+    }
+  ],
+  "strict_primary_gates_unchanged": {
+    "consecutive_real_data": {
+      "status": "PASS",
+      "periods": 46
+    },
+    "certificate_internal_accounting": {
+      "status": "PASS",
+      "checks": 322
+    },
+    "tape_to_certificate": {
+      "status": "FAIL",
+      "unresolved": 287
+    },
+    "exact_contractual_replay": {
+      "status": "FAIL",
+      "differences": 118,
+      "periods": 16
+    },
+    "credit_model": {
+      "status": "IMPLEMENTED_WITH_LIMITATIONS",
+      "evidence": "Frozen chronological/unseen-deal primary model; separate after-look cohort, fixed-segment and four expanding-time diagnostics; economic default timing and source allocations remain qualified"
+    },
+    "cash_forecast": {
+      "status": "MIXED",
+      "evidence": "Seven target months per deal; default and interest improve while principal and ending-pool errors worsen"
+    },
+    "scenario_conservation": {
+      "status": "PASS"
+    },
+    "valuation": {
+      "status": "ASSUMPTION_ONLY",
+      "evidence": "September15,2026 origin; common8% annual discount rate; no executable market quote"
+    },
+    "observed_floating_coupons": {
+      "status": "PASS",
+      "matches": 17,
+      "evidence": "Official New York Fed30-day compounded averages plus executed69bp spread; issuer date labels remain erroneous"
+    }
+  },
+  "interpretation": "The modeled consequence is quantified conditionally on these fixed collateral paths; no authoritative governing-rule resolution or exact source reconciliation is established.",
+  "limits": [
+    "Specified after inspection of primary results; this is a legal-input sensitivity, not a new withheld forecast evaluation.",
+    "Only the OC target is varied. Initial pool, reserve minimum, cleanup threshold, collateral cash, fees, elections and all other legal terms stay fixed.",
+    "Historical periods reset to reported opening balances. Adding their period deltas does not represent a state-propagated historical cash path.",
+    "Scenario states propagate independently from one common origin. All supplied collateral and recovery cash paths are identical between alternatives.",
+    "The two alternative endpoints do not prove a uniform bound over intermediate targets, arbitrary paths, rate scenarios or trigger changes.",
+    "No source cash allocation, collateral eligibility correction, amendment or issuer explanation is inferred. Exact primary differences are retained.",
+    "Small price effects on these paths do not establish investment materiality, a rating, investment alpha or executable market value."
+  ]
+}

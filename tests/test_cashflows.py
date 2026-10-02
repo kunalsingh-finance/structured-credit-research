@@ -148,6 +148,44 @@ class CashFlowTests(unittest.TestCase):
         self.assertEqual(end.note_balances["A2a"], 0)
         self.assertEqual(end.pool_balance, 100_000)
 
+    def test_a2_ratability_is_independent_of_principal_tier_partition(self):
+        # A2 opening shares7:3 and total payment2 cents imply1:1 after
+        # rounding the total once. Two separately rounded1-cent payments
+        # would incorrectly send both cents to A2a.
+        allocations = []
+        for junior_balance, pool_end in ((0, 8), (1, 9)):
+            with self.subTest(junior_balance=junior_balance):
+                state = ScenarioState(100_000, balances(A2a=7, A2b=3, B=junior_balance), 0, "2025-08-15")
+                end, row = distribute_period(state, replace(period(), pool_end=pool_end,
+                    defaults=100_000-pool_end, interest_collected=2), zero_terms())
+                allocations.append(row["principal"])
+                self.assertEqual(row["principal"]["A2a"], 1)
+                self.assertEqual(row["principal"]["A2b"], 1)
+                self.assertEqual(end.note_balances["A2a"], 6)
+                self.assertEqual(end.note_balances["A2b"], 2)
+                self.assertTrue(row["checks"]["cash_conservation"])
+        self.assertEqual(allocations[0], allocations[1])
+
+    def test_reserve_extra_regular_principal_uses_same_monthly_a2_ratio(self):
+        terms = replace(zero_terms(), oc_rate="0.00002")
+        state = ScenarioState(100_000, balances(A2a=7, A2b=3), 1, "2025-08-15")
+        _, row = distribute_period(state, replace(period(), pool_end=10,
+            defaults=99_990, interest_collected=1), terms)
+        self.assertEqual(row["principal_tier_paid"]["regular"], 2)
+        self.assertEqual(row["reserve_excess_principal"], 1)
+        self.assertEqual(row["principal"]["A2a"], 1)
+        self.assertEqual(row["principal"]["A2b"], 1)
+        self.assertTrue(row["checks"]["reserve_conservation"])
+
+    def test_split_tiers_cannot_overpay_a_small_a2_class(self):
+        state = ScenarioState(100_000, balances(A2a=1, A2b=1, B=1), 0, "2025-08-15")
+        end, row = distribute_period(state, replace(period(), pool_end=1,
+            defaults=99_999, interest_collected=2), zero_terms())
+        self.assertEqual(row["principal"], balances(A2a=1, A2b=1))
+        self.assertEqual(end.note_balances["A2a"], 0)
+        self.assertEqual(end.note_balances["A2b"], 0)
+        self.assertTrue(row["checks"]["principal_conservation"])
+
     def test_acceleration_payment_default_blocks_junior_interest_behind_senior_principal(self):
         terms = zero_terms()
         terms = replace(terms, fixed_rates={**terms.fixed_rates, "B": "0.12"})

@@ -12,7 +12,7 @@ python scripts/run_platform.py --credit-cache --include-supplements --require-ex
 python scripts/run_research.py --output-dir output/bounded_fixture
 ```
 
-**92 tests pass.** They cover exact arithmetic, unsupported/missing inputs, cent/date validation, cash/debt/pool/reserve conservation, legal branch priorities, interest arrears, maturity failure, cleanup conditions, complete terminal runoff, source parsing and version semantics, first-event/censoring definitions, disclosure-time feature joins, recovery-flow queues and failed-build invalidation.
+**113 tests pass.** They cover exact arithmetic, unsupported/missing inputs, cent/date validation, cash/debt/pool/reserve conservation, legal branch priorities, interest arrears, maturity failure, cleanup conditions, complete terminal runoff, source parsing and version semantics, first-event/censoring definitions, disclosure-time feature joins, recovery-flow queues and failed-build invalidation. Added controls cover tier-partition-independent A2 rounding, immutable source restoration, conditional OC study freshness and portable-release integrity.
 
 Forecast-origin tests perturb unfiled loan balances/defaults and later actual cash. The forecasts remain unchanged while scoring outcomes change. A source certificate accepted after the origin is rejected. Cash predictions retain source acceptance, bridge length, payment date and all model assumptions.
 
@@ -31,6 +31,8 @@ The old offline two-certificate fixture remains isolated in `output/bounded_fixt
 - Latest positive loan exposure $744,970,252.15 versus certificate pool $744,970,764.16 leaves $512.01 unexplained. Positive loan count 47,562 agrees. Immediate full loss of that residual is only an adverse scenario convention.
 
 Original-byte evidence, tested adjustments and issuer evidence needed are documented in [SOURCE_RECONCILIATION.md](SOURCE_RECONCILIATION.md) and [independent audit](INDEPENDENT_CASH_BRIDGE_AUDIT.md). No normalized adjustment silently repairs a source difference.
+
+The A2 engine rounds the cumulative monthly principal payment using opening class weights. Regression checks show that splitting one payment across priority tiers cannot change its final allocation. A separate hypothetical reported-target replay matches all 592 historical comparisons across the same 16 certificates. The executed-formula primary replay retains its 118 differences. Under identical collateral paths and separately propagated note state, the alternate target changes Central aggregate note PV by $7.89624870 at 8%; Downside and Severe cash flows are unchanged. Principal losses, interest claims and maturity flags are unchanged at the two tested target endpoints. This study does not establish a bound across intermediate targets, other paths or yields, or determine the governing legal rule. See [OC_SENSITIVITY.md](OC_SENSITIVITY.md).
 
 ## Predictive evidence
 
@@ -61,7 +63,9 @@ Valuation origin is September15,2026. Discount8% and the latest disclosed floati
 
 The separate reference-rate review reconstructs all17 observed floating coupons exactly from official New York Fed30-day compounded averages plus the executed0.69% spread and adjustment-date rule. Ten stale7/14/2024 labels are issuer-label errors. The amendment review covers444 records across four returned filer inventories and171 unique primary-document screens; three candidates reference original agreements. No transaction amendment was identified within the finite covered scope. A sponsor submissions endpoint returned404 and remains a disclosed scope gap. All177 supplemental original/archive hash chains pass separately from the frozen243-source core. See [RATE_AND_AMENDMENT_REVIEW.md](RATE_AND_AMENDMENT_REVIEW.md).
 
-Artifact builders require a matching SUCCESS status file, results SHA-256 and generation timestamp. Final verification is recorded in `output/artifact_verification.json`: 3,280 cached formulas, zero saved formula errors, five input validations, retained chart, two PDF pages and four rejected stale-input cases. Current updated views and browser controls were inspected; earlier full-sheet review is retained for unchanged schedules. Native Microsoft Excel was not invoked. The workbook's price/yield/class/scenario controls recalculate saved schedules; changing borrower-credit assumptions requires a Python rebuild.
+Artifact builders require a matching SUCCESS status file, results SHA-256 and generation timestamp. Final verification is recorded in `output/artifact_verification.json`: 3,280 cached formulas, zero saved formula errors, five input validations, retained chart, two PDF pages and five rejected stale-input cases, including a stale conditional OC study. Fresh previews of all nine workbook sheets, both memo pages and browser controls were inspected. Native Microsoft Excel was not invoked. The workbook's price/yield/class/scenario controls recalculate saved schedules; changing borrower-credit assumptions requires a Python rebuild.
+
+The portable ZIP preserves the saved research status and excludes the large raw panel and authoring runtimes. Its standard-library packager verifies every included file, embedded dashboard results and local link against the release manifest. See [RELEASE.md](RELEASE.md) for inspection and independent integrity checks.
 
 ## Authorship
 

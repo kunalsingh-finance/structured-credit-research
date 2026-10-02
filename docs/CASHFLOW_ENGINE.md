@@ -57,6 +57,16 @@ Opening pool - Closing pool = Principal collected + Defaults + Repurchases
 tranche recovery, paid-principal WAL and horizon closure. Terms are configurable
 for small independent example checks; live deal terms are supplied explicitly.
 
+Indenture2.8(d) allocates aggregate distribution principal and shares A2
+principal ratably. A2 subnote weights use the month's opening balances; the
+cumulative paid amount is rounded half-up once to A2a and the remainder goes
+to A2b. Each principal tier supplies only the incremental allocation. This
+prevents a one-cent drift caused by separately rounding successive tiers.
+Half-up is an explicit fractional-cent convention, not wording supplied by the
+indenture. Independent rational checks reproduce all16 historical A2 splits
+under the hypothetical reported-target diagnostic in
+[OC_SENSITIVITY.md](OC_SENSITIVITY.md); that result does not resolve the OC rule.
+
 The floating coupon is a nonnegative annual decimal fraction supplied by the
 caller. It is not reconstructed from SOFR by the cash-flow engine. Fixed notes
 other than A1 accrue monthly; A1 and A2b use actual payment-date days/360.

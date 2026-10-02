@@ -6,12 +6,14 @@ An inspectable auto-ABS research project connecting public loan disclosures, bor
 
 ## Inspect the work
 
+- [Portable project release](output/releases/structured_credit_research.zip): extract it and open `START_HERE.html`; no loan database or Python installation is needed to inspect the saved dashboard and deliverables. [Opening and verification instructions](docs/RELEASE.md).
 - `output/research_report.html`: interactive collateral, forecast, waterfall, stress and source review.
 - `output/outputs/credit_research/cashflow_workbook.xlsx`: formula-based payment valuation, WAL, scenario/class selection and audit schedules.
 - `output/pdf/credit_memo.pdf`: two-page credit research memo with results and material limitations.
 - [Interview guide](docs/interview_guide.md): project walkthrough, questions and defensible claims.
 - [Validation record](docs/VALIDATION.md), [research gates](docs/RESEARCH_DESIGN.md), [data dictionary](docs/DATA_DICTIONARY.md) and [cash-flow mechanics](docs/CASHFLOW_ENGINE.md).
 - [Supplemental model study](docs/SUPPLEMENTAL_VALIDATION.md) and [rate/amendment review](docs/RATE_AND_AMENDMENT_REVIEW.md): additional evidence, with retrospective and finite-search limits stated.
+- [Conditional OC sensitivity](docs/OC_SENSITIVITY.md): exact historical reproduction and state-propagated consequences of the reported-target alternative under identical collateral paths.
 
 ## What a reviewer can test
 
@@ -34,6 +36,8 @@ Better borrower-risk scores do not imply better runoff forecasts. Both deals' pr
 
 Four supplemental expanding-time folds, a smoothed cohort benchmark and fixed borrower segments retain mixed results: the fresh logistic has worse default Brier than the delinquency-transition baseline in every fold. This study was specified after inspecting the primary test and does not select or change the primary model. All seventeen observed floating coupons independently match official New York Fed averages plus the executed spread. A finite public amendment inventory and 177 separately hashed reference files are documented; no transaction amendment was identified within that scope, and an unavailable sponsor endpoint remains visible.
 
+A2 principal allocations round the cumulative monthly distribution using opening class weights, so splitting the same payment across priority tiers cannot change its final allocation. The separate reported-target OC diagnostic matches all 16 historical distributions, but its target remains a hypothetical substitution. Under the three fixed projected paths, that alternative changes Central aggregate note PV by $7.90 at 8% and leaves Downside/Severe values, principal losses and maturity outcomes unchanged. It does not resolve the governing rule or the cash bridge.
+
 ## Reproduce
 
 Python 3.11+, dependencies in `requirements.txt`. Install in an environment you control:
@@ -54,6 +58,8 @@ python scripts/run_platform.py
 Raw sources and the approximately 1.19 GB SQLite panel are excluded from Git. The saved source manifests contain URLs, acceptance times, original/archive SHA-256 hashes and byte counts. See the data dictionary for acquisition details. No credentials or fabricated contact identity belong in the repository.
 
 A matching `--credit-cache` reuses model and cash-validation results only when panel, source, protocol, certificate and modeling-code identities agree. Failed builds invalidate the machine-readable results. Build success means generation succeeded; it does not mean research gates passed.
+
+When restoring absent raw files, the downloader keeps each frozen manifest entry unchanged and requires both original and compressed byte identities to match. Changed disclosures and incompatible compressed bytes fail explicitly. Mutable submissions endpoints may no longer supply a historical snapshot; use the recorded original archive to reproduce that snapshot. Do not relabel a new source as the old evidence or append duplicate URL entries to bypass this check.
 
 ```powershell
 python scripts/run_extended_validation.py

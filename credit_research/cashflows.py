@@ -299,14 +299,27 @@ def distribute_period(state: ScenarioState, period: CollateralPeriod,
         groups = GROUPS
         if pro_rata_a:
             groups = (("A1",), ("A2a", "A2b", "A3", "A4"), ("B",), ("C",), ("D",))
+
+        def allocate_a2(additional: int) -> dict[str, int]:
+            # Indenture2.8(d) distributes the sum of principal tiers ratably.
+            # Round the cumulative monthly A2 amount against opening balances,
+            # then distribute only the increment. Rounding each tier against
+            # already-rounded remaining balances makes the final split depend
+            # on how the identical payment was partitioned through the tiers.
+            cumulative = additional + principal_paid["A2a"] + principal_paid["A2b"]
+            target = _pro_rata(cumulative, {n: notes[n] for n in ("A2a", "A2b")})
+            return {n: target[n] - principal_paid[n] for n in ("A2a", "A2b")}
+
         for group in groups:
             balance = {n: notes[n] - principal_paid[n] for n in group}
             amount_group = min(left, sum(balance.values()))
             if pro_rata_a and len(group) == 4:
                 class_weights = {"A2": balance["A2a"] + balance["A2b"], "A3": balance["A3"], "A4": balance["A4"]}
                 class_pays = _pro_rata(amount_group, class_weights)
-                allocated = _pro_rata(class_pays["A2"], {n: balance[n] for n in ("A2a", "A2b")})
+                allocated = allocate_a2(class_pays["A2"])
                 allocated.update({n: class_pays[n] for n in ("A3", "A4")})
+            elif group == ("A2a", "A2b"):
+                allocated = allocate_a2(amount_group)
             else:
                 allocated = _pro_rata(amount_group, balance)
             for n, p in allocated.items():

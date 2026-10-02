@@ -144,7 +144,16 @@ def rate_review_html(pack):
     return f'''<article class="card"><details><summary>Inspect historical coupon resets and amendment-search scope</summary><h3>Historical floating coupon check</h3><p>{matches} of {len(checks)} coupons match the official 30-day compounded SOFR average on the executed reset date plus the 0.69 percentage-point spread. This tests observed historical coupons; scenario floating rates remain an assumed constant.</p><div class="table-scroll"><table><thead><tr><th>Distribution date</th><th>SOFR adjustment date</th><th>Official average</th><th>Expected coupon</th><th>Observed coupon</th><th>Residual (pp)</th></tr></thead><tbody>{rows}</tbody></table></div><p class="chart-note">{escape(rate["limitations"])}</p><h3>Finite public amendment review</h3><p>{inventory} filer records in the defined execution-to-cutoff windows and {document_count} unique primary documents were reviewed. No post-execution transaction amendment was identified within that finite search. This does not establish absence of private or unfiled changes.</p><p class="muted">{escape(review["screen_scope_limit"])}</p><p>{escape(missing)}</p><p class="chart-note">{sources} supplemental archived records are verified separately from the frozen core archive. <a href="../docs/RATE_AND_AMENDMENT_REVIEW.md">Detailed review</a>, <a href="../data/rate_and_amendment_review.json">machine-readable evidence</a> and <a href="../data/rate_amendment_source_manifest.json">supplemental manifest</a>.</p></details></article>'''
 
 
-def build_html(pack, output):
+def oc_sensitivity_html(study):
+    if study is None:
+        return ""
+    rows = ''.join(f'<tr><td>{html.escape(case["name"])}</td><td>{case["period_count"]}</td><td>${float(case["aggregate_note_pv_delta_usd"]):,.2f}</td></tr>'
+                   for case in study["propagated_fixed_scenarios"])
+    history = study["historical_reset_sensitivity"]
+    return f'''<article class="card"><details><summary>Inspect conditional OC sensitivity</summary><h3>Consequence of the $76.08 target discrepancy</h3><p>The executed formula remains the primary rule. A separate diagnostic changes only the target to the reported dollar amount, holding each collateral cash path fixed. The alternative is hypothetical and does not determine which target legally governs.</p><div class="table-scroll"><table><thead><tr><th>Fixed path</th><th>Months</th><th>Aggregate note PV change at 8%</th></tr></thead><tbody>{rows}</tbody></table></div><p>Principal losses, unpaid-interest claims and maturity flags are unchanged at these two endpoints. This does not establish a uniform bound across other paths, yields or intermediate targets.</p><p class="muted">The {history["period_count"]} historical comparisons reset opening state to each certificate: {history["primary_difference_count"]} primary differences remain; the hypothetical target has {history["counterfactual_difference_count"]}. A2 allocations round the cumulative monthly payment using opening class weights.</p><p class="chart-note"><a href="oc_sensitivity.json">Complete conditional study</a> and <a href="../docs/OC_SENSITIVITY.md">method, contract evidence and limits</a>. Exact source reconciliation and governing-rule clarification remain open.</p></details></article>'''
+
+
+def build_html(pack, output, oc_sensitivity=None):
     escape = html.escape
     platform = pack["platform"]
     css = (ASSETS / "research.css").read_text(encoding="utf-8")
@@ -204,6 +213,7 @@ def build_html(pack, output):
         gates_rows.append(f'<tr><td>{escape(label.replace("_", " "))}</td><td>{escape(gate.get("status", "Unavailable"))}</td><td>{escape(detail)}</td></tr>')
     gates_section = f'<article class="card"><h3>Research gates</h3><p class="muted">A successful build preserves results and exceptions. The financial validation gates below retain their own status.</p><div class="table-scroll"><table class="gates-table"><thead><tr><th>Research gate</th><th>Status</th><th>Evidence</th></tr></thead><tbody>{"".join(gates_rows)}</tbody></table></div></article>' if gates_rows else ''
     supplemental_section = supplemental_html(pack)
+    oc_section = oc_sensitivity_html(oc_sensitivity)
     rate_review_section = rate_review_html(pack)
     initial_yield_pct = number(pack["scenarios"][0].get("assumptions", {}).get("discount_rate"), .08) * 100
     content = f'''<!doctype html>
@@ -216,13 +226,13 @@ def build_html(pack, output):
 <article class="card valuation"><div><h3>Cash-flow value</h3><p>Valuation date: {escape(str(platform.get('valuation_date', 'Unavailable')))}. Effective annual discount yield; no independent market quote is available.</p></div><label>Discount yield <strong id="yield-display"></strong><input id="yield-input" type="range" min="0" max="30" step="0.25" value="{initial_yield_pct:g}" aria-label="Discount yield percent"></label><div><span>Model value per $100</span><strong id="model-price"></strong></div></article>
 <article class="card"><h3>Class protection and principal timing</h3><div class="table-scroll"><table id="tranche-table"><thead><tr><th>Class</th><th>Opening principal</th><th>Opening protection</th><th>Principal paid</th><th>Principal loss</th><th>Unpaid interest</th><th>WAL (years)</th><th>Value / $100</th></tr></thead><tbody></tbody></table></div><p class="chart-note">Opening protection combines junior note principal, overcollateralization and reserve support as a share of collateral, using the model definition. WAL uses principal payment dates and actual elapsed days / 365.25. WAL is unavailable after principal loss or incomplete repayment. The research data separately reports average timing of repaid principal.</p></article>
 <article class="note"><h3>Scenario interpretation</h3><p id="scenario-interpretation"></p><p>Borrower assumptions and structural mechanics are calculated in Python. This interface reprices saved cash flows when yield changes; rerun the research pipeline to change credit assumptions.</p></article>{reverse_section}</section>
-<section id="evidence"><div class="section-heading"><div><p class="eyebrow">02 / VALIDATION</p><h2>What the evidence supports</h2></div></div>{gates_section}<div class="evidence-grid"><article class="card"><h3>Historical payment replay</h3><div id="historical-evidence"></div><p class="muted">Reported-data arithmetic and contractual replay are different checks. Differences remain visible.</p></article><article class="card"><h3>Chronological forecast evaluation</h3><div id="forecast-evidence"></div><p class="chart-note">Exposure MAE compares predicted and observed beginning principal associated with first-observed default/prepayment events. Brier score and AUC are dimensionless.</p></article></div>{cash_section}{supplemental_section}{loan_control_section}<article class="card"><details><summary>Inspect calculated payments against servicer reports</summary><div class="table-scroll"><table><thead><tr><th>Collection period</th><th>Quantity</th><th>Calculated</th><th>Reported</th><th>Difference</th></tr></thead><tbody>{''.join(replay_html)}</tbody></table></div></details></article><article class="card"><h3>Source and model limits</h3><ul class="limits">{limits_html}</ul></article></section>
+<section id="evidence"><div class="section-heading"><div><p class="eyebrow">02 / VALIDATION</p><h2>What the evidence supports</h2></div></div>{gates_section}<div class="evidence-grid"><article class="card"><h3>Historical payment replay</h3><div id="historical-evidence"></div><p class="muted">Reported-data arithmetic and contractual replay are different checks. Differences remain visible.</p></article><article class="card"><h3>Chronological forecast evaluation</h3><div id="forecast-evidence"></div><p class="chart-note">Exposure MAE compares predicted and observed beginning principal associated with first-observed default/prepayment events. Brier score and AUC are dimensionless.</p></article></div>{cash_section}{supplemental_section}{oc_section}{loan_control_section}<article class="card"><details><summary>Inspect calculated payments against servicer reports</summary><div class="table-scroll"><table><thead><tr><th>Collection period</th><th>Quantity</th><th>Calculated</th><th>Reported</th><th>Difference</th></tr></thead><tbody>{''.join(replay_html)}</tbody></table></div></details></article><article class="card"><h3>Source and model limits</h3><ul class="limits">{limits_html}</ul></article></section>
 <section id="sources"><div class="section-heading"><div><p class="eyebrow">03 / SOURCE RECORD</p><h2>Original evidence, preserved</h2></div></div><article class="card"><p class="muted">{len(sources)} archived source records. <a href="../data/source_manifest.json">Source manifest</a> and <a href="../data/source_verification.json">byte verification</a> preserve the accession, archive path and original content hashes.</p><details><summary>Inspect original sources and hashes</summary><div class="table-scroll"><table class="source-table"><thead><tr><th>Filing</th><th>Period</th><th>SHA-256 of original bytes</th></tr></thead><tbody>{''.join(sources)}</tbody></table></div></details></article>{rate_review_section}</section>
 </main><footer><span>Kunal Singh / Structured Credit Research</span><span>Generated {escape(built)} UTC</span></footer><script id="research-data" type="application/json">{encoded}</script><script>{js}</script></body></html>'''
     output.write_text(content, encoding="utf-8")
 
 
-def build_pdf(pack, output):
+def build_pdf(pack, output, oc_sensitivity=None):
     from reportlab.lib import colors
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.utils import simpleSplit
@@ -342,7 +352,11 @@ def build_pdf(pack, output):
     y = para(f"Reported-data checks: {arithmetic.get('PASS', 'unavailable')} / {arithmetic.get('total', 'unavailable')} pass. Class interest matches: {interest_matches} / {len(interest_checks)}. Historical replay differences: {pack.get('replay_difference_count', 'unavailable')}. Replay uses observed cash and balances; it tests structural mechanics separately from borrower forecasting.", y)
     oc_diffs = sorted({row.get("residual_cents") for record in pack.get("certificates", []) for row in record.get("replay_comparison", []) if row.get("name") == "oc_target" and row.get("residual_cents")})
     if oc_diffs:
-        y = para("Calculated minus reported OC target: " + ", ".join(money(v) for v in oc_diffs) + f". Related payment differences remain visible. The strict tape/certificate gate has {pack.get('loan_tape_reconciliation', {}).get('unresolved_comparisons', 0)} unresolved comparisons; neither ingestion checks nor the small latest balance difference resolves them.", y, 8.8)
+        conditional_note = ""
+        if oc_sensitivity is not None:
+            central_oc = next(case for case in oc_sensitivity["propagated_fixed_scenarios"] if case["name"] == "Central")
+            conditional_note = f" Fixed-path target sensitivity at 8% changes Central note PV by ${float(central_oc['aggregate_note_pv_delta_usd']):,.2f}; loss and maturity outcomes stay unchanged."
+        y = para("Calculated minus reported OC target: " + ", ".join(money(v) for v in oc_diffs) + f". Tape/certificate differences: {pack.get('loan_tape_reconciliation', {}).get('unresolved_comparisons', 0)}." + conditional_note, y, 8.8)
     validation = pack.get("forecast_validation", {})
     y = heading("Borrower forecast evaluation", y - 4)
     train = validation.get("training_periods", platform.get("train_periods", []))
@@ -432,13 +446,20 @@ def main():
     parser.add_argument("--run-status", type=Path)
     args = parser.parse_args()
     pack, digest = verified_results(args.input, args.run_status or args.input.parent / "platform_run_status.json")
+    oc_path = args.input.parent / "oc_sensitivity.json"
+    oc_study = json.loads(oc_path.read_text(encoding="utf-8")) if oc_path.exists() else None
+    if oc_study is not None and (oc_study.get("status") != "CONDITIONAL_SENSITIVITY_COMPLETED"
+            or oc_study.get("input_sha256", {}).get("output/platform_results.json") != digest
+            or oc_study.get("primary_generated_at") != pack["generated_at"]
+            or oc_study.get("strict_primary_gates_unchanged") != pack["research_gates"]):
+        raise ValueError("OC sensitivity is incomplete or does not match the primary results")
     args.html.parent.mkdir(parents=True, exist_ok=True)
     args.pdf.parent.mkdir(parents=True, exist_ok=True)
     staged_html = args.html.with_suffix(".building.html")
     staged_pdf = args.pdf.with_suffix(".building.pdf")
     try:
-        build_html(pack, staged_html)
-        build_pdf(pack, staged_pdf)
+        build_html(pack, staged_html, oc_study)
+        build_pdf(pack, staged_pdf, oc_study)
         staged_html.replace(args.html)
         staged_pdf.replace(args.pdf)
     finally:

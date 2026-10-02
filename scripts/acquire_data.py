@@ -43,6 +43,11 @@ class Downloader:
 
     def archive(self, url, path: Path, **metadata):
         existing = self.by_url.get(url)
+        if existing:
+            # A cloned repository has the frozen manifest but no raw archives.
+            # Restore its recorded location and identities; never append a new
+            # version of that URL or relabel changed bytes as the old source.
+            path = ROOT / existing["archive_path"]
         if existing and (ROOT / existing["archive_path"]).exists():
             cached_path = ROOT / existing["archive_path"]
             cached_hash = hashlib.sha256()
@@ -72,11 +77,19 @@ class Downloader:
                             digest.update(block)
                             count += len(block)
                             archive.write(block)
-                temporary.replace(path)
                 archive_digest = hashlib.sha256()
-                with path.open("rb") as archived:
+                with temporary.open("rb") as archived:
                     while chunk := archived.read(1024 * 1024):
                         archive_digest.update(chunk)
+                if existing:
+                    if digest.hexdigest() != existing["sha256_original_bytes"] or count != existing["original_byte_count"]:
+                        raise ValueError(f"Restored source differs from the frozen original: {url}; manifest unchanged and candidate retained at {temporary}")
+                    if archive_digest.hexdigest() != existing["sha256_archive"] or temporary.stat().st_size != existing["archive_byte_count"]:
+                        raise ValueError(f"Restored compressed bytes differ from the frozen archive: {url}; preserve the manifest and use the recorded compression runtime or original archive")
+                    temporary.replace(path)
+                    print(f"Restored frozen archive: {count:,} bytes", flush=True)
+                    return existing
+                temporary.replace(path)
                 entry = {"url": url, "archive_path": path.relative_to(ROOT).as_posix(),
                     "sha256_original_bytes": digest.hexdigest(), "original_byte_count": count,
                     "sha256_archive": archive_digest.hexdigest(), "archive_byte_count": path.stat().st_size,

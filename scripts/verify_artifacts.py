@@ -82,6 +82,23 @@ def main():
             assert process.returncode != 0, (builder, mode, "Invalid input unexpectedly accepted")
             assert {p.relative_to(ROOT).as_posix(): digest(p) for p in FILES} == before
             guards.append({"builder": builder, "invalid_input": mode, "rejected": True})
+    oc_path = ROOT / "output/oc_sensitivity.json"
+    if oc_path.exists():
+        conditional = temp / "conditional"
+        conditional.mkdir(exist_ok=True)
+        copied_results = conditional / "platform_results.json"
+        copied_results.write_bytes(results_path.read_bytes())
+        copied_status = conditional / "platform_run_status.json"
+        copied_status.write_bytes((ROOT / "output/platform_run_status.json").read_bytes())
+        stale = json.loads(oc_path.read_text(encoding="utf-8"))
+        stale["input_sha256"]["output/platform_results.json"] = "0" * 64
+        (conditional / "oc_sensitivity.json").write_text(json.dumps(stale), encoding="utf-8")
+        process = subprocess.run([sys.executable, str(ROOT / "scripts/build_artifacts.py"),
+                                  "--input", str(copied_results), "--run-status", str(copied_status)],
+                                 cwd=ROOT, capture_output=True, text=True)
+        assert process.returncode != 0 and "OC sensitivity" in process.stderr
+        assert {p.relative_to(ROOT).as_posix(): digest(p) for p in FILES} == before
+        guards.append({"builder": "scripts/build_artifacts.py", "invalid_input": "stale_oc_sensitivity", "rejected": True})
     report = {"results_version": pack["generated_at"], "results_sha256": expected,
               "verified_at": datetime.now(timezone.utc).isoformat(), "artifact_sha256": before,
               "cached_formulas": formula_count, "missing_formula_caches": missing,

@@ -1,4 +1,4 @@
-"""Reproduce the full research release from the archived, reconciled source panel."""
+"""Reproduce research evidence from the archived panel, preserving failed gates."""
 from __future__ import annotations
 
 import argparse
@@ -88,7 +88,7 @@ def build_scenario(name, description, cohorts, state, assumptions, unmapped_cent
                                           interest_collection_factor=assumptions["interest_collection_factor"],
                                           floating_note_rate=assumptions["floating_note_rate"])
     if unmapped_cents:
-        # Explicit adverse bound: the source-to-source collateral difference is
+        # Explicit adverse loss convention: the collateral difference is
         # a separate unreconciled amount, immediately written off without any
         # assumed collection/recovery. It is never made into a fabricated loan.
         periods[0]["defaults"] += unmapped_cents
@@ -166,7 +166,7 @@ def main():
     certificate_pool = parse_amount(latest["amounts"]["pool_end"])
     residual = certificate_pool - mapped_pool
     if residual < 0 or residual / certificate_pool > .00001:
-        raise ValueError("Collateral mismatch cannot be bounded by the documented positive small-residual convention")
+        raise ValueError("Collateral mismatch is outside the documented positive small-residual loss convention")
     cohorts, cohort_info = make_cohorts(active, mapped_pool)
     state = ScenarioState(certificate_pool, {n: parse_amount(latest["expected"]["note_end"][n]) for n in NOTES},
                           parse_amount(latest["amounts"]["reserve_end"]), latest["distribution_date"])
