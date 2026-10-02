@@ -109,9 +109,34 @@ market price/spread and liquidity evidence. No such recommendation is made.
 ## Completion decision
 
 The internal software, diagnostic and documented public-review work is
-completed; final artifact QA is the remaining delivery check. Keep development
+completed, including final artifact QA. Keep development
 research status because the external strict source/replay gates remain failed.
 Do not convert an issuer-information dependency into a passed gate. The current
 deliverables are reviewable research work, not a completed fully validated
 release under the original design, an official rating or verified investment
 alpha.
+
+## Current public dependency recheck
+
+At `2026-10-02T12:47:20.329865+00:00`, the
+[separate dependency recheck](../output/release_dependency_recheck.json)
+retrieved the four covered SEC submissions inventories, the target EX-103 and
+the latest target servicing certificate. All six returned exactly the same
+original bytes as the frozen review sources. No new accession appeared in
+those four current inventories. The sponsor endpoint again returned HTTP 404;
+its inventory remains a scope gap. The newly retrieved bytes are archived
+separately with original and compressed hashes.
+
+This check found no changed evidence within those endpoints. It does not
+establish that no other public or private allocation evidence exists. A unique
+exact cash bridge has not been established from the archived disclosed fields;
+issuer/servicer allocation records, corrected disclosures or an authoritative
+public bridge remain necessary to close the original financial gates. The
+independent follow-up audit confirmed the current results hash and all eleven
+recorded research-code hashes. It identified no remaining internal omission
+that would resolve those source facts.
+
+Run `python scripts/recheck_release_dependencies.py` to repeat this finite
+check without changing the performance corpus, fitted model or scenarios.
+Unavailable endpoints remain unverified; newly indexed or changed sources
+require independent review and cannot automatically pass a release gate.

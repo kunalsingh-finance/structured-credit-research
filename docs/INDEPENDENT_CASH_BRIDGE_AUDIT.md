@@ -155,11 +155,14 @@ the gate, or claim all discrepancies are bounded by the $512.01 opening
 collateral sensitivity. It does not establish that no additional public
 evidence could exist.
 
-This source audit also does not satisfy the separate predictive-method gates:
-a frozen chronological split is not an expanding-window exercise, and
-descriptive scores on seven later months per deal do not establish segment
-stability or generalization to a different originator. Those requirements
-remain distinct from successful parsing, software tests and conservation.
+This source audit does not itself satisfy the separate predictive-method
+gates. The subsequent [supplemental validation study](SUPPLEMENTAL_VALIDATION.md)
+completed four past-only expanding folds, a cohort benchmark and 23 observed
+segment bands per test split. Those descriptive diagnostic requirements are
+closed separately from this source audit. Mixed cash forecast results and
+segment calibration gaps remain visible; the studies do not establish uniform
+stability or generalization to a different originator. Successful parsing,
+software tests and conservation do not resolve the unidentified cash split.
 
 ## Primary sources
 

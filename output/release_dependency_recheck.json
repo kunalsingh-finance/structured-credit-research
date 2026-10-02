@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-02T12:47:20.329865+00:00",
+  "results_sha256": "80394cb846a98088377fcbdc5fd6ac9471359eb20b7c3aa27cd3a6fa742c6686",
+  "results_version": "2026-10-02T12:18:59.985073+00:00",
+  "research_gates": {
+    "consecutive_real_data": {
+      "status": "PASS",
+      "periods": 46
+    },
+    "certificate_internal_accounting": {
+      "status": "PASS",
+      "checks": 322
+    },
+    "tape_to_certificate": {
+      "status": "FAIL",
+      "unresolved": 287
+    },
+    "exact_contractual_replay": {
+      "status": "FAIL",
+      "differences": 118,
+      "periods": 16
+    },
+    "credit_model": {
+      "status": "IMPLEMENTED_WITH_LIMITATIONS",
+      "evidence": "Frozen chronological/unseen-deal primary model; separate after-look cohort, fixed-segment and four expanding-time diagnostics; economic default timing and source allocations remain qualified"
+    },
+    "cash_forecast": {
+      "status": "MIXED",
+      "evidence": "Seven target months per deal; default and interest improve while principal and ending-pool errors worsen"
+    },
+    "scenario_conservation": {
+      "status": "PASS"
+    },
+    "valuation": {
+      "status": "ASSUMPTION_ONLY",
+      "evidence": "September15,2026 origin; common8% annual discount rate; no executable market quote"
+    },
+    "observed_floating_coupons": {
+      "status": "PASS",
+      "matches": 17,
+      "evidence": "Official New York Fed30-day compounded averages plus executed69bp spread; issuer date labels remain erroneous"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://data.sec.gov/submissions/CIK0002016948.json",
+      "checked_at_utc": "2026-10-02T12:47:20.329865+00:00",
+      "previous_original_sha256": "a379444c1b47bf7a8cdfc2fc88706a63d55d3b79a2bbd67122ddafa9c77097c7",
+      "http_status": 200,
+      "original_sha256": "a379444c1b47bf7a8cdfc2fc88706a63d55d3b79a2bbd67122ddafa9c77097c7",
+      "original_byte_count": 13783,
+      "same_original_bytes_as_frozen_source": true,
+      "latest_filing_date": "2026-09-15",
+      "history_files": [],
+      "new_accession_records": [],
+      "previous_accessions_missing_now": [],
+      "availability": "RETRIEVED",
+      "archive_path": "data\\raw\\dependency_recheck\\20261002T124720329865Z\\source_01.gz",
+      "archive_sha256": "01967539beb00790b78754bb8864ee719252f3627185d6e54f48ccb9ab9d70d7",
+      "archive_byte_count": 3121
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0002063979.json",
+      "checked_at_utc": "2026-10-02T12:47:21.003149+00:00",
+      "previous_original_sha256": "988bf983cada791d30044a85080bba8b93c395fa5787447d2eb98aa152a59a62",
+      "http_status": 200,
+      "original_sha256": "988bf983cada791d30044a85080bba8b93c395fa5787447d2eb98aa152a59a62",
+      "original_byte_count": 9181,
+      "same_original_bytes_as_frozen_source": true,
+      "latest_filing_date": "2026-09-15",
+      "history_files": [],
+      "new_accession_records": [],
+      "previous_accessions_missing_now": [],
+      "availability": "RETRIEVED",
+      "archive_path": "data\\raw\\dependency_recheck\\20261002T124720329865Z\\source_02.gz",
+      "archive_sha256": "464b7eb9c043125da9d6439c228856e99309743fbefe51a24f236f90f0b0879e",
+      "archive_byte_count": 2297
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001259380.json",
+      "checked_at_utc": "2026-10-02T12:47:21.603422+00:00",
+      "previous_original_sha256": "0ce7c444a146616ac563ff721f3d35e38e217e1e3fb060988f6ad8c9d0c89784",
+      "http_status": 200,
+      "original_sha256": "0ce7c444a146616ac563ff721f3d35e38e217e1e3fb060988f6ad8c9d0c89784",
+      "original_byte_count": 140256,
+      "same_original_bytes_as_frozen_source": true,
+      "latest_filing_date": "2026-09-28",
+      "history_files": [],
+      "new_accession_records": [],
+      "previous_accessions_missing_now": [],
+      "availability": "RETRIEVED",
+      "archive_path": "data\\raw\\dependency_recheck\\20261002T124720329865Z\\source_03.gz",
+      "archive_sha256": "d189de3bfc77433aaacc3302286b9046cc40565e2539e18b162271ad37e62e8b",
+      "archive_byte_count": 29325
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001170010.json",
+      "checked_at_utc": "2026-10-02T12:47:22.262269+00:00",
+      "previous_original_sha256": "49b082fe2ff18a22b254947b9f9d90cb2b3579d356e78c3be42997fd70983757",
+      "http_status": 200,
+      "original_sha256": "49b082fe2ff18a22b254947b9f9d90cb2b3579d356e78c3be42997fd70983757",
+      "original_byte_count": 161813,
+      "same_original_bytes_as_frozen_source": true,
+      "latest_filing_date": "2026-09-30",
+      "history_files": [
+        {
+          "name": "CIK0001170010-submissions-001.json",
+          "filingCount": 800,
+          "filingFrom": "2002-03-29",
+          "filingTo": "2014-06-30"
+        }
+      ],
+      "new_accession_records": [],
+      "previous_accessions_missing_now": [],
+      "availability": "RETRIEVED",
+      "archive_path": "data\\raw\\dependency_recheck\\20261002T124720329865Z\\source_04.gz",
+      "archive_sha256": "75bf491c456b05dff3179fe467b4f71399aac8f5c4b5e01a831130814d54bf24",
+      "archive_byte_count": 31551
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001601902.json",
+      "checked_at_utc": "2026-10-02T12:47:22.706494+00:00",
+      "http_status": 404,
+      "availability": "NOT_RETRIEVED",
+      "finding": "HTTP status is an access/inventory observation, not evidence of no filings or corrections"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000045/exhibit103november2021.xml",
+      "checked_at_utc": "2026-10-02T12:47:23.183198+00:00",
+      "previous_original_sha256": "f627c94c8f12c3399f37f929f19d783a9a71a405432d3b8937821e2d497dc787",
+      "http_status": 200,
+      "original_sha256": "f627c94c8f12c3399f37f929f19d783a9a71a405432d3b8937821e2d497dc787",
+      "original_byte_count": 17054,
+      "same_original_bytes_as_frozen_source": true,
+      "availability": "RETRIEVED",
+      "archive_path": "data\\raw\\dependency_recheck\\20261002T124720329865Z\\source_06.gz",
+      "archive_sha256": "050c371b2dee2cc7b9b75e540d9a00ef727440c43a054076881a404ccf3907bd",
+      "archive_byte_count": 3771
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000047/a2025-2ex991091526.htm",
+      "checked_at_utc": "2026-10-02T12:47:23.797753+00:00",
+      "previous_original_sha256": "1894601bc3e05e1b34c2f75b4a13596fefbb8c4ce1a9a22d67e28769b88d4ba4",
+      "http_status": 200,
+      "original_sha256": "1894601bc3e05e1b34c2f75b4a13596fefbb8c4ce1a9a22d67e28769b88d4ba4",
+      "original_byte_count": 255756,
+      "same_original_bytes_as_frozen_source": true,
+      "availability": "RETRIEVED",
+      "archive_path": "data\\raw\\dependency_recheck\\20261002T124720329865Z\\source_07.gz",
+      "archive_sha256": "3e7cbeb65a6adb487712385d651d03299015518fdab82bf78d2a45ac13b8b5ed",
+      "archive_byte_count": 12929
+    }
+  ],
+  "conclusion": "This finite recheck does not change source reconciliation or exact replay gates. Changed or newly indexed sources require independent review; unavailable sources do not establish absence."
+}
