@@ -1,0 +1,15 @@
+{
+  "status": "SUCCESS",
+  "built_at": "2026-10-02T12:18:59.985073+00:00",
+  "results_sha256": "80394cb846a98088377fcbdc5fd6ac9471359eb20b7c3aa27cd3a6fa742c6686",
+  "identity": {
+    "panel_rows": 3825715,
+    "panel_sha256": "7827fd0fd86aac8b9b0559d24e8ae3ebfe53cd7416d8efd014cfb071eabafbae",
+    "source_fingerprint": "039d61279d3371c35f6461adf608b439ce8df3bd234e7fac71fbc5ac616afd28",
+    "protocol_sha256": "174d0fe33fe60ece9464d474b1b9adf94b8d409118097774f4ee86b2034785cd",
+    "model_code_sha256": "b2e32cae92edd843d8e4be43ddab67550508576b3e472c07909b7a266902a4e2",
+    "cash_validation_code_sha256": "9ece8efc73bb2d7d9cf9837d8f8a4f9480d10abe0cb4950dc478e34ccb617463",
+    "projection_code_sha256": "6ff7407567fbac4334c216afeea6d6af0c4e03fffdbd3b701a87999794fd3521",
+    "certificate_sha256": "9d748039fa803452dcedae74f15852acacd8e09096baf1d9008c0d7c977968af"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000025/a2025-2ex991091525.htm",
+      "archive_path": "tests/fixtures/sec_certificates/a2025-2ex991091525.htm.gz",
+      "sha256_original_bytes": "f6520fb59ad7c339ea8924465f57264ea2a68d1e4a981aff524d923069530de4",
+      "original_byte_count": 253093,
+      "sha256_archive": "e97e833938102a5af4edd0fd985ab9dc0e2fe2565dfa6d34139300c5487cc4b0",
+      "archive_byte_count": 12817,
+      "retrieved_at_utc": "2026-10-02T05:34:04.543407+00:00",
+      "http_content_type": "text/html",
+      "http_last_modified": "Mon, 15 Sep 2025 17:29:44 GMT",
+      "kind": "certificate",
+      "deal_id": "CAOT-2025-2",
+      "cik": 2063979,
+      "accession": "0002063979-25-000025",
+      "form": "10-D",
+      "report_period": "2025-08-31",
+      "acceptance_time": "2025-09-15T17:29:26.000Z",
+      "filing_date": "2025-09-15",
+      "is_amendment": false
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000040/a2025-2ex991121525.htm",
+      "archive_path": "tests/fixtures/sec_certificates/a2025-2ex991121525.htm.gz",
+      "sha256_original_bytes": "f79d9cdaeb2e71f18535bffb5162c0d1bec30000ddb9de8de05eff19bd157b87",
+      "original_byte_count": 253047,
+      "sha256_archive": "d69f0573ba37f8a6da8cd2f586c6333e2cceef8a5b670a0b8a1a2814a65dc5e5",
+      "archive_byte_count": 12891,
+      "retrieved_at_utc": "2026-10-02T05:34:07.586901+00:00",
+      "http_content_type": "text/html",
+      "http_last_modified": "Mon, 15 Dec 2025 17:41:08 GMT",
+      "kind": "certificate",
+      "deal_id": "CAOT-2025-2",
+      "cik": 2063979,
+      "accession": "0002063979-25-000040",
+      "form": "10-D",
+      "report_period": "2025-11-30",
+      "acceptance_time": "2025-12-15T17:40:48.000Z",
+      "filing_date": "2025-12-15",
+      "is_amendment": false
+    }
+  ]
+}

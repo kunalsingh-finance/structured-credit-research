@@ -1,0 +1,51 @@
+{
+  "project": "Structured Credit Research Platform",
+  "checked_on": "2026-10-02",
+  "deal": "CarMax Auto Owner Trust 2025-2",
+  "cik": "0002063979",
+  "sources": [
+    {
+      "kind": "final_prospectus",
+      "form": "424B5",
+      "accession": "0001193125-25-099841",
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000119312525099841/d30805d424b5.htm",
+      "viewed": true,
+      "original_archived": false
+    },
+    {
+      "kind": "monthly_certificate",
+      "form": "10-D exhibit99.1",
+      "accession": "0002063979-25-000025",
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000025/a2025-2ex991091525.htm",
+      "collection_period": "2025-08-31",
+      "distribution_date": "2025-09-15",
+      "viewed": true,
+      "original_archived": false
+    },
+    {
+      "kind": "monthly_certificate",
+      "form": "10-D exhibit99.1",
+      "accession": "0002063979-25-000040",
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000040/a2025-2ex991121525.htm",
+      "collection_period": "2025-11-30",
+      "distribution_date": "2025-12-15",
+      "viewed": true,
+      "original_archived": false
+    },
+    {
+      "kind": "loan_tape_index",
+      "form": "ABS-EE",
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000018/0002063979-26-000018-index.htm",
+      "asset_xml_bytes": 244267163,
+      "index_viewed": true,
+      "tape_downloaded": false,
+      "tape_parsed": false
+    },
+    {
+      "kind": "industry_workflow",
+      "url": "https://careers.moodys.com/en/job/lohchap/financial-engineer/49841/100120026272",
+      "purpose": "Evidence of waterfall modelling and SQL/Python workflow, not a claim of candidate eligibility or a hiring guarantee."
+    }
+  ]
+}
+

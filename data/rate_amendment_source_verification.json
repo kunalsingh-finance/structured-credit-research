@@ -1,0 +1,1071 @@
+{
+  "status": "PASS",
+  "source_count": 177,
+  "source_manifest_sha256": "6730526e8b4764a4f0aea5648ca7588153c8b62da1105adb4bc0ad68be699c40",
+  "verified_at_utc": "2026-10-02T12:18:13.050076+00:00",
+  "original_and_archive_bytes": "independently reread and verified",
+  "sources": [
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001259380.json",
+      "original_sha256": "0ce7c444a146616ac563ff721f3d35e38e217e1e3fb060988f6ad8c9d0c89784",
+      "archive_sha256": "4506e36fc20c508efc386867d8331f55c540600dbd69fb025d429c3e161fb7b1",
+      "status": "PASS"
+    },
+    {
+      "url": "https://markets.newyorkfed.org/static/docs/markets-api.yml",
+      "original_sha256": "5dbb331d86b91bfc115be9b5fe9c46735833a4f7280d33e4327e8acf7ad30d2b",
+      "archive_sha256": "e31d1c4f277eeb38d6722ce2730d4ed6dc4ed4f48b83f3f339a539c713938d3b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://markets.newyorkfed.org/api/rates/secured/sofrai/search.json?startDate=2024-04-01&endDate=2026-10-02",
+      "original_sha256": "26a1f891613ccad90ce274d7d36782decca1c0b85518a4e57a7b7c691fcae6d7",
+      "archive_sha256": "52cf2bdb8ecabe47058cf8d9483ece9d94764169e3795c60fac987ec9692fd1e",
+      "status": "PASS"
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001170010.json",
+      "original_sha256": "49b082fe2ff18a22b254947b9f9d90cb2b3579d356e78c3be42997fd70983757",
+      "archive_sha256": "b2a53076b28795b952c513146ad62de3605f7d38e3ba7da97858cf25f948bf30",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000010290926000860/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "original_sha256": "0eb414bf58a3dc8c2e31dfcbe0b79ac840edb30b2cfd8d2b5f29dd629990c7ec",
+      "archive_sha256": "5087be441a70f374c23d6d29c2dafca0cd7919e210b7cfcf3129738eb467dc5c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000108514625002921/xslSCHEDULE_13G_X01/primary_doc.xml",
+      "original_sha256": "641f8c4dd642fc17c9166b004af66471c059c221455a40722c7094f0160d98e8",
+      "archive_sha256": "12fc6990674d00ce261c9192a50bae40bdc8785c5e199c6c57f967ffbd866395",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000110465926041539/tm2611421d1_8k.htm",
+      "original_sha256": "7564e6d77973eb6bea2cedecfccacbffe869e1155b668203e09a0d1e72bdaba9",
+      "archive_sha256": "91ae2d3d9e3554e7c1c349b6afa5d68ac2b8408168f2f0819662a8e22ae2ba39",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000116755726000073/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "original_sha256": "c79f6ce86d2ad71ca73021213facc1b7d4def3fd45ef8ae9eac4186c045184ef",
+      "archive_sha256": "8ebb26dd147792c6f107c23ded518aa81a83152201f0aae3bceed3a6e226e4a1",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000116755726000124/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "original_sha256": "4e757f4dd733bd83c7a9d586255a09490de254a50c466be1f02e9160c3073f11",
+      "archive_sha256": "2c0370a8f4d04c0b063295031969e0a6f72064bf4fc5f5f0fe267632f9f7297e",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001024000084/kmx-20240621.htm",
+      "original_sha256": "4b95a5e29d2898207f9640dec1d331389922debfabcb4c78105f08931b96cebe",
+      "archive_sha256": "c984af4078708021da933c663269a50f5c86b58faafc13900cfb632253b5a3d6",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001024000087/kmx-20240531.htm",
+      "original_sha256": "2f9f865f7f346e14f8c47e2dd7936b8241513afdd1dec24fac9cda1bcd23d478",
+      "archive_sha256": "cae9be04fe7457be2322ef9ad3aea0dd3bb375c19011a38ca53675ce043085ba",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001024000088/kmx-20240625.htm",
+      "original_sha256": "4d5bdb4e55248461e0617308f7ff322dbc38dc920f61987c15ae310baa9ea921",
+      "archive_sha256": "6c299738df6f0399938342a9b93c36b59cca4352d57d09ee7467a101ce135482",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001024000128/kmx-20240926.htm",
+      "original_sha256": "e2a37f1f7d1dab888ef050796a478c899e2552e4e8af474d9443788986e3d532",
+      "archive_sha256": "fb0d78df43c14f10cff64ced1fbc5a6104d5a42518c0426e903336dc7c1dc241",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001024000130/kmx-20240831.htm",
+      "original_sha256": "c5edc352f4d79611c44e4e40bf948b5f22eb70331ee2e8b6392f75f967fed98b",
+      "archive_sha256": "0f370b54a9d8fc3263f45c5c685a66b3ae68dd11704ae0015f69b77965e8d607",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001024000132/kmx-20241219.htm",
+      "original_sha256": "07f1eb5e432e46da2bf1b0023c2aa28584d54ae5470598de9c090613e0d57413",
+      "archive_sha256": "6514cd3e5d127f8aa7b9e8976b3b46f69fe263dd65d7bc6ef3a026450ba9b71f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000004/kmx-20241130.htm",
+      "original_sha256": "46a00e984837b06d51519a0752e2f41bdbd9c0700e8f17632508671653dcd67e",
+      "archive_sha256": "3cb2f775f9dcf38baf1e66bf3fc6a1cf86fe0bcfa23554bc58784098fa91df6c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000020/kmx-20250128.htm",
+      "original_sha256": "68480ca9c2393bbf88f1fa3c3ea2aac1f34cf4accd050db56b146e6cfc5b4dde",
+      "archive_sha256": "81664fdc827d032530b93b6fb11357236a75b32b9a204d9af9f8e1df5bb9add9",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000022/kmx-20250410.htm",
+      "original_sha256": "d66b7bd9d05c3e75b82b5968dd138490cb2943fb7e2a974ac57cc7b7a97049cd",
+      "archive_sha256": "a881d74863f2e69a81945ff46d97b811ee1a4a4c276d4e89e2a9748fa68783a5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000024/kmx-20250228.htm",
+      "original_sha256": "f1ec2da406028effc7f2e66dea3c72a0052bb621a6cd70f6bd1b171b7912ba88",
+      "archive_sha256": "003f55a98c235ff91a32c37f8c4ddbb904765ecfeca30679e11655f19af4b5ba",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000078/kmx-20250509.htm",
+      "original_sha256": "2aad31e3fc6539d0c0ca3010316a8448623371838b64c85626ec98d4993b0a3b",
+      "archive_sha256": "64967157403381d863b3766debb658a264b6878122a02ea90b457c9557e38916",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000080/kmx-20250620.htm",
+      "original_sha256": "d09725e2c8c1183a6e2cd60856b430900ed961f5488b6283c34e8da7a0e92d9f",
+      "archive_sha256": "0375e850df9b9dafb08a6fcc4e63d852a5be0c675fc00d80964b975ebfcd90ef",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000083/kmx-20250531.htm",
+      "original_sha256": "b63be321feec5c4b43067c5b4325cda775459f13143027d5f26d8a18e351ceb2",
+      "archive_sha256": "443aea7586f55c4d2f3c579a9b04fded3841dcd94ab3c4a576cb4762f0de12ec",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000086/kmx-20250624.htm",
+      "original_sha256": "5cb2e5205716f79780fbff1c7e28eee061815cd05163275155d671b908bdb80b",
+      "archive_sha256": "3fb9ccdf686410e3bf0ef4c0ec3afc83f11ad99ab408d96717ec7be22b90a933",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000115/kmx-20250925.htm",
+      "original_sha256": "c2b2fe5bccb160cb6fca329266421d260aa8ffbf93e80ce0d41ac48f0c891b1c",
+      "archive_sha256": "5ac447c824e7c0931617ac18ed0e51926a192e5e350bff383e5a68751bcbc126",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000118/kmx-20250831.htm",
+      "original_sha256": "4f8a50a864332103712b9f56a72b544687691b894ed55563a5f17ea4d1a1786a",
+      "archive_sha256": "9d9e428c80222d58cd68910cd4ae1e4645f60123d2af063361768eeb7d645a1b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000125/kmx-20251104.htm",
+      "original_sha256": "6e8356cfc8c77e755b9ed37a01c8917f15c8d9bc20a515a5500807856200db76",
+      "archive_sha256": "5502007bbf3657e582c102f5f7e385936eb32073541a37f145fc8b887583e50f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000129/kmx-20251218.htm",
+      "original_sha256": "78a0b7f3bfec9e75927469b3468e86050737dc4626aeb3631d251baec780a05a",
+      "archive_sha256": "aa442bd1475fd60e8ddf17a7e1a46bf4b345334228075dae5c2e88aa2248ca7c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001025000131/kmx-20251130.htm",
+      "original_sha256": "420d8cc9140ca05688ed5c8ba8e6fae8634262e86a4498e01b0279bf3194d43c",
+      "archive_sha256": "c752e922bb3bfeaa03be20523f512b9ac40df7b30b7777563ae959953bbd5409",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000002/kmx-20260210.htm",
+      "original_sha256": "375eee33de234c9655dc681395bab126118f726da3a55a837c298aed00a7c215",
+      "archive_sha256": "34f3bb4df72c2d122ee0efb14bde1c6aaef9df66970fd86addd7bb944646f0bb",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000006/kmx-20260301.htm",
+      "original_sha256": "c6ce01a9aea73b64173cff5ce989066f3db4c375056b2e0c26034c1aa35efb4f",
+      "archive_sha256": "a1aba314494b298d3de59c0aa29a1cfbc8ca00258fd4981ebccff9bb402c6e98",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000017/kmx-20260414.htm",
+      "original_sha256": "d95092282e57546e10628aa04b8de196229e23434e985ac57cda2d75ad9e4514",
+      "archive_sha256": "3e4c956c11b12014e152f796820d65060d47f963b61fc1a6c6e12f6e13ce093f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000021/kmx-20260228.htm",
+      "original_sha256": "3b66e2e18e5446b8377e29189727fd12864dbe52656fe653d0aac83d55b670d4",
+      "archive_sha256": "8052294bcadb66fd37c6588c2643577d8bc94a2b3a4678570ebbe3e62c5d4db2",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000048/kmx-20260512.htm",
+      "original_sha256": "7a1677d901a29c6fcd3ae4b422298be04a7466eb5d9dbec4dac658af491ef4e8",
+      "archive_sha256": "ac8a1a6432433dd720c6eb50084da71ebbbd0c61d6db2f3416829d86495facfe",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000051/kmx-20260603.htm",
+      "original_sha256": "04b635e5fa9ab60e63b9870f4be39a2d803ff49ece2ef60e313b06f6842e3939",
+      "archive_sha256": "35f20ed28970273b82636ba7926726948bdd0e562aabf4939f9ed7539f99ac7b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000053/kmx-20260617.htm",
+      "original_sha256": "eeb5afa58e76b062dc7caef651a0e7ba6182551457204bd48387e311270edeaa",
+      "archive_sha256": "048302b56ad9f53af69556156f8ea331295d6c854146d8ac9ca6182f9da6ce61",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000055/kmx-20260531.htm",
+      "original_sha256": "dc9b0ea27cded262f219ad6f6a106684e623f37161d3a2aaca301ee7d0bcdd1d",
+      "archive_sha256": "54df4213f092c83a0197c9d1431385bb3a4d02f556add482c0e57f28b39af1a3",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000057/kmx-20260623.htm",
+      "original_sha256": "447de0df24e4006b65b0e5881b569295d1dfb88e30394ac37a7d6009669f08db",
+      "archive_sha256": "261ee1125daa9a141fe126972db60ce5074590bab18a92c476bb9a89cb555069",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000098/kmx-20260729.htm",
+      "original_sha256": "f5f21d7c3ab1cd856f20089d535e576ac35d63c5eae1d6baf55553588088174a",
+      "archive_sha256": "93206bebca8c4987007de9f1ae332b36beb3c9bba25b44ab3cff1c44d85c3996",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000102/kmx-20260929.htm",
+      "original_sha256": "75699e5fa5f20b5bd7cb412ebede5cd0768b8dc09092bb5144c6311100e4e6f6",
+      "archive_sha256": "1110f2f786e05762516892df1056c2d1fbc1120d7e199f18fff69cd909902beb",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000104/kmx-20260831.htm",
+      "original_sha256": "913f7cbe2aabe977f9a2959fb31516853a067da1ce4e1f417f7608813c5cfed5",
+      "archive_sha256": "285afdb1e1e878a5076f907cfd0548ba5d4231b0bb066b04649a52e4bfeb4882",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000119312524109815/d801955d8k.htm",
+      "original_sha256": "5260aa68720d887ffa2f0f272e3e2cf308de4e031612dcf43473a27aac36b777",
+      "archive_sha256": "e18f046c9989e17666aafb1a60e98441def69263807585998a4bcb4e831bca78",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524165509/d857929d8k.htm",
+      "original_sha256": "011bef222f7fd0f11b28563bad411b8b1627640fbe228b9ab02c76dfb510fd92",
+      "archive_sha256": "06e86c37c248378bac138ed344c48f58023320e90977b768ea8ee0cfef468e3f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524168928/d807382d8k.htm",
+      "original_sha256": "100c8e972a3ab00826e4fe33292ed47ee3730e17355f98dff69bb120635294b4",
+      "archive_sha256": "e8bde88297167ee7f09bc1c4092614a5bb5ce6b09a5cac76fabef3a3a62ba366",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524184578/d844067d8k.htm",
+      "original_sha256": "640a8afcc6fdc3c28c8fd9878aa4f200dcbb29b5ebcd9bfc2c52a88bd01fb15f",
+      "archive_sha256": "cfbb436b79535a414fcff8860298772f578cdff53b49d14291d166b0c8ac0eba",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524188728/d844067d8k.htm",
+      "original_sha256": "a348f0d45fd7196f1af967abbfd99d020f520526f5eb216ee93e24313cdf5aab",
+      "archive_sha256": "4a9dced77447ff708bcaa512c6bd3bdbf4891a9333f991fc2032bff940e0cff0",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524248440/d905517d8k.htm",
+      "original_sha256": "b61a2fc9e810df1c3438c852e850200f7c970b09c957a91ec0defa8ed097cf2d",
+      "archive_sha256": "e8ce7bd5be3f15b8d0be05dcd4740e2161578f4c903e363013b8dd865a8f31cf",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524251168/d905517d8k.htm",
+      "original_sha256": "e94a8642b9b3c507c856ec665cceba68059440008e7b04225391256bd9e4e056",
+      "archive_sha256": "93241dfb3176f28995a61e92b90c4002909d2c1cfdc64357accf089a07067e44",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524258176/d813972dsf3.htm",
+      "original_sha256": "7cd32ae2a57af32eea52a9650345497d9d991a17ece7f34262c00dfaa6211a61",
+      "archive_sha256": "9d386703947bd6a8faa4043c7cd57fe52f9e1064ad115ff8b109fc353fa0b901",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312524280159/d813972dsf3a.htm",
+      "original_sha256": "1a4663c0dfae3ddc2f5e3f7210424769fad5c962c8b9d72ed6ff4b28790a724c",
+      "archive_sha256": "4c0054e3192762505b92be6ee5d00146261d60f62701012e0f8a44b1f6c967e7",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525007672/d899433d8k.htm",
+      "original_sha256": "f3bd9613b5864b28858322e199383b96257d0ff4ec4890b8fc391015b21c3d17",
+      "archive_sha256": "cf888d29576abcc4e8a4426c826a81ffddfe8db1a23c6bec36ab9b8fb14cf649",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525010361/d885484d8k.htm",
+      "original_sha256": "7c3e1827e7c0ab1457d45a39975d017f6d14918cc7a560ffbd14c835c21ec76a",
+      "archive_sha256": "4871cff2a5e35a4f6a72a18f6c5762b21722a5996c3de422ae4196da44bb4674",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525053781/d940032d424ha.htm",
+      "original_sha256": "d9d70601777222273c689f49370eaf63fd755914ce7c8c74f7f41bf58d71b6b7",
+      "archive_sha256": "7fd7552e2af6710ec130bb2e26ba0e54c81df5ec764e4bd414ad113d7a4398b4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525059291/d821592d8k.htm",
+      "original_sha256": "e495a23930cc9ff8086a9644dbcf67932d3f292003425bf3c0ad4dc8779f959c",
+      "archive_sha256": "a9618cca5dbdee775a254734b5756da64c436b254b81ca2bc8a691c9460a2fcb",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525063786/d945016d8k.htm",
+      "original_sha256": "2e67e63796089ac606b5907d8aa6bfdaf045172c96d0764d7a1620d59cc9859c",
+      "archive_sha256": "e5a55dc8dbfb375f28627b1073bb7bd69cd951e0ffd5ce6ede2e1d297a575f87",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525099897/d938571d8k.htm",
+      "original_sha256": "727c638b0f77e3d4e605012721092483bed1f1eaef780e3493584cd659d3c797",
+      "archive_sha256": "f3796f4f7927f25cee58c6245cca26852ffb202630c872302b080006969eab74",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525138366/d44944dposam.htm",
+      "original_sha256": "8041c2c7f54b59a6e067bed788780adab4d87a92fc24dbc767ff0b138151f309",
+      "archive_sha256": "caed2caf54b95bab72f9964f291f20136d2e79deb03b598cc12bee78e18fcaea",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525139655/d44944daw.htm",
+      "original_sha256": "65095abf9afab3ab5a6e6ba7bf7fc6df03288cf934560c9eee56f6523c446242",
+      "archive_sha256": "5c0175be894eb5637b947840ef1b96decbbd483ead44226fdf27e3947bb15fe2",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525160490/d927442d8k.htm",
+      "original_sha256": "d0495e700f2df282d460331bbdd056be1be63ecd9ecc828ef6fa244a7cc424d5",
+      "archive_sha256": "430ac6498ee5cadb9e800732ba9b59a05dabd9435ba192686579a5d18f3a78b1",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525163433/d37717d8k.htm",
+      "original_sha256": "485a6e6605d9704fad3a086bf35dc24dc6771d23811308a68e589de52ebc49a4",
+      "archive_sha256": "af35af00fbd1c283b5990587f521cb8fc57d45749e3534e9c05a0322da396681",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525165042/d26356dsf3.htm",
+      "original_sha256": "a7c5d081d0cd7041d729c5bdea619c6d8646420ef5eed79cb32484f263593fec",
+      "archive_sha256": "c6070488531d92e657911927948e7e72515618eddb0f7893f8b4291dbe7a9036",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525209071/d15649d8k.htm",
+      "original_sha256": "3ccf11adb799f3bd36801c2720984e7093d37289590036780b19c66f782764c2",
+      "archive_sha256": "e1380707f36d2703d6280786c052d28877de838970d163d41f5672010d1eceb3",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525215605/d942531d8k.htm",
+      "original_sha256": "77cac051377475e9bf90b19dd073c42d3f75ad05cef9537ca3dde9163cc06c8d",
+      "archive_sha256": "49a13c1191bb3c1b3f0f874bb0fd4707008139dddb61b70f713334ad9b31214f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525242433/d23889d8k.htm",
+      "original_sha256": "1368d2b6d53b35434944a01b659a549f59cd6fd4352539271806d7c72be4db43",
+      "archive_sha256": "1d8f86c3f508bd3d99aaf0f1196af20b38d990607408f13db8d3cb8b4acc40b5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312525246953/d26929d8k.htm",
+      "original_sha256": "be9da785a71284356b7360726013e1f4188fb77310f183cbcfb04b50af85c38e",
+      "archive_sha256": "2f813b095404aeab73b4fba441d9fab91a66b03876126751417ad82d2f4b2559",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526020910/d39053d8k.htm",
+      "original_sha256": "4e1de78fef233b2b6b6876640e45ffe6b0c05e39539e4d891202d9566e0f09f8",
+      "archive_sha256": "bb9ce217067d8e080c919b962179a5de568c19e63a68fa931eb19b281babbfa1",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526027367/d77250d8k.htm",
+      "original_sha256": "37a947e576d9f8eac90c8b8399a5eca2c9f96489660eb575e06c332210a8e1e1",
+      "archive_sha256": "8689693ac543d88c4b2cc9e6e14bd70baba930194e8708547b0d16407793b5b4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526061053/d946411d8k.htm",
+      "original_sha256": "a2a085c34a7a24de481eb0e5beb7127a2945906ec0b3f478c92e7494b0ae139f",
+      "archive_sha256": "edfd96bb6fb41faf9dc6a2ce2104617a8a43884079a1bd0b54443cc52e56589b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526071910/d104520d8k.htm",
+      "original_sha256": "5775c9903e83aa232943071a54aac53409161d8363c5a60c509f632ba6a26fc8",
+      "archive_sha256": "8319fa4ee881b3593cada8ace7c99e59ff1a0966e916c862cb7dfea5057282ef",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526173263/d139274d8k.htm",
+      "original_sha256": "b9f8cfe04094ed982dcd878cbaceddd1b94fd5ac97e28c2396b352c653bc44b1",
+      "archive_sha256": "1dfd23b446b066dd35bb7b4ffa23c5973e6f3303ddb0636d327883b0666bc0a5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526190338/d215039d8k.htm",
+      "original_sha256": "72c3a2bdd090521d3ad4d0341ce085f2a8766649346479c944aa04a35603fef2",
+      "archive_sha256": "9fde50282bf6b6176f1da5cb88cf8669a64bec7055bb1d14db9a7824f45deb80",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526267424/d128690d8k.htm",
+      "original_sha256": "732679219e8c2f1557eeb60853e840413caf0bf9e844970d5df504dbe3401495",
+      "archive_sha256": "1b12bc2069a6615e2f78bc349d461c14c8c81ac048748bd34eeb9c08d13963cd",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526272291/d160561d8k.htm",
+      "original_sha256": "cb1d886801290bc57122b46785810321077ca572f74639934d1341cb64d46fe5",
+      "archive_sha256": "18dedcd767a14161bbc68e51feb380f32809deaac8f8655671722b3f7b38b9f5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526305930/d21267d8k.htm",
+      "original_sha256": "a0b29f6ecb237e39912af3ca0b2176274fbfdbfca2d9144bee12318f9fb21b9f",
+      "archive_sha256": "52b420b056ec7eeda954216d9fcf02bd4cabf92006831b58a66cc3a1b6511057",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526311879/d84416d8k.htm",
+      "original_sha256": "76aacf8fc32be32b4853caa19daf1aa03be06620f5c5a03f87e980f66c2d36be",
+      "archive_sha256": "69539a06c7a9efaef0c7ce633eeb88ce46b01b9dc553435b203e4006f2d2f9cf",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526400886/d119527d8k.htm",
+      "original_sha256": "8f91cb22fbee08352daa13c216e7e9ee05d4a06f26f21f87e62d288598a3fb55",
+      "archive_sha256": "2ea87e0f167d2bf8188ec570e384105685d17775d0fc644f1b055c7abed84299",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1259380/000119312526404717/d337070d8k.htm",
+      "original_sha256": "07f1c7690da4cc7aae7030a233632f403c0181dfb34ee7bd1bee99183d10bd1d",
+      "archive_sha256": "9ea87b3f3f721e35675fdde7a2f8557280a0430ce785ded39b56bcc47e1eb1ed",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000201238325001272/xslSCHEDULE_13G_X01/primary_doc.xml",
+      "original_sha256": "3340a150c587245bfa60dec9a1774ae74cd896be0974b6c48a5d986bafdbe35f",
+      "archive_sha256": "5d95959aa769b405394124eee566e9520f0845c93d9351077214822d44ea3c56",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000201238325002930/xslSCHEDULE_13G_X01/primary_doc.xml",
+      "original_sha256": "9be59e7aca1148cd0356c3f6faf590f27f9b7c4ce57f2b59f8610dc343498483",
+      "archive_sha256": "83f79be1dbbe6bf82ba6a607324a8b401399fdce54ef527a887da8ec2bad1132",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000003/a2024-2absxee051524.htm",
+      "original_sha256": "be473a80d3cd8c6845f76a2a9438f0a3456227356d31659917c3630dc762bc52",
+      "archive_sha256": "d61ff42070920977c880399dbf7f99461a3cc241879ae3db0b68670a6cfcc201",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000005/a2024-210xd051524.htm",
+      "original_sha256": "83b3fbb58095cfb5c270a2ce65c0378a7091c34616b078f1704858daaba3c5e1",
+      "archive_sha256": "a6e1b7b77460e3557a18bc38e0d52d95a3d355e3287ca20e305db12944071021",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000009/a2024-2absxee061724.htm",
+      "original_sha256": "4d2a1018ae6d67cc2e8ec2a1c8fc544a724ea8d1d19bbc3508d01fca182a01b3",
+      "archive_sha256": "2802599f29886f8a67ed78a44aa13de1fec054eadec9d770b32e06791f6d6228",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000011/a2024-210xd061724.htm",
+      "original_sha256": "e09ed21502cd760ee59e77eb48073636413953be7b41cc83c529eaf27b1c99bf",
+      "archive_sha256": "8ffc5fb69274e169aa8dc90e7ab58e03767a41d1211465b8cc8f563a4e9e8541",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000014/a2024-2absxee071524.htm",
+      "original_sha256": "2b5454ea0f3e6103256b316d0aadcc397ed45556403375dc04d133790eb49246",
+      "archive_sha256": "f8afd933f374e892d16f842ae409cb2237b27219a610850dc1be09368047ff28",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000016/a2024-210xd071524.htm",
+      "original_sha256": "31c7202fd7342b7cd2ae132047c19ebcfcc56e8dc88127ab574573e70455a6a1",
+      "archive_sha256": "a05e4cbf4740e2e95838c24457ea7ae2d196a131a0822258253aff187775b097",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000019/a2024-2absxee081524.htm",
+      "original_sha256": "4df8a8d1321c66e651d91ff48eec9adfa656f7475dfe89a91e650818314cef68",
+      "archive_sha256": "2f1be161bd6d22e050a15c3a92550c27666c44183044f2c6bac58bda30abf00b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000021/a2024-210xd081524.htm",
+      "original_sha256": "77b9177909b3d2cc6bcb622f4f54db482dd61086ce1692dfde339b79fa188a4f",
+      "archive_sha256": "1ffac342362964a4a63a99ea9b22f9b46630f838c76b8861522adc28f2809ddb",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000024/a2024-2absxee091624.htm",
+      "original_sha256": "bd30702911641a7f4ca99ed828a9584160619f1fc368b9cfc0c035e2e0277940",
+      "archive_sha256": "75cdb8723d677db39fb29e91de70b30596479bfcffc2406c1d934508f58a78a0",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000026/a2024-210xd091624.htm",
+      "original_sha256": "41f6baffb17d6a73d2d4f75663aa27adf139b57917eda2f4ccda90b674a3c1a7",
+      "archive_sha256": "48bb1bc7ecaf9449b489377334f41b4732416a7d23616fc06224f598c94cda6e",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000029/a2024-2absxee101524.htm",
+      "original_sha256": "1a5c4e78abf7395e4cbb01c96130a150587f1015ccb439b10b5260a6af0ffd39",
+      "archive_sha256": "b42655a97ed932cf441141a9061eb92a674c8c04b040972d333fe1d2f2800a0b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000031/a2024-210xd101524.htm",
+      "original_sha256": "1bf118732cdb2ba9d98f05868f237e96898d03c6a9bc836783a940c38a47316e",
+      "archive_sha256": "0e0470a37c7b177600cb189fc9ebd12f7b7765c548cbb552477210e1e00b927a",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000034/a2024-2absxee111524.htm",
+      "original_sha256": "a574c580c1aeac5e9704b770e4da3758eab441518507a91127f804c09391e264",
+      "archive_sha256": "0d36ce3e926a440dbe38d0d0263c49421df0af2d8b76463c15ba7e51b76976a5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000036/a2024-210xd111524.htm",
+      "original_sha256": "abe98d9ef2510c2f5bbd4e529b66e7a3b798638fb52d4434e9b1f1e1c2348d5c",
+      "archive_sha256": "0de15e6fed2f150f869ec40d2eac07c159698e7fa60d8a55437a77db5ca9a959",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000039/a2024-2absxee121624.htm",
+      "original_sha256": "bdef994a05c3195104f06dd5c0b36297dba8ec8923d6f943b0a8d45386dadb9b",
+      "archive_sha256": "46a99a1b3efe4197530c20a2b95cd362c3166b645f95a8c00fd6bddf1528151b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694824000041/a2024-210xd121624.htm",
+      "original_sha256": "380219ee50acd024ac9833b9bd1193a60c4b258300883d222c0cb7917a8f6912",
+      "archive_sha256": "13449503f7baefee6e7b69e111909d7ae921dda2056fdb9e3ff6508a11ccb3d4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000003/a2024-2absxee011525.htm",
+      "original_sha256": "822e0e7473154a7819572ab55d2816c4440af13d5ad11d2022c9988f1f56e56e",
+      "archive_sha256": "939372c7c41d4e180ba0ec06d998891b59db7a571f6895087720b42a629eea1b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000005/a2024-210xd011525.htm",
+      "original_sha256": "76df822f07f2e018f824e322bca8db28e67d57db40f1b7b46a36077d80ad84c8",
+      "archive_sha256": "c4c9ee8e55a4b8ecd1484f39a57a1253f8f57de08e7c078e42f4949f42570925",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000008/a2024-2absxee021825.htm",
+      "original_sha256": "b234c6878be8cb8ef3304db45a9f3b1afaa74aeadc766df516fa4239bf5b19a2",
+      "archive_sha256": "4b8d00661f9cc34abd5853247039d6dfc9f66a3c5c54432263a81575130963a4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000010/a2024-210xd021825.htm",
+      "original_sha256": "3765c2f4222bac13510c6ea3495388d8b35af1c7d6f53db8883005133d4a409d",
+      "archive_sha256": "b0411f3f9e299ea10407199c25a76fabab7bc4121ed03e685f845139402832a0",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000013/a2024-2absxee031725.htm",
+      "original_sha256": "ae8f166668accaa1fa7ac61f76c285e50063f15f76cb0fe57f0003dc29d24b3d",
+      "archive_sha256": "7954090380b2585f013fd1c2ab43123b2cccdcf8aff5170e527441b310e24292",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000015/a2024-210xd031725.htm",
+      "original_sha256": "b7cbd8b76801083165f8ee3cf9858570e06ec6ae6fb806b977407ea2729d7a4d",
+      "archive_sha256": "3933e19684ae628bf65ccc43058703b19e3c072f2cad7d74e99be6bad9a0ada5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000018/a2024-2absxee041525.htm",
+      "original_sha256": "567192211b6444c58ae7dab311dd45b358d68e2089bc7fc55d35eb14d9eb08ea",
+      "archive_sha256": "681aa5f77cb6fff0eb53a62fec659854c864554fb221cdd7ffb1c27cbe23fea4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000020/a2024-210xd041525.htm",
+      "original_sha256": "502876c85e77f7ae389c8fc10abf2c805c0b001829dc2b8c825731c443074caa",
+      "archive_sha256": "6026f6299756207e73d0cffe1cf4b85ee494edf1bfc339f5730ea5c167e1d011",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000023/a2024-2absxee051525.htm",
+      "original_sha256": "2be3afbb3edb80522a250236cc1792a30f36ad51848dd0c5654ea457819e0814",
+      "archive_sha256": "eefec8acfedf6e5f6fbb19f2021ff8d431465fd5a0dca338187643b6c2b7ba77",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000025/a2024-210xd051525.htm",
+      "original_sha256": "3e0ec7c3a73295268ad229e3d49845bb571c6778635075276ff673caff07246b",
+      "archive_sha256": "da034ad8e69a7138e08e261ff4997f828f042ed8f023239e6fd2851f1fb5f957",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000027/a2024-210xk052325.htm",
+      "original_sha256": "4fbb47eb514c17312704a0c21c06c248cb4479be7cb11a77e585c1627f6524a6",
+      "archive_sha256": "cb9e45299201adbdeb83bf4cb0ae284f491445fa5abc5f1e9c045cf9edd23f37",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000030/a2024-2absxee061625.htm",
+      "original_sha256": "034d8672040000aaa81be6223fd980ee88afbfa4cea1d0f33cc6166a1346496d",
+      "archive_sha256": "2248d4daf42385e894502ea780c4bb9f3156546e6d626fa397f6f3b54ef5ee03",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000032/a2024-210xd061625.htm",
+      "original_sha256": "b3920bbcd24c8316290e56b7980348ca00dc27c0a1c23e82e1ab81bd0bc96112",
+      "archive_sha256": "d90be49bc673bb5ed08e2979b32ea10be2c6af5f3737408ba3f6125808f55c73",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000035/a2024-2absxee071525.htm",
+      "original_sha256": "3b2234f9c710c44f66e99da12b048c25e5de495e0be8b3c833cfa5ff7fd89f12",
+      "archive_sha256": "4d5774163f5ac45d0a6114808b566e61cde578e6c9c91f8ec7b68f97723ff74e",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000037/a2024-210xd071525.htm",
+      "original_sha256": "b36896c0e88a4327ed5c22e9f817d2edf2a7665d9c7b069e552fd696d053e32f",
+      "archive_sha256": "3440cb8f018b3332b103891b2c81bba5f8bd52ab35387c0cff794f2e04b32db7",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000041/a2024-2absxee081525.htm",
+      "original_sha256": "8eface7e7d00c14696ccaf4786a32d655d208dda53b5922acf01698787a9b49c",
+      "archive_sha256": "c5971f81b2379e1a5c1a0064aac16d32f9f63721f4ea5c9f26de5f69be5ae3a6",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000043/a2024-210xd081525.htm",
+      "original_sha256": "d48261185f5353b31c4014833cedacc57c8550ea63c09fa55ac39c76df6b61d4",
+      "archive_sha256": "67c39d42db7faa0aa118ca4949683835b9be2036bd65107a3004bd2b50c1fc96",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000046/a2024-2absxee091525.htm",
+      "original_sha256": "ab748570ea869133a33f197d0cd5b9f286a4c1adf682547062f40beaafbbca5b",
+      "archive_sha256": "976bfad925cd571007ec87609ffe637a69008ba9652f8f08b2744059a46ff199",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000048/a2024-210xd091525.htm",
+      "original_sha256": "1bf62e72ba860f3ce8fd38dd6da0eebf3fc5a74606668217623652ae21adf52a",
+      "archive_sha256": "aacd79c7d2280da890507961d523380dd200844e5b3b5e3ccb6145f695be922c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000051/a2024-2absxee101525.htm",
+      "original_sha256": "8b4133b523e27971b0ac70a9a56f0e12cc1c77588e229bf82ee983e7f5e46795",
+      "archive_sha256": "5d28f371a6ed5eb8de8ca3f9562c572baf8aacd276d4944a101f26cf1bb50b08",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000053/a2024-210xd101525.htm",
+      "original_sha256": "b6b7c3868971c0d6c3a588a53223ea9e34581e04773a946a1746c538cddffe94",
+      "archive_sha256": "c35bc340620d59a798b91a6bc932bcc5378c91e46691ed566cb3097f643fe38a",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000056/a2024-2absxee111725.htm",
+      "original_sha256": "44e2137b0c75315929f5ae2acf5e423029589132f49908bbf3ef1a0086cf7b66",
+      "archive_sha256": "beae365044f9f0dd6c8e13e96f5e81d0eedcf24efc9147d3fb4ea75748aa5023",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000058/a2024-210xd111725.htm",
+      "original_sha256": "324015e40ae45b60b62303e99eeb2e5eddaf96497c21895ffae0a90b3d38be15",
+      "archive_sha256": "faa8cccfeb9652a377f25b987cc9de12ddca09d7a329d3eece3b89e4098c3332",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000061/a2024-2absxee121525.htm",
+      "original_sha256": "908117ed10127ebf56ddbbd81e75ea51b4e424e38871847f0332e33c7afeaa5b",
+      "archive_sha256": "fe2980def5bf3d9fa887972c823fe7771bbebe897f761851032f371521f3e61a",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694825000063/a2024-210xd121525.htm",
+      "original_sha256": "24e46c6d725cf718c59373c7f402d3cbc36dbe61873e38997b0afb361398ff1b",
+      "archive_sha256": "e3d43189237f9b341a11c58ecef11096c1ddbf7fbb61de5ddb330973f9db7071",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000003/a2024-2absxee011526.htm",
+      "original_sha256": "7425a8074e73d0e5574ee8d5d7300a4e9f379b97ba60e15c0821023615b5a268",
+      "archive_sha256": "530f4bbd0e9675c62bbed6f0d29b1fba7ee8a5dae592a0e7dd84a25b65e3426d",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000005/a2024-210xd011526.htm",
+      "original_sha256": "011ace37de0dc3d6d2572208da7de364c98e69b7f3cfe816b9965355b0bf1fdc",
+      "archive_sha256": "eb2148374ce644e4d712f54f6a02b7a040b2978a54405cca55ac267525005f69",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000008/a2024-2absxee021726.htm",
+      "original_sha256": "30f263b41968e55648438b6317564cda834cce1304c031096bd5a2ba635208b3",
+      "archive_sha256": "45fc2de15d234709dd2b4a8202467699e8b8b769f10d5c752d4261e63110dcff",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000010/a2024-210xd021726.htm",
+      "original_sha256": "1ca706cd47836e34db8d96607692c988d04cec37ae53b51087e9693c5178cdb3",
+      "archive_sha256": "5b6696606c7f47f21d2e604c0286555c1cd82e84d57630c80b0e96d1515f6052",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000015/a2024-2absxee031626.htm",
+      "original_sha256": "a4230aef6e442a440f1cf064133e1f55267ef301ae5940a04a2dfb5b2cbb175e",
+      "archive_sha256": "9c36e19665305121c8d1a6947c0d49f979b29a5c2855c2e90a1640eb1f43b51b",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000017/a2024-210xd031626.htm",
+      "original_sha256": "aaf3077ce97efe24ebf5f53997c3be2677bf3e0f57e34d987b0ebfddeb2a269b",
+      "archive_sha256": "cb7d0edea084e5971ec87e1514b0b591cbcbe35bd9e97c23856846740dcaffe4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000020/a2024-2absxee041526.htm",
+      "original_sha256": "3cf1c0ac3c0a3d3ab11a055322d1008461a44ab2136a6e77149ea9de319f55ff",
+      "archive_sha256": "a628a05cc923b300769977f4d820862ae9d0604315d604ac40b9610fb94bd425",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000022/a2024-210xd041526.htm",
+      "original_sha256": "261e05fecb22706d055526c17bab4f7cdd159f457b74488d9f3c23351802def2",
+      "archive_sha256": "2030afabc0a269a64bbe4aeba6a90a984c842296f5b24b1749050064f48e19ef",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000025/a2024-2absxee051526.htm",
+      "original_sha256": "4f7b8202008ae846855fd6e8d6c6106237ea57d3b9a4353d87d58184d90542a9",
+      "archive_sha256": "c7c68d24c380e216688db587a7a0ffb221044fadbcb08d99e86a4b9bc687839d",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000027/a2024-210xd051526.htm",
+      "original_sha256": "3f12f51b1e8b0f0dd4095695fd5c32d04c2d126fafa826be76df6a234c8ef804",
+      "archive_sha256": "25d9b95bbe8ef429f1bb9123090472ab3cf9926e9739587ebe13c4c6299c0461",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000029/a2024-210xk052726.htm",
+      "original_sha256": "42a4055968adc567bc56d343fe172492a7c5947047f0b0061f53a8b7a41cf92d",
+      "archive_sha256": "b3750166b406ab492bdb9161068d4ef1a8cbcdce23a80b3b63a6706e6c13e3ea",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000032/a2024-2absxee061526.htm",
+      "original_sha256": "f004a5e99e652ac7caee6c0226b55a962aa1ba0bb52d021b6ffca5a0a99e856b",
+      "archive_sha256": "a5ba854fa4afdd4515959592dacb7855ff8c6a930d15901670f727c08b99dcf3",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000034/a2024-210xd061526.htm",
+      "original_sha256": "836a01773293209ce2075f788613ae1027f89e48e0e22cfda6009853141d435b",
+      "archive_sha256": "23c9892f8e310ed56ccc98e24f1a2c9255f9d37ee9596a166555d1f999450316",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000037/a2024-2absxee071526.htm",
+      "original_sha256": "c510414b27fc057cea3e104129c69258c8b87c540b990c768d0bf31b2b8c89ca",
+      "archive_sha256": "f2ec3ce9b7047e68ca44e9e3d1d236a86bdd339f0284eb3a570d0eebe49a9603",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000039/a2024-210xd071526.htm",
+      "original_sha256": "4370e955ee6acacd5812328dabfc15e617712909f13bd11ba343b5b6693ebbc0",
+      "archive_sha256": "b3b283dcdf56bbba9d5bab5b62b74a7c77a790900843a21ef8a9bac6f58b7bb9",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000042/a2024-2absxee081726.htm",
+      "original_sha256": "d7ac89d1138e448a95fd8c6d58da67658e88fca6a3df6adadd87c1dfb03a317c",
+      "archive_sha256": "dd6e6b28274596b128329dba92ede7384511db0236884a90f5e36bebe6a7f48d",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000044/a2024-210xd081726.htm",
+      "original_sha256": "affa1e6ecb3e141f060d3335ba70149c97257c93491ec07c4e215d25796b84e8",
+      "archive_sha256": "a5e145faa9957a453021c495a26ead4fbf1144ef8186831b2ed29d89b15eb31c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000047/a2024-2absxee091526.htm",
+      "original_sha256": "60a3ec3241ae111c04d5ae45b31bf11c3395025104365d11ec2b4854314e5b0a",
+      "archive_sha256": "9e0369bbb718c61d00a6145e5acda7e4a8282f314ed0ecf0426e63f6a10d92d6",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2016948/000201694826000049/a2024-210xd091526.htm",
+      "original_sha256": "b4ea73ee4107a713eedcf81defbb150f5009874314e1b9777027ec8a29e9fc4b",
+      "archive_sha256": "025f534eed70779543d71792c337be0771c131752a2a55454ec95c832c574fdf",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1170010/000205211325002539/xslSCHEDULE_13G_X01/primary_doc.xml",
+      "original_sha256": "b6298dd866811ce4a1882601bd0088f017e082363480e8e56a9f9a03b17405db",
+      "archive_sha256": "d159dda8b7bc08075d67fe13e5733973c3c25c2c4c886dac0846dbcc17d9913a",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000003/a2025-2absxee051525.htm",
+      "original_sha256": "f4bab4d666a50e7604e91773fdae9e9d978753bfd2fbf23ec3416b52d74aadbe",
+      "archive_sha256": "4afd364b4e6d226387fa5f64bc6bb5c338214508fbb6cf7c717c82b21c5a3a01",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000005/a2025-210xd051525.htm",
+      "original_sha256": "f91a523f4b7f2dfdb0f2f8bab37dac4c58c3afc67fb0fa582d99d30784841f0a",
+      "archive_sha256": "de708b314f60959b22db0907bacf24e074dd46a2ef43dad10c0982964ca9eb56",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000008/a2025-2absxee061625.htm",
+      "original_sha256": "4a2ca640e45c8b7fdb41083f36d390e7be8571085e829a22f2655468614a5824",
+      "archive_sha256": "f28723132acdb247fbc0d08faeb207f8001058d20f5b70e901c11aa889fc659e",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000010/a2025-210xd061625.htm",
+      "original_sha256": "191368aa5a03dd0c7313384c1247365604f189b85560b304c66e826276c84210",
+      "archive_sha256": "863e3dff58ff8a823e9942cb76627f025b060d59d39021af01ed2dbfcb8cb34d",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000013/a2025-2absxee071525.htm",
+      "original_sha256": "f3c31e6e4e684091006aa0dcbc11f661ce60587746b4eff0c851ab382be87fae",
+      "archive_sha256": "c3114f8480eaa9cb5e940dcc45cf08a35dfecf48efbe803d02ac577d935ce39f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000015/a2025-210xd071525.htm",
+      "original_sha256": "260b085a09d231913e97f766bf464d1ba9bc17fe3b02ef01f99c925952e35c61",
+      "archive_sha256": "604c72283aa3d4488661d65028ae18100ae323b2314b3a5a962b7a138af40799",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000018/a2025-2absxee081525.htm",
+      "original_sha256": "3732a82eb48dba9a56ea282b5924ac0a588f31ae54478d0eabe2a1ee19310c06",
+      "archive_sha256": "18626d1a3ce83c2d52bf065f7a92d9053bc80a4832abbf293ad6467da7d20f4f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000020/a2025-210xd081525.htm",
+      "original_sha256": "72ef2cf0b8537196da434efd751855978beb5820454cad3433d1d26a3257c485",
+      "archive_sha256": "2cab4c6f9d453e0de865be7c91dadbf67aac4d2c717fbdf5895648a311d785bc",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000023/a2025-2absxee091525.htm",
+      "original_sha256": "78ee914cd928a922930c750b17bf88fece62b2054f97bd263afaf927e796e532",
+      "archive_sha256": "80a28d45716c502f43c3adca13dfe6f180de80470d5d6d041f170b48e262c932",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000025/a2025-210xd091525.htm",
+      "original_sha256": "1c915cdd76b1d62975de3a9d2ee94d36f4c7954d21308c0001276a5d06986a9d",
+      "archive_sha256": "23af227bb685d8f6383aa01b7e3671b612c92f12f2b1f1ce69bf6e61072c5071",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000028/a2025-2absxee101525.htm",
+      "original_sha256": "6dfc131d4b0d59912103d08afcce8481144b3bd1f4e9fff17ff010c1bf6092b7",
+      "archive_sha256": "5a4e2ee5aaa5679bae08ebf8d79036d093fd6a2c0c0fccbac8029f5b4b717929",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000030/a2025-210xd101525.htm",
+      "original_sha256": "542e26b9430cae694b3ab9aec6256d0540f1ac4772e285706c11cd65e4f23e09",
+      "archive_sha256": "3d65e0220b6ddf4e6a620489139f531aab193160237e3d957a21e7a5cfab0fcc",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000033/a2025-2absxee111725.htm",
+      "original_sha256": "814baac41930c898bb30d4983e30ff07f62342562d33a799ebc27ee84d42e63f",
+      "archive_sha256": "0ce01758ce58ab2c5adc315d636001a7ccf2ad921dd2bbd15e1babbf7cd5691f",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000035/a2025-210xd111725.htm",
+      "original_sha256": "8caceeeb960c9c270d8bb6b277722fc409a76fcb3da9e03b0a5ba11777031690",
+      "archive_sha256": "ec990880f5c42507c3360d3d2ccd25793197b1ddae481f07dc1027e77d115096",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000038/a2025-2absxee121525.htm",
+      "original_sha256": "dd55b1a0879a005e7be5420b41d0dc455b7de32ab49215056add9e64c8dddff3",
+      "archive_sha256": "e1dc80c81c792e57cfc17e789112ef1134eae9cf42f8ffaf3573a144b7e0b12c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000040/a2025-210xd121525.htm",
+      "original_sha256": "0822cf2e6daa5d661f01a94704d5c522166063d7286be66d653430fabfe4c117",
+      "archive_sha256": "dba94a6bdf6e22181335c5819212442bb9b90e840bde36245c055c15ede1e2d2",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000003/a2025-2absxee011526.htm",
+      "original_sha256": "d73255ad5ed8ce67cb51f234eeac384c059e1ef028bb0ab9b52eb89f8e4d1ce2",
+      "archive_sha256": "3d6ac33fc41986f271060d9ec972ff77614ede6496a059669329c7f4c7caafc6",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000005/a2025-210xd011526.htm",
+      "original_sha256": "66e9d41f7e2d09bc06ca254fb1db94bbcdd2413278a95c6552e1b6697606e254",
+      "archive_sha256": "1ed13aeb9bcdd435a82c4d1a80698bc42bbefa9dc60ac554b4544923e131220c",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000008/a2025-2absxee021726.htm",
+      "original_sha256": "789550602dc29e2f307f5a95ea38a188a21945340bc554f244d0bf4f690cc093",
+      "archive_sha256": "ab444c8534c7c502a78db4bff983ee5ad2dad12702bc431c48d3475c627094ac",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000010/a2025-210xd021726.htm",
+      "original_sha256": "ec36917e8eeebfd8d79528ea427a61e5fce82c182388be9e349ba6d5b03f5e3d",
+      "archive_sha256": "d65ecc3ba881cc569d95d7fb4ccfe1bf941bdc9c4dc2c681759b8f4b1f7fe2b5",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000013/a2025-2absxee031626.htm",
+      "original_sha256": "50c5476650999f89563cb143864c18e66d64dff135190f31267b659f51070aec",
+      "archive_sha256": "a648d556fae26390577ea99ac75bbc38a50f76c094ea9ea95123c9ffc1f2606d",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000015/a2025-210xd031626.htm",
+      "original_sha256": "4e8f1beced6d9515156b346b1eee949795e9326266e3b3aa315409d1ca7fa603",
+      "archive_sha256": "0d64b149110d7cdfe28d90b720900a10f99ae42a71b4f0ce6a3128a5cd5f1d0a",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000018/a2025-2absxee041526.htm",
+      "original_sha256": "61986013e7baf0a80e2d96cc67662ae0bc568c1f921a5dfb55b08adfd21edd80",
+      "archive_sha256": "6bc9e558cc1115be835bb9843433f29fd52b3fbe0858b7e6a35a8aaaebe030b7",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000020/a2025-210xd041526.htm",
+      "original_sha256": "1b9e0a280ab86d2d755f1c75aee67c9514560c090c62ebf5d6f1ab83c92600f3",
+      "archive_sha256": "04dcc9dde397277c787b0e1ce9e7cae788e8b80a93c173e98908cfc80147598e",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000023/a2025-2absxee051526.htm",
+      "original_sha256": "4f006753b600df2ec8f8beadc3c84248a109c1ce364d27956fc649dc78b54955",
+      "archive_sha256": "6e60384f7b758603511ea4f02b2a028b01a3403673b1f1d4ef29783bfc9a26f6",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000025/a2025-210xd051526.htm",
+      "original_sha256": "f35b0bd18296e63248ef4af4519da1f32af5c39c71bdf3cc80e49aca872fe235",
+      "archive_sha256": "9c3231eba83cc1c7c257acbdadb0e756bddd26c1b078f23ef69bc0e2ec901521",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000027/a2025-210xk052726.htm",
+      "original_sha256": "c175c14f63d7c11c5005e11b888996c153b518ddbdd7a9c9b4d10e4abb3e0b7d",
+      "archive_sha256": "ed713923bedfd16e23428fd4dd675b8780aa81c3fb253e5ec8cd9ebcc9e55f67",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000030/a2025-2absxee061526.htm",
+      "original_sha256": "ea160ad35793f1c3426e335f32d68f31607a8145ee5bbadc45248206e21b6a90",
+      "archive_sha256": "f4fcef55d46e3978b5e31047cbe5e461e2670c25b7b4287c28042d5dd4047023",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000032/a2025-210xd061526.htm",
+      "original_sha256": "322e69456ea39f5105133b03e33ad02c2f88894c9a7935cb99e8ce566aee6b51",
+      "archive_sha256": "5d3b4e3cdf822cf769f870bfbca4b8e3e57aaf27389a4d0216d87d68cde460da",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000035/a2025-2absxee071526.htm",
+      "original_sha256": "aef71839875ea60434fac7be051cc5999704c6717b868fa9dbc28ac7dd95dbb5",
+      "archive_sha256": "d01f8924a20dcac1da424fb1a1ccb9fe72923872cf04c3629f8abdf00f3ce172",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000037/a2025-210xd071526.htm",
+      "original_sha256": "65e3e1d0a49879838860283df48ad4e430053aac32d6dade820bec710de90ff9",
+      "archive_sha256": "3be792e1803b593bffabca7e0fc9730e8aaaadc9d54c717fcda91d0ad341a9e0",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000040/a2025-2absxee081726.htm",
+      "original_sha256": "1a80976f256c4e1bb2186a3cbe4080fbf5bdad24ab869b807f95078d7363e74c",
+      "archive_sha256": "0b4b150cf9154fb7eda6cc7a9aa93ddf34c334063b6f6dc515ceda3c6612b4e2",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000042/a2025-210xd081726.htm",
+      "original_sha256": "51f3c12fa86cf42756149d2d5874eefe97ddf71826992b9d4acb4e159ad7c334",
+      "archive_sha256": "534647297dcf5a04bdeef8aa8a9366cbbc79a6dd99cb6f047def4afd1523fac4",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000045/a2025-2absxee091526.htm",
+      "original_sha256": "0a5967c587e96ff379a96a2e8d345d240d6c5d9c3ccd4ec06c68683e72abdf59",
+      "archive_sha256": "940042dc8e787c4b648649fff0541dd59020a64195ee9701b18af95885ef728a",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000047/a2025-210xd091526.htm",
+      "original_sha256": "da38e8e9406506e5036fa349bfda589a713b0ea4b199c8aa78745744c4f06b2d",
+      "archive_sha256": "93b87ffc1486eabf56e2d91b56b85a7d4bf7417e3a37cf3414c354ab799935ad",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sifma.org/news/press-releases/sifma-fixed-income-market-close-recommendations-in-the-u-s-the-u-k-and-japan-for-u-s-columbus-day-and-japan-health-and-sports-day-holidays-2025",
+      "original_sha256": "47d81ad9192c12cdff4e1001e2b77eafd3486558d45dabd5ea59759be0199545",
+      "archive_sha256": "640579340b85b8c5d83ad530c10490fdd2585d55533e22635eb0e72fcac66bde",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.sifma.org/resources/general/holiday-schedule",
+      "original_sha256": "0a993a0cf70ee12bcba620ffd2969ad262a86e7d7be3e4a1f92c71d91ebd1881",
+      "archive_sha256": "7a22d8023c52a0882a83e8cdd3a737a822d7cea185dae14ffe3e46c65e90a848",
+      "status": "PASS"
+    },
+    {
+      "url": "https://www.newyorkfed.org/markets/reference-rates/sofr-averages-and-index",
+      "original_sha256": "205bab2c96b076cf736f1981f0c2c80ecf748c4bf0012c7c6ab4cbb125f73eee",
+      "archive_sha256": "681c20759be7dec80792df1c9e62be19eb8469beaca6d7561d20bd3430b6ac36",
+      "status": "PASS"
+    }
+  ]
+}

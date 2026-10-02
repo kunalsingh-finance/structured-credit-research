@@ -1,0 +1,15 @@
+collection_period,check_id,name,status,computed_cents,reported_cents,residual_cents,formula
+2025-08-31,pool_rollforward,Pool principal roll-forward,PASS,117606364734,117606364734,0,pool_begin - principal_collected - defaults - repurchases = pool_end
+2025-08-31,collections_total,Reported collection components,PASS,5411591616,5411591616,0,interest_collected + principal_collected + recoveries + investment_income + repurchases = available_collections
+2025-08-31,collections_to_distributions,Collections and reserve draws to distributions,PASS,5411591616,5411591616,0,available_collections + reserve_draw = total_distributions
+2025-08-31,distribution_components,Reported distribution components,PASS,5411591616,5411591616,0,servicing_fee + trustee_fee + total_note_interest + total_note_principal + reserve_deposit + residual_distribution = total_distributions
+2025-08-31,note_rollforward,Note principal roll-forward,PASS,116548422560,116548422560,0,note_begin - total_note_principal = note_end
+2025-08-31,reserve_rollforward,Reserve balance roll-forward,PASS,352644855,352644855,0,reserve_begin + reserve_interest + reserve_deposit - reserve_draw - reserve_release = reserve_end
+2025-08-31,net_loss,Gross losses less recoveries,PASS,77713350,77713350,0,gross_loss - recoveries = net_loss
+2025-11-30,pool_rollforward,Pool principal roll-forward,PASS,105617277756,105617277756,0,pool_begin - principal_collected - defaults - repurchases = pool_end
+2025-11-30,collections_total,Reported collection components,PASS,4613794972,4613794972,0,interest_collected + principal_collected + recoveries + investment_income + repurchases = available_collections
+2025-11-30,collections_to_distributions,Collections and reserve draws to distributions,PASS,4613794972,4613794972,0,available_collections + reserve_draw = total_distributions
+2025-11-30,distribution_components,Reported distribution components,PASS,4613794972,4613794972,0,servicing_fee + trustee_fee + total_note_interest + total_note_principal + reserve_deposit + residual_distribution = total_distributions
+2025-11-30,note_rollforward,Note principal roll-forward,PASS,104559335582,104559335582,0,note_begin - total_note_principal = note_end
+2025-11-30,reserve_rollforward,Reserve balance roll-forward,PASS,352644855,352644855,0,reserve_begin + reserve_interest + reserve_deposit - reserve_draw - reserve_release = reserve_end
+2025-11-30,net_loss,Gross losses less recoveries,PASS,49025909,49025909,0,gross_loss - recoveries = net_loss

@@ -1,0 +1,20 @@
+{
+  "status": "SUPPLEMENTAL_RETROSPECTIVE_AFTER_PRIMARY_TEST_INSPECTION",
+  "specified_date": "2026-10-02",
+  "changes_primary_model": false,
+  "changes_scenario_assumptions": false,
+  "cohort_smoothing_pseudo_observations": 100,
+  "cohort_prior": "Development-only constant probabilities with one added count per cause",
+  "cohort_features": ["credit_score", "age_months", "remaining_months", "disclosure_lag_months"],
+  "segment_features": ["credit_score", "age_months", "remaining_months", "disclosure_lag_months", "delinquency_days", "interest_rate_pct"],
+  "expanding_folds": [
+    ["2024-09-01", "2024-11-30"],
+    ["2025-01-01", "2025-03-31"],
+    ["2025-04-01", "2025-06-30"],
+    ["2025-09-01", "2025-11-30"]
+  ],
+  "expanding_training": "CAOT-2024-2 labels accepted strictly before fold origin; collection months no later than June2025",
+  "expanding_model": "Fresh development-only imputer and scaler; uncalibrated multinomial logistic C1 max_iterations350 seed7",
+  "eligibility": "Unchanged disclosure_features public availability, terminal-event, repurchase and censoring rules",
+  "interpretation": "Descriptive supplemental diagnostics after primary test inspection; no model selection or superiority acceptance requirement"
+}

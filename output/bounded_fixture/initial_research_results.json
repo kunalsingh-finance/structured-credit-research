@@ -1,0 +1,916 @@
+{
+  "status": "REVIEW REQUIRED",
+  "generated_at": "2026-10-02T05:14:41.679661+00:00",
+  "arithmetic_summary": {
+    "PASS": 14,
+    "FAIL": 0,
+    "SKIPPED": 0,
+    "total": 14,
+    "status": "PASS"
+  },
+  "replay_difference_count": 14,
+  "certificates": [
+    {
+      "deal_id": "CAOT-2025-2",
+      "collection_period_end": "2025-08-31",
+      "distribution_date": "2025-09-15",
+      "accession": "0002063979-25-000025",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000025/a2025-2ex991091525.htm",
+      "extraction_method": "Manual transcription of numeric facts from SEC HTML viewed on 2026-10-02. Original HTML bytes not archived; source hash unavailable.",
+      "available_collections_cents": 5411591616,
+      "arithmetic_checks": [
+        {
+          "check_id": "pool_rollforward",
+          "name": "Pool principal roll-forward",
+          "formula": "pool_begin - principal_collected - defaults - repurchases = pool_end",
+          "required_fields": [
+            "pool_begin",
+            "principal_collected",
+            "defaults",
+            "repurchases",
+            "pool_end"
+          ],
+          "missing_fields": [],
+          "computed_cents": 117606364734,
+          "reported_cents": 117606364734,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "collections_total",
+          "name": "Reported collection components",
+          "formula": "interest_collected + principal_collected + recoveries + investment_income + repurchases = available_collections",
+          "required_fields": [
+            "interest_collected",
+            "principal_collected",
+            "recoveries",
+            "investment_income",
+            "repurchases",
+            "available_collections"
+          ],
+          "missing_fields": [],
+          "computed_cents": 5411591616,
+          "reported_cents": 5411591616,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "collections_to_distributions",
+          "name": "Collections and reserve draws to distributions",
+          "formula": "available_collections + reserve_draw = total_distributions",
+          "required_fields": [
+            "available_collections",
+            "reserve_draw",
+            "total_distributions"
+          ],
+          "missing_fields": [],
+          "computed_cents": 5411591616,
+          "reported_cents": 5411591616,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "distribution_components",
+          "name": "Reported distribution components",
+          "formula": "servicing_fee + trustee_fee + total_note_interest + total_note_principal + reserve_deposit + residual_distribution = total_distributions",
+          "required_fields": [
+            "servicing_fee",
+            "trustee_fee",
+            "total_note_interest",
+            "total_note_principal",
+            "reserve_deposit",
+            "residual_distribution",
+            "total_distributions"
+          ],
+          "missing_fields": [],
+          "computed_cents": 5411591616,
+          "reported_cents": 5411591616,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "note_rollforward",
+          "name": "Note principal roll-forward",
+          "formula": "note_begin - total_note_principal = note_end",
+          "required_fields": [
+            "note_begin",
+            "total_note_principal",
+            "note_end"
+          ],
+          "missing_fields": [],
+          "computed_cents": 116548422560,
+          "reported_cents": 116548422560,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "reserve_rollforward",
+          "name": "Reserve balance roll-forward",
+          "formula": "reserve_begin + reserve_interest + reserve_deposit - reserve_draw - reserve_release = reserve_end",
+          "required_fields": [
+            "reserve_begin",
+            "reserve_interest",
+            "reserve_deposit",
+            "reserve_draw",
+            "reserve_release",
+            "reserve_end"
+          ],
+          "missing_fields": [],
+          "computed_cents": 352644855,
+          "reported_cents": 352644855,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "net_loss",
+          "name": "Gross losses less recoveries",
+          "formula": "gross_loss - recoveries = net_loss",
+          "required_fields": [
+            "gross_loss",
+            "recoveries",
+            "net_loss"
+          ],
+          "missing_fields": [],
+          "computed_cents": 77713350,
+          "reported_cents": 77713350,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        }
+      ],
+      "replay": {
+        "scope": "bounded_fully_funded_pre_acceleration_replay",
+        "act_360_days": 31,
+        "contractual_oc_target": 1057934566,
+        "servicing_fee": 101753767,
+        "interest": {
+          "A1": 36037390,
+          "A2a": 133875000,
+          "A2b": 69993813,
+          "A3": 168784000,
+          "A4": 34487500,
+          "B": 11953600,
+          "C": 9098800,
+          "D": 6749283
+        },
+        "principal": {
+          "A1": 4498148182,
+          "A2a": 0,
+          "A2b": 0,
+          "A3": 0,
+          "A4": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0
+        },
+        "priority": 0,
+        "secondary": 0,
+        "tertiary": 2029213616,
+        "quaternary": 1411000000,
+        "regular": 1057934566,
+        "total_note_interest": 470979386,
+        "total_note_principal": 4498148182,
+        "note_end": {
+          "A1": 4868430168,
+          "A2a": 35000000000,
+          "A2b": 16151000000,
+          "A3": 45210000000,
+          "A4": 8900000000,
+          "B": 2892000000,
+          "C": 2116000000,
+          "D": 1411000000
+        },
+        "residual_distribution": 340710281,
+        "reserve_deposit": 0,
+        "reserve_release": 1260152,
+        "reserve_end": 352644855
+      },
+      "replay_comparison": [
+        {
+          "name": "servicing_fee",
+          "computed_cents": 101753767,
+          "reported_cents": 101753767,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "total_note_interest",
+          "computed_cents": 470979386,
+          "reported_cents": 470979386,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "total_note_principal",
+          "computed_cents": 4498148182,
+          "reported_cents": 4498155790,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "residual_distribution",
+          "computed_cents": 340710281,
+          "reported_cents": 340702673,
+          "residual_cents": 7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "reserve_deposit",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "reserve_end",
+          "computed_cents": 352644855,
+          "reported_cents": 352644855,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "reserve_release",
+          "computed_cents": 1260152,
+          "reported_cents": 1260152,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A1",
+          "computed_cents": 36037390,
+          "reported_cents": 36037390,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A2a",
+          "computed_cents": 133875000,
+          "reported_cents": 133875000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A2b",
+          "computed_cents": 69993813,
+          "reported_cents": 69993813,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A3",
+          "computed_cents": 168784000,
+          "reported_cents": 168784000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A4",
+          "computed_cents": 34487500,
+          "reported_cents": 34487500,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.B",
+          "computed_cents": 11953600,
+          "reported_cents": 11953600,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.C",
+          "computed_cents": 9098800,
+          "reported_cents": 9098800,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.D",
+          "computed_cents": 6749283,
+          "reported_cents": 6749283,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A1",
+          "computed_cents": 4498148182,
+          "reported_cents": 4498155790,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "principal.A2a",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A2b",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A3",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A4",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.B",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.C",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.D",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A1",
+          "computed_cents": 4868430168,
+          "reported_cents": 4868422560,
+          "residual_cents": 7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "note_end.A2a",
+          "computed_cents": 35000000000,
+          "reported_cents": 35000000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A2b",
+          "computed_cents": 16151000000,
+          "reported_cents": 16151000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A3",
+          "computed_cents": 45210000000,
+          "reported_cents": 45210000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A4",
+          "computed_cents": 8900000000,
+          "reported_cents": 8900000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.B",
+          "computed_cents": 2892000000,
+          "reported_cents": 2892000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.C",
+          "computed_cents": 2116000000,
+          "reported_cents": 2116000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.D",
+          "computed_cents": 1411000000,
+          "reported_cents": 1411000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "priority_principal",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "secondary_principal",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "tertiary_principal",
+          "computed_cents": 2029213616,
+          "reported_cents": 2029213616,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "quaternary_principal",
+          "computed_cents": 1411000000,
+          "reported_cents": 1411000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "regular_principal",
+          "computed_cents": 1057934566,
+          "reported_cents": 1057942174,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "oc_target",
+          "computed_cents": 1057934566,
+          "reported_cents": 1057942174,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "collection_period_end": "2025-11-30",
+      "distribution_date": "2025-12-15",
+      "accession": "0002063979-25-000040",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397925000040/a2025-2ex991121525.htm",
+      "extraction_method": "Manual transcription of numeric facts from SEC HTML viewed on 2026-10-02. Original HTML bytes not archived; source hash unavailable.",
+      "available_collections_cents": 4613794972,
+      "arithmetic_checks": [
+        {
+          "check_id": "pool_rollforward",
+          "name": "Pool principal roll-forward",
+          "formula": "pool_begin - principal_collected - defaults - repurchases = pool_end",
+          "required_fields": [
+            "pool_begin",
+            "principal_collected",
+            "defaults",
+            "repurchases",
+            "pool_end"
+          ],
+          "missing_fields": [],
+          "computed_cents": 105617277756,
+          "reported_cents": 105617277756,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "collections_total",
+          "name": "Reported collection components",
+          "formula": "interest_collected + principal_collected + recoveries + investment_income + repurchases = available_collections",
+          "required_fields": [
+            "interest_collected",
+            "principal_collected",
+            "recoveries",
+            "investment_income",
+            "repurchases",
+            "available_collections"
+          ],
+          "missing_fields": [],
+          "computed_cents": 4613794972,
+          "reported_cents": 4613794972,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "collections_to_distributions",
+          "name": "Collections and reserve draws to distributions",
+          "formula": "available_collections + reserve_draw = total_distributions",
+          "required_fields": [
+            "available_collections",
+            "reserve_draw",
+            "total_distributions"
+          ],
+          "missing_fields": [],
+          "computed_cents": 4613794972,
+          "reported_cents": 4613794972,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "distribution_components",
+          "name": "Reported distribution components",
+          "formula": "servicing_fee + trustee_fee + total_note_interest + total_note_principal + reserve_deposit + residual_distribution = total_distributions",
+          "required_fields": [
+            "servicing_fee",
+            "trustee_fee",
+            "total_note_interest",
+            "total_note_principal",
+            "reserve_deposit",
+            "residual_distribution",
+            "total_distributions"
+          ],
+          "missing_fields": [],
+          "computed_cents": 4613794972,
+          "reported_cents": 4613794972,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "note_rollforward",
+          "name": "Note principal roll-forward",
+          "formula": "note_begin - total_note_principal = note_end",
+          "required_fields": [
+            "note_begin",
+            "total_note_principal",
+            "note_end"
+          ],
+          "missing_fields": [],
+          "computed_cents": 104559335582,
+          "reported_cents": 104559335582,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "reserve_rollforward",
+          "name": "Reserve balance roll-forward",
+          "formula": "reserve_begin + reserve_interest + reserve_deposit - reserve_draw - reserve_release = reserve_end",
+          "required_fields": [
+            "reserve_begin",
+            "reserve_interest",
+            "reserve_deposit",
+            "reserve_draw",
+            "reserve_release",
+            "reserve_end"
+          ],
+          "missing_fields": [],
+          "computed_cents": 352644855,
+          "reported_cents": 352644855,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        },
+        {
+          "check_id": "net_loss",
+          "name": "Gross losses less recoveries",
+          "formula": "gross_loss - recoveries = net_loss",
+          "required_fields": [
+            "gross_loss",
+            "recoveries",
+            "net_loss"
+          ],
+          "missing_fields": [],
+          "computed_cents": 49025909,
+          "reported_cents": 49025909,
+          "residual_cents": 0,
+          "status": "PASS",
+          "reason": "Exact reported-data identity; residual 0 cents."
+        }
+      ],
+      "replay": {
+        "scope": "bounded_fully_funded_pre_acceleration_replay",
+        "act_360_days": 28,
+        "contractual_oc_target": 1057934566,
+        "servicing_fee": 91166772,
+        "interest": {
+          "A1": 0,
+          "A2a": 125139099,
+          "A2b": 56738416,
+          "A3": 168784000,
+          "A4": 34487500,
+          "B": 11953600,
+          "C": 9098800,
+          "D": 6749283
+        },
+        "principal": {
+          "A1": 0,
+          "A2a": 2588403714,
+          "A2b": 1194437382,
+          "A3": 0,
+          "A4": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0
+        },
+        "priority": 0,
+        "secondary": 0,
+        "tertiary": 1313906530,
+        "quaternary": 1411000000,
+        "regular": 1057934566,
+        "total_note_interest": 412950698,
+        "total_note_principal": 3782841096,
+        "note_end": {
+          "A1": 0,
+          "A2a": 30127700566,
+          "A2b": 13902642624,
+          "A3": 45210000000,
+          "A4": 8900000000,
+          "B": 2892000000,
+          "C": 2116000000,
+          "D": 1411000000
+        },
+        "residual_distribution": 326836406,
+        "reserve_deposit": 0,
+        "reserve_release": 1129288,
+        "reserve_end": 352644855
+      },
+      "replay_comparison": [
+        {
+          "name": "servicing_fee",
+          "computed_cents": 91166772,
+          "reported_cents": 91166772,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "total_note_interest",
+          "computed_cents": 412950698,
+          "reported_cents": 412950698,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "total_note_principal",
+          "computed_cents": 3782841096,
+          "reported_cents": 3782848704,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "residual_distribution",
+          "computed_cents": 326836406,
+          "reported_cents": 326828798,
+          "residual_cents": 7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "reserve_deposit",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "reserve_end",
+          "computed_cents": 352644855,
+          "reported_cents": 352644855,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "reserve_release",
+          "computed_cents": 1129288,
+          "reported_cents": 1129288,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A1",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A2a",
+          "computed_cents": 125139099,
+          "reported_cents": 125139099,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A2b",
+          "computed_cents": 56738416,
+          "reported_cents": 56738416,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A3",
+          "computed_cents": 168784000,
+          "reported_cents": 168784000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.A4",
+          "computed_cents": 34487500,
+          "reported_cents": 34487500,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.B",
+          "computed_cents": 11953600,
+          "reported_cents": 11953600,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.C",
+          "computed_cents": 9098800,
+          "reported_cents": 9098800,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "interest.D",
+          "computed_cents": 6749283,
+          "reported_cents": 6749283,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A1",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A2a",
+          "computed_cents": 2588403714,
+          "reported_cents": 2588408919,
+          "residual_cents": -5205,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "principal.A2b",
+          "computed_cents": 1194437382,
+          "reported_cents": 1194439785,
+          "residual_cents": -2403,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "principal.A3",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.A4",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.B",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.C",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "principal.D",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A1",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A2a",
+          "computed_cents": 30127700566,
+          "reported_cents": 30127695361,
+          "residual_cents": 5205,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "note_end.A2b",
+          "computed_cents": 13902642624,
+          "reported_cents": 13902640221,
+          "residual_cents": 2403,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "note_end.A3",
+          "computed_cents": 45210000000,
+          "reported_cents": 45210000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.A4",
+          "computed_cents": 8900000000,
+          "reported_cents": 8900000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.B",
+          "computed_cents": 2892000000,
+          "reported_cents": 2892000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.C",
+          "computed_cents": 2116000000,
+          "reported_cents": 2116000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "note_end.D",
+          "computed_cents": 1411000000,
+          "reported_cents": 1411000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "priority_principal",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "secondary_principal",
+          "computed_cents": 0,
+          "reported_cents": 0,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "tertiary_principal",
+          "computed_cents": 1313906530,
+          "reported_cents": 1313906530,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "quaternary_principal",
+          "computed_cents": 1411000000,
+          "reported_cents": 1411000000,
+          "residual_cents": 0,
+          "status": "PASS"
+        },
+        {
+          "name": "regular_principal",
+          "computed_cents": 1057934566,
+          "reported_cents": 1057942174,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        },
+        {
+          "name": "oc_target",
+          "computed_cents": 1057934566,
+          "reported_cents": 1057942174,
+          "residual_cents": -7608,
+          "status": "DIFFERENCE"
+        }
+      ]
+    }
+  ],
+  "source_exceptions": [
+    "Displayed servicing percentage conflicts with the dollar fee and prospectus annual rate.",
+    "Published OC target differs from prospectus percentage applied to cutoff pool; governing-document review is outstanding.",
+    "Rate-row accrual labels refer to July 2024 on a 2025 certificate; the replay uses the numeric reported rate and separately specified distribution dates.",
+    "Reserve percentage label conflicts with the dollar amount and prospectus minimum."
+  ],
+  "original_source_hashes": null,
+  "normalized_fixture_sha256": "48d93d6e6c47c4e306565b826e64fc5d583eed0971e4b64f2ba8442b67725fe2",
+  "evidence_type": "Manually extracted development samples; observed-cash replay; not a forecast or a holdout.",
+  "source_manifest_sha256": "0e6bbb70516c13ac495d4e2e5cb450b401069389e31e2ba32abb2b97b02a042a",
+  "code_sha256": {
+    "credit_research/__init__.py": "402288d4727b53fd8008dfcb4863dda4f708d089d8a620b0544338d7e65a381f",
+    "credit_research/reconcile.py": "40621a0e45a8358d4b4b1a6c41ef8a6c613d75ab098c2530ebd044345dff636b",
+    "credit_research/waterfall.py": "b88b643d6f461115b7d8302f6d5840f52741490fd5c027662c187a4096ca9524",
+    "scripts/run_research.py": "52997db130b8f4c24c894c0a042c0fb32cba6c73af399d3c95009299d87f8139"
+  }
+}

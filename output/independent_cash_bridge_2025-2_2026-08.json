@@ -1,0 +1,213 @@
+{
+  "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000045/cart20252.xml",
+    "archive_path": "data/raw/CAOT-2025-2/0002063979-26-000045/cart20252.xml.gz",
+    "sha256_original_bytes": "61c380e6a4588a09fb9740f5ea5c0734349eaaa6ff1d59f6a78d78a09b0677fe",
+    "original_byte_count": 241269840,
+    "sha256_archive": "559a0cd7a9609d804aa1cadbe2c6bb2bdf83a90b482c1e703085dbe179a302ab",
+    "archive_byte_count": 15820188,
+    "retrieved_at_utc": "2026-10-02T05:43:12.868554+00:00",
+    "http_content_type": "text/xml",
+    "http_last_modified": "Tue, 15 Sep 2026 14:09:52 GMT",
+    "kind": "loan_tape",
+    "deal_id": "CAOT-2025-2",
+    "cik": 2063979,
+    "accession": "0002063979-26-000045",
+    "form": "ABS-EE",
+    "report_period": "2026-08-31",
+    "acceptance_time": "2026-09-15T14:08:21.000Z",
+    "filing_date": "2026-09-15",
+    "is_amendment": false
+  },
+  "rows": 79101,
+  "sums_cents": {
+    "reportingPeriodBeginningLoanBalanceAmount": 77578101012,
+    "reportingPeriodActualEndBalanceAmount": 74497011895,
+    "totalActualAmountPaid": 3570410319,
+    "actualInterestCollectedAmount": 612423281,
+    "actualPrincipalCollectedAmount": 2950961488,
+    "actualOtherCollectedAmount": 7025550,
+    "otherPrincipalAdjustmentAmount": -35825025,
+    "otherAssessedUncollectedServicerFeeAmount": 137975879,
+    "repossessedProceedsAmount": 469737478,
+    "recoveredAmount": 35066699,
+    "chargedoffPrincipalAmount": 165952654
+  },
+  "field_presence": {
+    "reportingPeriodBeginningLoanBalanceAmount": 79101,
+    "reportingPeriodActualEndBalanceAmount": 79101,
+    "totalActualAmountPaid": 79101,
+    "actualInterestCollectedAmount": 79101,
+    "actualPrincipalCollectedAmount": 79101,
+    "actualOtherCollectedAmount": 79101,
+    "otherPrincipalAdjustmentAmount": 79101,
+    "otherAssessedUncollectedServicerFeeAmount": 79101,
+    "repossessedProceedsAmount": 429,
+    "recoveredAmount": 80,
+    "chargedoffPrincipalAmount": 89
+  },
+  "negative_counts": {
+    "reportingPeriodBeginningLoanBalanceAmount": 16,
+    "reportingPeriodActualEndBalanceAmount": 17,
+    "totalActualAmountPaid": 0,
+    "actualInterestCollectedAmount": 0,
+    "actualPrincipalCollectedAmount": 0,
+    "actualOtherCollectedAmount": 0,
+    "otherPrincipalAdjustmentAmount": 71,
+    "otherAssessedUncollectedServicerFeeAmount": 0,
+    "repossessedProceedsAmount": 1,
+    "recoveredAmount": 0,
+    "chargedoffPrincipalAmount": 0
+  },
+  "identities": {
+    "loan_balance_break_rows": 0,
+    "loan_balance_break_cents": 0,
+    "total_paid_minus_components_cents": 0,
+    "negative_component_sum_rows": 0,
+    "total_paid_components_break_rows": 0
+  },
+  "fee_proxy_cents": "64389823.83996",
+  "zero_codes": {
+    "ACTIVE": {
+      "rows": 47579,
+      "reportingPeriodBeginningLoanBalanceAmount": 76247974286,
+      "reportingPeriodActualEndBalanceAmount": 74497011895,
+      "totalActualAmountPaid": 2362059416,
+      "actualInterestCollectedAmount": 604737564,
+      "actualPrincipalCollectedAmount": 1752398947,
+      "actualOtherCollectedAmount": 4922905,
+      "otherPrincipalAdjustmentAmount": -1436556,
+      "chargedoffPrincipalAmount": 0,
+      "recoveredAmount": 0,
+      "repossessedProceedsAmount": 0,
+      "repurchaseAmount": 0,
+      "servicerAdvancedAmount": 0,
+      "otherLoanLevelServicerFeeAmount": 0,
+      "otherAssessedUncollectedServicerFeeAmount": 94578668
+    },
+    "1": {
+      "rows": 30691,
+      "reportingPeriodBeginningLoanBalanceAmount": 1198487681,
+      "reportingPeriodActualEndBalanceAmount": 0,
+      "totalActualAmountPaid": 1208315960,
+      "actualInterestCollectedAmount": 7665369,
+      "actualPrincipalCollectedAmount": 1198547946,
+      "actualOtherCollectedAmount": 2102645,
+      "otherPrincipalAdjustmentAmount": -60265,
+      "chargedoffPrincipalAmount": 0,
+      "recoveredAmount": 0,
+      "repossessedProceedsAmount": 0,
+      "repurchaseAmount": 0,
+      "servicerAdvancedAmount": 0,
+      "otherLoanLevelServicerFeeAmount": 0,
+      "otherAssessedUncollectedServicerFeeAmount": 42552
+    },
+    "4": {
+      "rows": 831,
+      "reportingPeriodBeginningLoanBalanceAmount": 131639045,
+      "reportingPeriodActualEndBalanceAmount": 0,
+      "totalActualAmountPaid": 34943,
+      "actualInterestCollectedAmount": 20348,
+      "actualPrincipalCollectedAmount": 14595,
+      "actualOtherCollectedAmount": 0,
+      "otherPrincipalAdjustmentAmount": -34328204,
+      "chargedoffPrincipalAmount": 165952654,
+      "recoveredAmount": 35066699,
+      "repossessedProceedsAmount": 469737478,
+      "repurchaseAmount": 0,
+      "servicerAdvancedAmount": 0,
+      "otherLoanLevelServicerFeeAmount": 0,
+      "otherAssessedUncollectedServicerFeeAmount": 43354659
+    }
+  },
+  "examples": [],
+  "certificate_amounts": {
+    "pool_begin": "775782240.33",
+    "principal_collected": "29502058.28",
+    "repurchases": "0.00",
+    "defaults": "1309417.89",
+    "pool_end": "744970764.16",
+    "interest_collected": "6173785.69",
+    "recoveries": "345715.96",
+    "investment_income": "97940.15",
+    "available_collections": "36119500.08",
+    "reserve_draw": "0.00",
+    "servicing_fee": "646485.20",
+    "reserve_deposit": "0.00",
+    "residual_distribution": "1756295.94",
+    "total_distributions": "36119500.08",
+    "reserve_begin": "3526448.55",
+    "reserve_interest": "10722.61",
+    "reserve_end": "3526448.55",
+    "gross_loss": "1309417.89",
+    "net_loss": "963701.93",
+    "note_begin": "765202818.59",
+    "note_end": "734391342.42",
+    "trustee_fee": "0.00",
+    "total_note_interest": "2905242.77",
+    "total_note_principal": "30811476.17",
+    "reserve_release": "10722.61"
+  },
+  "certificate_bridge_rows": {
+    "17a": {
+      "label": "a. Collections allocable to Finance Charge | $ | 6,173,785.69",
+      "money_cents": [
+        617378569
+      ]
+    },
+    "17b": {
+      "label": "b. Liquidation Proceeds allocable to Finance Charge | $ | 1,110.66",
+      "money_cents": [
+        111066
+      ]
+    },
+    "17c": {
+      "label": "c. Purchase Amount allocable to Finance Charge | $ | 0.00",
+      "money_cents": [
+        0
+      ]
+    },
+    "18a": {
+      "label": "a. Collections allocable to Principal | $ | 29,502,058.28",
+      "money_cents": [
+        2950205828
+      ]
+    },
+    "18b": {
+      "label": "b. Liquidation Proceeds allocable to Principal | $ | 344,605.30",
+      "money_cents": [
+        34460530
+      ]
+    },
+    "18c": {
+      "label": "c. Purchase Amount allocable to Principal | $ | 0.00",
+      "money_cents": [
+        0
+      ]
+    },
+    "21": {
+      "label": "21. | Simple Interest Advances | $ | 0.00",
+      "money_cents": [
+        0
+      ]
+    },
+    "27": {
+      "label": "27. | Unreimbursed Servicer Advances | $ | 0.00",
+      "money_cents": [
+        0
+      ]
+    },
+    "76": {
+      "label": "76. | Defaulted Receivables (charge-offs) | 74 | $ | 1,309,417.89",
+      "money_cents": [
+        130941789
+      ]
+    },
+    "77": {
+      "label": "77. | Recoveries | 78 | $ | 345,715.96",
+      "money_cents": [
+        34571596
+      ]
+    }
+  }
+}

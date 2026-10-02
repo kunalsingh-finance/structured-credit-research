@@ -1,0 +1,3001 @@
+{
+  "method": "regularized multinomial logistic competing-event model with development-only calibration",
+  "features": [
+    "log_balance",
+    "credit_score",
+    "orig_ltv_pct",
+    "interest_rate_pct",
+    "age_months",
+    "remaining_months",
+    "delinquency_days",
+    "disclosure_lag_months"
+  ],
+  "splits": {
+    "training": {
+      "n": 904502,
+      "period_start": "2024-06-01",
+      "period_end": "2025-06-30",
+      "max_label_acceptance": "2025-07-15T12:30:39+00:00",
+      "deals": [
+        "CAOT-2024-2"
+      ]
+    },
+    "calibration": {
+      "n": 151482,
+      "period_start": "2025-09-01",
+      "period_end": "2025-11-30",
+      "max_label_acceptance": "2025-12-15T12:35:45+00:00",
+      "deals": [
+        "CAOT-2024-2"
+      ]
+    },
+    "later_months": {
+      "n": 293318,
+      "period_start": "2026-02-01",
+      "period_end": "2026-08-31",
+      "max_label_acceptance": "2026-09-15T13:38:20+00:00",
+      "deals": [
+        "CAOT-2024-2"
+      ]
+    },
+    "unseen_deal": {
+      "n": 377266,
+      "period_start": "2026-02-01",
+      "period_end": "2026-08-31",
+      "max_label_acceptance": "2026-09-15T14:08:21+00:00",
+      "deals": [
+        "CAOT-2025-2"
+      ]
+    }
+  },
+  "evaluations": {
+    "later_months": {
+      "constant_baseline": {
+        "n": 293318,
+        "log_loss": 0.10606657985300622,
+        "events": {
+          "default": {
+            "observed_events": 935,
+            "observed_rate": 0.0031876666280282835,
+            "predicted_rate": 0.001742389483750781,
+            "brier": 0.0031795942355206087,
+            "auc": 0.5,
+            "average_precision": 0.0031876666280282835,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.0038183553797899905
+              },
+              {
+                "bin": 2,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.002897858993590618
+              },
+              {
+                "bin": 3,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.003920632756034366
+              },
+              {
+                "bin": 4,
+                "n": 29331,
+                "predicted": 0.0017423894837507803,
+                "observed": 0.0028638641710136033
+              },
+              {
+                "bin": 5,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.003136506204827492
+              },
+              {
+                "bin": 6,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.0029660439110868676
+              },
+              {
+                "bin": 7,
+                "n": 29331,
+                "predicted": 0.0017423894837507803,
+                "observed": 0.002727489686679622
+              },
+              {
+                "bin": 8,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.002829674076094368
+              },
+              {
+                "bin": 9,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.0037501704622937408
+              },
+              {
+                "bin": 10,
+                "n": 29332,
+                "predicted": 0.00174238948375078,
+                "observed": 0.0029660439110868676
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 124036971,
+                "observed_event_balance_cents": 201897460,
+                "eligible_balance_cents": 71187855408
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 119110432,
+                "observed_event_balance_cents": 288225911,
+                "eligible_balance_cents": 68360394250
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 113502923,
+                "observed_event_balance_cents": 179924478,
+                "eligible_balance_cents": 65142107524
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 108493346,
+                "observed_event_balance_cents": 203453641,
+                "eligible_balance_cents": 62266988381
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 103746277,
+                "observed_event_balance_cents": 284527997,
+                "eligible_balance_cents": 59542529280
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 99092004,
+                "observed_event_balance_cents": 230622125,
+                "eligible_balance_cents": 56871328045
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 94409007,
+                "observed_event_balance_cents": 226659085,
+                "eligible_balance_cents": 54183641138
+              }
+            ],
+            "balance_mae_cents": 121845676.71428572
+          },
+          "prepayment": {
+            "observed_events": 4839,
+            "observed_rate": 0.0164974532759667,
+            "predicted_rate": 0.01791366548554182,
+            "brier": 0.016227292968396544,
+            "auc": 0.5,
+            "average_precision": 0.0164974532759667,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.015546161189144961
+              },
+              {
+                "bin": 2,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.016262102822855583
+              },
+              {
+                "bin": 3,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.01615982544661121
+              },
+              {
+                "bin": 4,
+                "n": 29331,
+                "predicted": 0.01791366548554182,
+                "observed": 0.016126282772493266
+              },
+              {
+                "bin": 5,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.015614346106641211
+              },
+              {
+                "bin": 6,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.016568934951588708
+              },
+              {
+                "bin": 7,
+                "n": 29331,
+                "predicted": 0.01791366548554182,
+                "observed": 0.01581944018274181
+              },
+              {
+                "bin": 8,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.01823946543024683
+              },
+              {
+                "bin": 9,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.016671212327833085
+              },
+              {
+                "bin": 10,
+                "n": 29332,
+                "predicted": 0.01791366548554182,
+                "observed": 0.01796672576026183
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 1275235428,
+                "observed_event_balance_cents": 886589622,
+                "eligible_balance_cents": 71187855408
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 1224585235,
+                "observed_event_balance_cents": 1006840375,
+                "eligible_balance_cents": 68360394250
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 1166933923,
+                "observed_event_balance_cents": 898562800,
+                "eligible_balance_cents": 65142107524
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 1115430001,
+                "observed_event_balance_cents": 828940594,
+                "eligible_balance_cents": 62266988381
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 1066624952,
+                "observed_event_balance_cents": 725682988,
+                "eligible_balance_cents": 59542529280
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 1018773946,
+                "observed_event_balance_cents": 724203958,
+                "eligible_balance_cents": 56871328045
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 970627622,
+                "observed_event_balance_cents": 692524471,
+                "eligible_balance_cents": 54183641138
+              }
+            ],
+            "balance_mae_cents": 296409471.28571427
+          }
+        }
+      },
+      "delinquency_transition_baseline": {
+        "n": 293318,
+        "log_loss": 0.09377114873536045,
+        "events": {
+          "default": {
+            "observed_events": 935,
+            "observed_rate": 0.0031876666280282835,
+            "predicted_rate": 0.0038953908079215668,
+            "brier": 0.0027188490717617747,
+            "auc": 0.9735059927348608,
+            "average_precision": 0.16796658014550983,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 29332,
+                "predicted": 6.349555052841376e-05,
+                "observed": 0.00010227737624437475
+              },
+              {
+                "bin": 2,
+                "n": 29332,
+                "predicted": 6.349555052841376e-05,
+                "observed": 0.00017046229374062457
+              },
+              {
+                "bin": 3,
+                "n": 29332,
+                "predicted": 6.349555052841376e-05,
+                "observed": 0.00010227737624437475
+              },
+              {
+                "bin": 4,
+                "n": 29331,
+                "predicted": 6.349555052841378e-05,
+                "observed": 3.4093621083495276e-05
+              },
+              {
+                "bin": 5,
+                "n": 29332,
+                "predicted": 6.349555052841376e-05,
+                "observed": 6.818491749624983e-05
+              },
+              {
+                "bin": 6,
+                "n": 29332,
+                "predicted": 6.349555052841376e-05,
+                "observed": 6.818491749624983e-05
+              },
+              {
+                "bin": 7,
+                "n": 29331,
+                "predicted": 6.349555052841378e-05,
+                "observed": 0.00020456172650097168
+              },
+              {
+                "bin": 8,
+                "n": 29332,
+                "predicted": 6.349555052841376e-05,
+                "observed": 6.818491749624983e-05
+              },
+              {
+                "bin": 9,
+                "n": 29332,
+                "predicted": 0.0005284649542046431,
+                "observed": 0.000784126551206873
+              },
+              {
+                "bin": 10,
+                "n": 29332,
+                "predicted": 0.03791721744332172,
+                "observed": 0.030274103368334925
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 357321035,
+                "observed_event_balance_cents": 201897460,
+                "eligible_balance_cents": 71187855408
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 372219962,
+                "observed_event_balance_cents": 288225911,
+                "eligible_balance_cents": 68360394250
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 312051634,
+                "observed_event_balance_cents": 179924478,
+                "eligible_balance_cents": 65142107524
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 291115355,
+                "observed_event_balance_cents": 203453641,
+                "eligible_balance_cents": 62266988381
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 334304415,
+                "observed_event_balance_cents": 284527997,
+                "eligible_balance_cents": 59542529280
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 318933501,
+                "observed_event_balance_cents": 230622125,
+                "eligible_balance_cents": 56871328045
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 341546026,
+                "observed_event_balance_cents": 226659085,
+                "eligible_balance_cents": 54183641138
+              }
+            ],
+            "balance_mae_cents": 101740175.85714285
+          },
+          "prepayment": {
+            "observed_events": 4839,
+            "observed_rate": 0.0164974532759667,
+            "predicted_rate": 0.017464440721181942,
+            "brier": 0.016209086177921852,
+            "auc": 0.545163665872328,
+            "average_precision": 0.018121036957647236,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 29332,
+                "predicted": 0.007682568082517579,
+                "observed": 0.0064434747033956085
+              },
+              {
+                "bin": 2,
+                "n": 29332,
+                "predicted": 0.014984363229022463,
+                "observed": 0.012239192690576845
+              },
+              {
+                "bin": 3,
+                "n": 29332,
+                "predicted": 0.018997197551397175,
+                "observed": 0.017591708714032456
+              },
+              {
+                "bin": 4,
+                "n": 29331,
+                "predicted": 0.018997197551397175,
+                "observed": 0.017626402100167058
+              },
+              {
+                "bin": 5,
+                "n": 29332,
+                "predicted": 0.018997197551397175,
+                "observed": 0.017387153961543708
+              },
+              {
+                "bin": 6,
+                "n": 29332,
+                "predicted": 0.018997197551397175,
+                "observed": 0.01789854084276558
+              },
+              {
+                "bin": 7,
+                "n": 29331,
+                "predicted": 0.018997197551397175,
+                "observed": 0.017592308479083562
+              },
+              {
+                "bin": 8,
+                "n": 29332,
+                "predicted": 0.018997197551397175,
+                "observed": 0.020012273285149325
+              },
+              {
+                "bin": 9,
+                "n": 29332,
+                "predicted": 0.018997197551397175,
+                "observed": 0.01878494477021683
+              },
+              {
+                "bin": 10,
+                "n": 29332,
+                "predicted": 0.018997197551397175,
+                "observed": 0.019398609027683075
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 1219852666,
+                "observed_event_balance_cents": 886589622,
+                "eligible_balance_cents": 71187855408
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 1171440462,
+                "observed_event_balance_cents": 1006840375,
+                "eligible_balance_cents": 68360394250
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 1096517510,
+                "observed_event_balance_cents": 898562800,
+                "eligible_balance_cents": 65142107524
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 1070185342,
+                "observed_event_balance_cents": 828940594,
+                "eligible_balance_cents": 62266988381
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 1016820872,
+                "observed_event_balance_cents": 725682988,
+                "eligible_balance_cents": 59542529280
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 970362009,
+                "observed_event_balance_cents": 724203958,
+                "eligible_balance_cents": 56871328045
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 918958890,
+                "observed_event_balance_cents": 692524471,
+                "eligible_balance_cents": 54183641138
+              }
+            ],
+            "balance_mae_cents": 242970420.42857143
+          }
+        }
+      },
+      "calibrated_multinomial": {
+        "n": 293318,
+        "log_loss": 0.09077313972007428,
+        "events": {
+          "default": {
+            "observed_events": 935,
+            "observed_rate": 0.0031876666280282835,
+            "predicted_rate": 0.003250910561672299,
+            "brier": 0.0025218325523223947,
+            "auc": 0.9783574181992374,
+            "average_precision": 0.32773904144910565,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 29332,
+                "predicted": 4.8015521427032486e-05,
+                "observed": 3.4092458748124914e-05
+              },
+              {
+                "bin": 2,
+                "n": 29332,
+                "predicted": 6.227332560436331e-05,
+                "observed": 6.818491749624983e-05
+              },
+              {
+                "bin": 3,
+                "n": 29332,
+                "predicted": 7.180536321805384e-05,
+                "observed": 3.4092458748124914e-05
+              },
+              {
+                "bin": 4,
+                "n": 29331,
+                "predicted": 8.069877308120362e-05,
+                "observed": 0.0001363744843339811
+              },
+              {
+                "bin": 5,
+                "n": 29332,
+                "predicted": 8.979803713824434e-05,
+                "observed": 3.4092458748124914e-05
+              },
+              {
+                "bin": 6,
+                "n": 29332,
+                "predicted": 0.00010019132941954603,
+                "observed": 0.00017046229374062457
+              },
+              {
+                "bin": 7,
+                "n": 29331,
+                "predicted": 0.00011325012282298127,
+                "observed": 0.00010228086325048584
+              },
+              {
+                "bin": 8,
+                "n": 29332,
+                "predicted": 0.0001320920981805695,
+                "observed": 0.00030683212873312425
+              },
+              {
+                "bin": 9,
+                "n": 29332,
+                "predicted": 0.00017822160136307837,
+                "observed": 0.0004432019637256239
+              },
+              {
+                "bin": 10,
+                "n": 29332,
+                "predicted": 0.03163254439359421,
+                "observed": 0.030546843038319924
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 293944498,
+                "observed_event_balance_cents": 201897460,
+                "eligible_balance_cents": 71187855408
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 290007316,
+                "observed_event_balance_cents": 288225911,
+                "eligible_balance_cents": 68360394250
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 227607601,
+                "observed_event_balance_cents": 179924478,
+                "eligible_balance_cents": 65142107524
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 219485931,
+                "observed_event_balance_cents": 203453641,
+                "eligible_balance_cents": 62266988381
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 225672853,
+                "observed_event_balance_cents": 284527997,
+                "eligible_balance_cents": 59542529280
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 243812398,
+                "observed_event_balance_cents": 230622125,
+                "eligible_balance_cents": 56871328045
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 248020020,
+                "observed_event_balance_cents": 226659085,
+                "eligible_balance_cents": 54183641138
+              }
+            ],
+            "balance_mae_cents": 35850029.71428572
+          },
+          "prepayment": {
+            "observed_events": 4839,
+            "observed_rate": 0.0164974532759667,
+            "predicted_rate": 0.014813962549422351,
+            "brier": 0.015974246229170038,
+            "auc": 0.6184394516954724,
+            "average_precision": 0.052793199240455495,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 29332,
+                "predicted": 0.004700151227687447,
+                "observed": 0.008625392063275603
+              },
+              {
+                "bin": 2,
+                "n": 29332,
+                "predicted": 0.0075717159475957715,
+                "observed": 0.013227873994272468
+              },
+              {
+                "bin": 3,
+                "n": 29332,
+                "predicted": 0.009125333014588474,
+                "observed": 0.012852856948043093
+              },
+              {
+                "bin": 4,
+                "n": 29331,
+                "predicted": 0.010435204863618626,
+                "observed": 0.013705635675565101
+              },
+              {
+                "bin": 5,
+                "n": 29332,
+                "predicted": 0.01174523915541377,
+                "observed": 0.013568798581753716
+              },
+              {
+                "bin": 6,
+                "n": 29332,
+                "predicted": 0.013113973964710706,
+                "observed": 0.013364243829264967
+              },
+              {
+                "bin": 7,
+                "n": 29331,
+                "predicted": 0.014690139779094636,
+                "observed": 0.012887388769561215
+              },
+              {
+                "bin": 8,
+                "n": 29332,
+                "predicted": 0.016744579588236747,
+                "observed": 0.014114277921723714
+              },
+              {
+                "bin": 9,
+                "n": 29332,
+                "predicted": 0.02007037164336859,
+                "observed": 0.017250784126551205
+              },
+              {
+                "bin": 10,
+                "n": 29332,
+                "predicted": 0.0399427628058703,
+                "observed": 0.045377062593754264
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 779133705,
+                "observed_event_balance_cents": 886589622,
+                "eligible_balance_cents": 71187855408
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 751476898,
+                "observed_event_balance_cents": 1006840375,
+                "eligible_balance_cents": 68360394250
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 721443388,
+                "observed_event_balance_cents": 898562800,
+                "eligible_balance_cents": 65142107524
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 694737762,
+                "observed_event_balance_cents": 828940594,
+                "eligible_balance_cents": 62266988381
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 667853676,
+                "observed_event_balance_cents": 725682988,
+                "eligible_balance_cents": 59542529280
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 641648017,
+                "observed_event_balance_cents": 724203958,
+                "eligible_balance_cents": 56871328045
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 615868036,
+                "observed_event_balance_cents": 692524471,
+                "eligible_balance_cents": 54183641138
+              }
+            ],
+            "balance_mae_cents": 127311903.71428572
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "200 fixed-seed loan-cluster bootstrap draws, percentile 95% interval",
+        "loans": 44910,
+        "intervals": {
+          "default_actual": {
+            "lower": 0.0029570047747666498,
+            "upper": 0.0033971196494394706
+          },
+          "default_brier": {
+            "lower": 0.0023737751508692007,
+            "upper": 0.002669233100447008
+          },
+          "default_brier_lift": {
+            "lower": 0.0005450250943684964,
+            "upper": 0.0007383814055018592
+          },
+          "prepayment_actual": {
+            "lower": 0.016062168827800715,
+            "upper": 0.016961167122911742
+          },
+          "prepayment_brier": {
+            "lower": 0.015542517799871656,
+            "upper": 0.01642014070308054
+          },
+          "prepayment_brier_lift": {
+            "lower": 0.00022446575531212464,
+            "upper": 0.00028851031560929235
+          }
+        }
+      }
+    },
+    "unseen_deal": {
+      "constant_baseline": {
+        "n": 377266,
+        "log_loss": 0.10839776814760138,
+        "events": {
+          "default": {
+            "observed_events": 413,
+            "observed_rate": 0.001094718315459119,
+            "predicted_rate": 0.0017423894837507805,
+            "brier": 0.0010939393852111535,
+            "auc": 0.5,
+            "average_precision": 0.001094718315459119,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 37727,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0013518170010867548
+              },
+              {
+                "bin": 2,
+                "n": 37727,
+                "predicted": 0.001742389483750781,
+                "observed": 0.001113261059718504
+              },
+              {
+                "bin": 3,
+                "n": 37726,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0010867836505327891
+              },
+              {
+                "bin": 4,
+                "n": 37727,
+                "predicted": 0.001742389483750781,
+                "observed": 0.001298804569671588
+              },
+              {
+                "bin": 5,
+                "n": 37726,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0007687006308646556
+              },
+              {
+                "bin": 6,
+                "n": 37727,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0011397672754260874
+              },
+              {
+                "bin": 7,
+                "n": 37726,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0009542490590044001
+              },
+              {
+                "bin": 8,
+                "n": 37727,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0010867548440109205
+              },
+              {
+                "bin": 9,
+                "n": 37726,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0010072628956157557
+              },
+              {
+                "bin": 10,
+                "n": 37727,
+                "predicted": 0.001742389483750781,
+                "observed": 0.0011397672754260874
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 170929800,
+                "observed_event_balance_cents": 89306847,
+                "eligible_balance_cents": 98100798461
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 165026313,
+                "observed_event_balance_cents": 88442989,
+                "eligible_balance_cents": 94712642931
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 158341401,
+                "observed_event_balance_cents": 90237036,
+                "eligible_balance_cents": 90876008387
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 152259902,
+                "observed_event_balance_cents": 79539383,
+                "eligible_balance_cents": 87385686952
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 146407695,
+                "observed_event_balance_cents": 94072386,
+                "eligible_balance_cents": 84026962164
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 140860018,
+                "observed_event_balance_cents": 92482705,
+                "eligible_balance_cents": 80843014497
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 135109079,
+                "observed_event_balance_cents": 131639045,
+                "eligible_balance_cents": 77542409561
+              }
+            ],
+            "balance_mae_cents": 57601973.85714286
+          },
+          "prepayment": {
+            "observed_events": 7693,
+            "observed_rate": 0.02039144794389105,
+            "predicted_rate": 0.017913665485541824,
+            "brier": 0.019981776200553532,
+            "auc": 0.5,
+            "average_precision": 0.02039144794389105,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 37727,
+                "predicted": 0.01791366548554182,
+                "observed": 0.020754366899037823
+              },
+              {
+                "bin": 2,
+                "n": 37727,
+                "predicted": 0.01791366548554182,
+                "observed": 0.02025074880059374
+              },
+              {
+                "bin": 3,
+                "n": 37726,
+                "predicted": 0.01791366548554182,
+                "observed": 0.019853681810952657
+              },
+              {
+                "bin": 4,
+                "n": 37727,
+                "predicted": 0.01791366548554182,
+                "observed": 0.019906167996395156
+              },
+              {
+                "bin": 5,
+                "n": 37726,
+                "predicted": 0.01791366548554182,
+                "observed": 0.021338069236070616
+              },
+              {
+                "bin": 6,
+                "n": 37727,
+                "predicted": 0.01791366548554182,
+                "observed": 0.020224242584886157
+              },
+              {
+                "bin": 7,
+                "n": 37726,
+                "predicted": 0.01791366548554182,
+                "observed": 0.01937655728145046
+              },
+              {
+                "bin": 8,
+                "n": 37727,
+                "predicted": 0.01791366548554182,
+                "observed": 0.020674848251915075
+              },
+              {
+                "bin": 9,
+                "n": 37726,
+                "predicted": 0.01791366548554182,
+                "observed": 0.020595875523511636
+              },
+              {
+                "bin": 10,
+                "n": 37727,
+                "predicted": 0.01791366548554182,
+                "observed": 0.02093991040899091
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 1757344887,
+                "observed_event_balance_cents": 1132633629,
+                "eligible_balance_cents": 98100798461
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 1696650603,
+                "observed_event_balance_cents": 1292068194,
+                "eligible_balance_cents": 94712642931
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 1627922415,
+                "observed_event_balance_cents": 1230181572,
+                "eligible_balance_cents": 90876008387
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 1565397964,
+                "observed_event_balance_cents": 1182060451,
+                "eligible_balance_cents": 87385686952
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 1505230892,
+                "observed_event_balance_cents": 1065198095,
+                "eligible_balance_cents": 84026962164
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 1448194719,
+                "observed_event_balance_cents": 1075513452,
+                "eligible_balance_cents": 80843014497
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 1389068786,
+                "observed_event_balance_cents": 954825212,
+                "eligible_balance_cents": 77542409561
+              }
+            ],
+            "balance_mae_cents": 436761380.14285713
+          }
+        }
+      },
+      "delinquency_transition_baseline": {
+        "n": 377266,
+        "log_loss": 0.10308958493154007,
+        "events": {
+          "default": {
+            "observed_events": 413,
+            "observed_rate": 0.001094718315459119,
+            "predicted_rate": 0.0012380835716769517,
+            "brier": 0.0008930970838855671,
+            "auc": 0.9701134196686052,
+            "average_precision": 0.193247666136801,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 37727,
+                "predicted": 6.349555052841378e-05,
+                "observed": 0.0
+              },
+              {
+                "bin": 2,
+                "n": 37727,
+                "predicted": 6.349555052841378e-05,
+                "observed": 0.00015903729424550058
+              },
+              {
+                "bin": 3,
+                "n": 37726,
+                "predicted": 6.349555052841378e-05,
+                "observed": 0.0
+              },
+              {
+                "bin": 4,
+                "n": 37727,
+                "predicted": 6.349555052841378e-05,
+                "observed": 2.6506215707583428e-05
+              },
+              {
+                "bin": 5,
+                "n": 37726,
+                "predicted": 6.349555052841378e-05,
+                "observed": 5.3013836611355566e-05
+              },
+              {
+                "bin": 6,
+                "n": 37727,
+                "predicted": 6.349555052841378e-05,
+                "observed": 2.6506215707583428e-05
+              },
+              {
+                "bin": 7,
+                "n": 37726,
+                "predicted": 6.349555052841378e-05,
+                "observed": 7.952075491703334e-05
+              },
+              {
+                "bin": 8,
+                "n": 37727,
+                "predicted": 6.349555052841378e-05,
+                "observed": 7.951864712275029e-05
+              },
+              {
+                "bin": 9,
+                "n": 37726,
+                "predicted": 6.349555052841378e-05,
+                "observed": 5.3013836611355566e-05
+              },
+              {
+                "bin": 10,
+                "n": 37727,
+                "predicted": 0.011809251226479967,
+                "observed": 0.010469955204495455
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 111155484,
+                "observed_event_balance_cents": 89306847,
+                "eligible_balance_cents": 98100798461
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 126122816,
+                "observed_event_balance_cents": 88442989,
+                "eligible_balance_cents": 94712642931
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 120080539,
+                "observed_event_balance_cents": 90237036,
+                "eligible_balance_cents": 90876008387
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 108264446,
+                "observed_event_balance_cents": 79539383,
+                "eligible_balance_cents": 87385686952
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 121806897,
+                "observed_event_balance_cents": 94072386,
+                "eligible_balance_cents": 84026962164
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 125296957,
+                "observed_event_balance_cents": 92482705,
+                "eligible_balance_cents": 80843014497
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 129592404,
+                "observed_event_balance_cents": 131639045,
+                "eligible_balance_cents": 77542409561
+              }
+            ],
+            "balance_mae_cents": 25813204.85714286
+          },
+          "prepayment": {
+            "observed_events": 7693,
+            "observed_rate": 0.02039144794389105,
+            "predicted_rate": 0.018194769102147915,
+            "brier": 0.019974702599095114,
+            "auc": 0.5160759815587558,
+            "average_precision": 0.021057872367335445,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 37727,
+                "predicted": 0.01097299813627086,
+                "observed": 0.014366368913510218
+              },
+              {
+                "bin": 2,
+                "n": 37727,
+                "predicted": 0.018997197551397175,
+                "observed": 0.02088689797757574
+              },
+              {
+                "bin": 3,
+                "n": 37726,
+                "predicted": 0.01899719755139718,
+                "observed": 0.020542861686900282
+              },
+              {
+                "bin": 4,
+                "n": 37727,
+                "predicted": 0.018997197551397175,
+                "observed": 0.02056882338908474
+              },
+              {
+                "bin": 5,
+                "n": 37726,
+                "predicted": 0.01899719755139718,
+                "observed": 0.021682659174044425
+              },
+              {
+                "bin": 6,
+                "n": 37727,
+                "predicted": 0.018997197551397175,
+                "observed": 0.021629072017388076
+              },
+              {
+                "bin": 7,
+                "n": 37726,
+                "predicted": 0.01899719755139718,
+                "observed": 0.019164501935005036
+              },
+              {
+                "bin": 8,
+                "n": 37727,
+                "predicted": 0.018997197551397175,
+                "observed": 0.021761603095925994
+              },
+              {
+                "bin": 9,
+                "n": 37726,
+                "predicted": 0.01899719755139718,
+                "observed": 0.02139108307268197
+              },
+              {
+                "bin": 10,
+                "n": 37727,
+                "predicted": 0.018997197551397175,
+                "observed": 0.021920640390171494
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 1789046715,
+                "observed_event_balance_cents": 1132633629,
+                "eligible_balance_cents": 98100798461
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 1727385113,
+                "observed_event_balance_cents": 1292068194,
+                "eligible_balance_cents": 94712642931
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 1624139130,
+                "observed_event_balance_cents": 1230181572,
+                "eligible_balance_cents": 90876008387
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 1594379377,
+                "observed_event_balance_cents": 1182060451,
+                "eligible_balance_cents": 87385686952
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 1530084421,
+                "observed_event_balance_cents": 1065198095,
+                "eligible_balance_cents": 84026962164
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 1471215866,
+                "observed_event_balance_cents": 1075513452,
+                "eligible_balance_cents": 80843014497
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 1405956451,
+                "observed_event_balance_cents": 954825212,
+                "eligible_balance_cents": 77542409561
+              }
+            ],
+            "balance_mae_cents": 458532352.5714286
+          }
+        }
+      },
+      "calibrated_multinomial": {
+        "n": 377266,
+        "log_loss": 0.0953464044405231,
+        "events": {
+          "default": {
+            "observed_events": 413,
+            "observed_rate": 0.001094718315459119,
+            "predicted_rate": 0.001358888442107075,
+            "brier": 0.0008665134245967984,
+            "auc": 0.9813194063138755,
+            "average_precision": 0.3167039681973266,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 37727,
+                "predicted": 6.252682079314512e-05,
+                "observed": 2.6506215707583428e-05
+              },
+              {
+                "bin": 2,
+                "n": 37727,
+                "predicted": 8.115200215652498e-05,
+                "observed": 0.0
+              },
+              {
+                "bin": 3,
+                "n": 37726,
+                "predicted": 9.341078279546467e-05,
+                "observed": 2.6506918305677783e-05
+              },
+              {
+                "bin": 4,
+                "n": 37727,
+                "predicted": 0.00010481518722822792,
+                "observed": 2.6506215707583428e-05
+              },
+              {
+                "bin": 5,
+                "n": 37726,
+                "predicted": 0.00011640180314711579,
+                "observed": 0.0
+              },
+              {
+                "bin": 6,
+                "n": 37727,
+                "predicted": 0.0001291120104306607,
+                "observed": 0.00010602486283033371
+              },
+              {
+                "bin": 7,
+                "n": 37726,
+                "predicted": 0.00014430693986057437,
+                "observed": 0.0
+              },
+              {
+                "bin": 8,
+                "n": 37727,
+                "predicted": 0.00016439409479071743,
+                "observed": 0.00015903729424550058
+              },
+              {
+                "bin": 9,
+                "n": 37726,
+                "predicted": 0.00019753425050789456,
+                "observed": 0.00021205534644542227
+              },
+              {
+                "bin": 10,
+                "n": 37727,
+                "predicted": 0.01249510107565374,
+                "observed": 0.010390436557372705
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 123267152,
+                "observed_event_balance_cents": 89306847,
+                "eligible_balance_cents": 98100798461
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 134921627,
+                "observed_event_balance_cents": 88442989,
+                "eligible_balance_cents": 94712642931
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 114179023,
+                "observed_event_balance_cents": 90237036,
+                "eligible_balance_cents": 90876008387
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 107473708,
+                "observed_event_balance_cents": 79539383,
+                "eligible_balance_cents": 87385686952
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 107984241,
+                "observed_event_balance_cents": 94072386,
+                "eligible_balance_cents": 84026962164
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 127035393,
+                "observed_event_balance_cents": 92482705,
+                "eligible_balance_cents": 80843014497
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 122748452,
+                "observed_event_balance_cents": 131639045,
+                "eligible_balance_cents": 77542409561
+              }
+            ],
+            "balance_mae_cents": 27095770.14285714
+          },
+          "prepayment": {
+            "observed_events": 7693,
+            "observed_rate": 0.02039144794389105,
+            "predicted_rate": 0.019748321741493696,
+            "brier": 0.01934417244597252,
+            "auc": 0.6816491727705337,
+            "average_precision": 0.08844961177267162,
+            "calibration": [
+              {
+                "bin": 1,
+                "n": 37727,
+                "predicted": 0.006632077686038713,
+                "observed": 0.013571182442282715
+              },
+              {
+                "bin": 2,
+                "n": 37727,
+                "predicted": 0.0092572093738485,
+                "observed": 0.01290852704959313
+              },
+              {
+                "bin": 3,
+                "n": 37726,
+                "predicted": 0.010749916219505657,
+                "observed": 0.012617293113502624
+              },
+              {
+                "bin": 4,
+                "n": 37727,
+                "predicted": 0.012084078449960444,
+                "observed": 0.011980809499827709
+              },
+              {
+                "bin": 5,
+                "n": 37726,
+                "predicted": 0.013431367327813427,
+                "observed": 0.011053384933467634
+              },
+              {
+                "bin": 6,
+                "n": 37727,
+                "predicted": 0.014923341543079907,
+                "observed": 0.011344660322845708
+              },
+              {
+                "bin": 7,
+                "n": 37726,
+                "predicted": 0.016769429936861428,
+                "observed": 0.01134496103483009
+              },
+              {
+                "bin": 8,
+                "n": 37727,
+                "predicted": 0.01957825529363172,
+                "observed": 0.012590452461102129
+              },
+              {
+                "bin": 9,
+                "n": 37726,
+                "predicted": 0.02695097961436401,
+                "observed": 0.023511636537136192
+              },
+              {
+                "bin": 10,
+                "n": 37727,
+                "predicted": 0.06710626797365354,
+                "observed": 0.08299096138044372
+              }
+            ],
+            "monthly_balance_predictions": [
+              {
+                "period": "2026-02",
+                "predicted_balance_cents": 1244911401,
+                "observed_event_balance_cents": 1132633629,
+                "eligible_balance_cents": 98100798461
+              },
+              {
+                "period": "2026-03",
+                "predicted_balance_cents": 1200879358,
+                "observed_event_balance_cents": 1292068194,
+                "eligible_balance_cents": 94712642931
+              },
+              {
+                "period": "2026-04",
+                "predicted_balance_cents": 1148883731,
+                "observed_event_balance_cents": 1230181572,
+                "eligible_balance_cents": 90876008387
+              },
+              {
+                "period": "2026-05",
+                "predicted_balance_cents": 1105307737,
+                "observed_event_balance_cents": 1182060451,
+                "eligible_balance_cents": 87385686952
+              },
+              {
+                "period": "2026-06",
+                "predicted_balance_cents": 1061286470,
+                "observed_event_balance_cents": 1065198095,
+                "eligible_balance_cents": 84026962164
+              },
+              {
+                "period": "2026-07",
+                "predicted_balance_cents": 1020440068,
+                "observed_event_balance_cents": 1075513452,
+                "eligible_balance_cents": 80843014497
+              },
+              {
+                "period": "2026-08",
+                "predicted_balance_cents": 977699146,
+                "observed_event_balance_cents": 954825212,
+                "eligible_balance_cents": 77542409561
+              }
+            ],
+            "balance_mae_cents": 63339443.71428572
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "200 fixed-seed loan-cluster bootstrap draws, percentile 95% interval",
+        "loans": 58860,
+        "intervals": {
+          "default_actual": {
+            "lower": 0.0009993242987439645,
+            "upper": 0.0012011536685548486
+          },
+          "default_brier": {
+            "lower": 0.0007942539028662077,
+            "upper": 0.0009371430409565894
+          },
+          "default_brier_lift": {
+            "lower": 0.0001829037268642826,
+            "upper": 0.0002691937167758621
+          },
+          "prepayment_actual": {
+            "lower": 0.020005454931734914,
+            "upper": 0.020786910009476092
+          },
+          "prepayment_brier": {
+            "lower": 0.01897197104991323,
+            "upper": 0.01969706991715404
+          },
+          "prepayment_brier_lift": {
+            "lower": 0.0005904586178306232,
+            "upper": 0.000685388452001592
+          }
+        }
+      }
+    }
+  },
+  "baseline_probabilities": [
+    0.9803439450307074,
+    0.0017423894837507808,
+    0.017913665485541817
+  ],
+  "recovery_cohorts": {
+    "available": true,
+    "deal": "CAOT-2024-2",
+    "loans": 1905,
+    "censored_loans": 8,
+    "observation_months": 12,
+    "default_principal_cents": 4113415135,
+    "recovery_cents": 1630610561,
+    "observed_recovery_fraction": 0.39641283641068725,
+    "median_recovery_flow_lag_months": 1,
+    "curve": [
+      {
+        "lag_months": 0,
+        "period_recovery_cents": 551788998,
+        "cumulative_recovery_fraction": 0.13414376616280915
+      },
+      {
+        "lag_months": 1,
+        "period_recovery_cents": 400348428,
+        "cumulative_recovery_fraction": 0.23147127016150293
+      },
+      {
+        "lag_months": 2,
+        "period_recovery_cents": 169613464,
+        "cumulative_recovery_fraction": 0.27270549000885125
+      },
+      {
+        "lag_months": 3,
+        "period_recovery_cents": 125726608,
+        "cumulative_recovery_fraction": 0.30327050809570183
+      },
+      {
+        "lag_months": 4,
+        "period_recovery_cents": 98756583,
+        "cumulative_recovery_fraction": 0.32727892440158485
+      },
+      {
+        "lag_months": 5,
+        "period_recovery_cents": 80051183,
+        "cumulative_recovery_fraction": 0.3467399270898049
+      },
+      {
+        "lag_months": 6,
+        "period_recovery_cents": 62006980,
+        "cumulative_recovery_fraction": 0.36181425777731524
+      },
+      {
+        "lag_months": 7,
+        "period_recovery_cents": 31974878,
+        "cumulative_recovery_fraction": 0.36958757434046347
+      },
+      {
+        "lag_months": 8,
+        "period_recovery_cents": 28422035,
+        "cumulative_recovery_fraction": 0.3764971699118329
+      },
+      {
+        "lag_months": 9,
+        "period_recovery_cents": 20138821,
+        "cumulative_recovery_fraction": 0.3813930582039345
+      },
+      {
+        "lag_months": 10,
+        "period_recovery_cents": 21986718,
+        "cumulative_recovery_fraction": 0.38673818318607417
+      },
+      {
+        "lag_months": 11,
+        "period_recovery_cents": 13196172,
+        "cumulative_recovery_fraction": 0.3899462649300531
+      },
+      {
+        "lag_months": 12,
+        "period_recovery_cents": 26599693,
+        "cumulative_recovery_fraction": 0.39641283641068725
+      }
+    ],
+    "limitation": "Realized twelve-month recovery fraction for complete seasoned default records. It is not ultimate recovery; late flows and other-originator behavior remain uncertain."
+  },
+  "training_periods": "2024-06-01 to 2025-06-30",
+  "holdout_periods": "2026-02-01 to 2026-08-31",
+  "eligible_loan_months": 2475386,
+  "excluded_loan_months": 1350329,
+  "coefficients_standardized": [
+    [
+      0.38253263578365787,
+      -0.07682811830813369,
+      -0.13410750556640277,
+      0.012280698322582969,
+      0.13468515761275676,
+      -0.08407897894452637,
+      -0.21020747433143142,
+      0.0027688144302514257,
+      -0.006367503102567505
+    ],
+    [
+      0.029275628364090756,
+      0.08176760116535059,
+      0.16028173843523622,
+      0.06340616791607484,
+      -0.14031322570252086,
+      0.09038922551252411,
+      0.6183114831876256,
+      0.00093032096430576,
+      0.02741149611015273
+    ],
+    [
+      -0.41180826414775096,
+      -0.0049394828572149685,
+      -0.02617423286883324,
+      -0.07568686623865563,
+      0.005628068089765461,
+      -0.00631024656799317,
+      -0.4081040088561993,
+      -0.0036991353945572273,
+      -0.021043993007585686
+    ]
+  ],
+  "forecast": {
+    "period_end": "2026-08-31",
+    "as_of": "2026-09-15T14:08:21+00:00",
+    "active_loans": 47562,
+    "target_collection_period_start": "2026-10-01",
+    "disclosure_lag_months": 2,
+    "previously_defaulted_positive_balance_loans": 19,
+    "previously_defaulted_balance_cents": 26483616,
+    "reinstated_default_hazard_multiplier": 2.0,
+    "balance_cents": 74497025215,
+    "monthly_default_probability": 0.0021724933185432696,
+    "monthly_prepayment_probability": 0.012731360256466338,
+    "annual_default_rate": 0.025924188401745284,
+    "annual_prepayment_rate": 0.14266474498098625,
+    "annual_default_probability": 0.024035624956007733,
+    "annual_prepayment_probability": 0.14085484069954926,
+    "observed_recovery_flow_ratio": 0.30373956484938847,
+    "weighted_apr": 0.09507322226042662,
+    "weighted_remaining_months": 45.715661638342375
+  },
+  "limitations": [
+    "Conditional monthly hazards use observed beginning exposure for eligibility and dollar-error evaluation. They do not predict the undisclosed live fleet's eligibility.",
+    "All predictors come from an earlier accession accepted before the target collection month. Current-period payments, ending balances and chargeoffs are outcomes only.",
+    "The later-month and unseen-deal tests are withheld from fitting and calibration; the two deals are from the same originator and do not establish other-originator generalization.",
+    "Public reporting delays leave a gap between the latest collateral snapshot and today's date. Scenario projections start at that snapshot and include the unreported interval.",
+    "Observed aggregate recovery/default flow ratio is censored and mixes vintages. Ultimate recoveries and recovery timing remain scenario assumptions.",
+    "Logistic hazards have constant modeled monthly rates in the aggregate runoff scenarios; no claim of causal macroeconomic stress forecasting is made.",
+    "Reinstated positive-balance loans remain in collateral. Their redefault hazard is an explicit two-times central hazard assumption; a first-default model cannot estimate redefault.",
+    "Loan-cluster bootstrap intervals condition on fitted models and observed calendar months. They exclude macroeconomic, parameter-fitting and calibration uncertainty."
+  ],
+  "cashflow_validation": {
+    "method": "Frozen conditional model mapped to a publicly known origin fleet and projected across the unreported bridge; compared to future actual servicing cash",
+    "recovery_benchmark": {
+      "available": true,
+      "deal": "CAOT-2024-2",
+      "loans": 612,
+      "censored_loans": 1,
+      "observation_months": 12,
+      "default_principal_cents": 1469377092,
+      "recovery_cents": 605466397,
+      "observed_recovery_fraction": 0.41205651040597546,
+      "median_recovery_flow_lag_months": 1,
+      "curve": [
+        {
+          "lag_months": 0,
+          "period_recovery_cents": 255648068,
+          "cumulative_recovery_fraction": 0.17398397551715744
+        },
+        {
+          "lag_months": 1,
+          "period_recovery_cents": 131334098,
+          "cumulative_recovery_fraction": 0.26336477416649423
+        },
+        {
+          "lag_months": 2,
+          "period_recovery_cents": 62672890,
+          "cumulative_recovery_fraction": 0.30601746716220074
+        },
+        {
+          "lag_months": 3,
+          "period_recovery_cents": 32741670,
+          "cumulative_recovery_fraction": 0.32830015428061404
+        },
+        {
+          "lag_months": 4,
+          "period_recovery_cents": 28641813,
+          "cumulative_recovery_fraction": 0.3477926406926725
+        },
+        {
+          "lag_months": 5,
+          "period_recovery_cents": 24839069,
+          "cumulative_recovery_fraction": 0.3646971297685101
+        },
+        {
+          "lag_months": 6,
+          "period_recovery_cents": 22100440,
+          "cumulative_recovery_fraction": 0.3797378161384865
+        },
+        {
+          "lag_months": 7,
+          "period_recovery_cents": 15067380,
+          "cumulative_recovery_fraction": 0.389992079718635
+        },
+        {
+          "lag_months": 8,
+          "period_recovery_cents": 6473123,
+          "cumulative_recovery_fraction": 0.3943974315069831
+        },
+        {
+          "lag_months": 9,
+          "period_recovery_cents": 8267202,
+          "cumulative_recovery_fraction": 0.40002376258633005
+        },
+        {
+          "lag_months": 10,
+          "period_recovery_cents": 11224768,
+          "cumulative_recovery_fraction": 0.407662896244472
+        },
+        {
+          "lag_months": 11,
+          "period_recovery_cents": 3175597,
+          "cumulative_recovery_fraction": 0.40982408210839316
+        },
+        {
+          "lag_months": 12,
+          "period_recovery_cents": 3280279,
+          "cumulative_recovery_fraction": 0.41205651040597546
+        }
+      ],
+      "limitation": "Realized twelve-month recovery fraction for complete seasoned default records. It is not ultimate recovery; late flows and other-originator behavior remain uncertain."
+    },
+    "monthly": [
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-02-28",
+        "origin_date": "2026-02-01",
+        "source_period": "2025-12-31",
+        "source_accepted": "2026-01-15T13:31:23+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-03-16",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.981522942823938,
+          "uncapped_collection_ratio": 0.981522942823938,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 124514411,
+            "observed_cents": 191021869,
+            "error_cents": -66507458
+          },
+          "principal_collections": {
+            "forecast_cents": 2801917472,
+            "observed_cents": 2629299143,
+            "error_cents": 172618329
+          },
+          "interest_collections": {
+            "forecast_cents": 660537283,
+            "observed_cents": 655077358,
+            "error_cents": 5459925
+          },
+          "ending_pool": {
+            "forecast_cents": 68386037910,
+            "observed_cents": 68530977735,
+            "error_cents": -144939825
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-02-28",
+        "origin_date": "2026-02-01",
+        "source_period": "2025-12-31",
+        "source_accepted": "2026-01-15T13:31:23+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-03-16",
+        "assumptions": {
+          "annual_default_rate": 0.05704200742016349,
+          "annual_prepayment_rate": 0.12453149378394453,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.981522942823938,
+          "uncapped_collection_ratio": 0.981522942823938,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 348328137,
+            "observed_cents": 191021869,
+            "error_cents": 157306268
+          },
+          "principal_collections": {
+            "forecast_cents": 2323405411,
+            "observed_cents": 2629299143,
+            "error_cents": -305893732
+          },
+          "interest_collections": {
+            "forecast_cents": 664367639,
+            "observed_cents": 655077358,
+            "error_cents": 9290281
+          },
+          "ending_pool": {
+            "forecast_cents": 68917090288,
+            "observed_cents": 68530977735,
+            "error_cents": 386112553
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-03-31",
+        "origin_date": "2026-03-01",
+        "source_period": "2026-01-31",
+        "source_accepted": "2026-02-17T14:04:36+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-04-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 1.0,
+          "uncapped_collection_ratio": 1.0357690018725427,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 119461237,
+            "observed_cents": 292459928,
+            "error_cents": -172998691
+          },
+          "principal_collections": {
+            "forecast_cents": 2726328032,
+            "observed_cents": 2936355370,
+            "error_cents": -210027338
+          },
+          "interest_collections": {
+            "forecast_cents": 647006655,
+            "observed_cents": 648805916,
+            "error_cents": -1799261
+          },
+          "ending_pool": {
+            "forecast_cents": 65564108998,
+            "observed_cents": 65302162437,
+            "error_cents": 261946561
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-03-31",
+        "origin_date": "2026-03-01",
+        "source_period": "2026-01-31",
+        "source_accepted": "2026-02-17T14:04:36+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-04-15",
+        "assumptions": {
+          "annual_default_rate": 0.056671015493936897,
+          "annual_prepayment_rate": 0.1250695127092861,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 1.0,
+          "uncapped_collection_ratio": 1.0357690018725427,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 331944273,
+            "observed_cents": 292459928,
+            "error_cents": 39484345
+          },
+          "principal_collections": {
+            "forecast_cents": 2271003212,
+            "observed_cents": 2936355370,
+            "error_cents": -665352158
+          },
+          "interest_collections": {
+            "forecast_cents": 650740281,
+            "observed_cents": 648805916,
+            "error_cents": 1934365
+          },
+          "ending_pool": {
+            "forecast_cents": 66070767842,
+            "observed_cents": 65302162437,
+            "error_cents": 768605405
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-04-30",
+        "origin_date": "2026-04-01",
+        "source_period": "2026-02-28",
+        "source_accepted": "2026-03-16T12:36:30+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-05-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9623963729382892,
+          "uncapped_collection_ratio": 0.9623963729382892,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 114689556,
+            "observed_cents": 163101675,
+            "error_cents": -48412119
+          },
+          "principal_collections": {
+            "forecast_cents": 2657476823,
+            "observed_cents": 2704344794,
+            "error_cents": -46867971
+          },
+          "interest_collections": {
+            "forecast_cents": 598835241,
+            "observed_cents": 618284311,
+            "error_cents": -19449070
+          },
+          "ending_pool": {
+            "forecast_cents": 62896314832,
+            "observed_cents": 62434715968,
+            "error_cents": 461598864
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-04-30",
+        "origin_date": "2026-04-01",
+        "source_period": "2026-02-28",
+        "source_accepted": "2026-03-16T12:36:30+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-05-15",
+        "assumptions": {
+          "annual_default_rate": 0.05182819239161492,
+          "annual_prepayment_rate": 0.1258818963076797,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9623963729382892,
+          "uncapped_collection_ratio": 0.9623963729382892,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 290866440,
+            "observed_cents": 163101675,
+            "error_cents": 127764765
+          },
+          "principal_collections": {
+            "forecast_cents": 2227202239,
+            "observed_cents": 2704344794,
+            "error_cents": -477142555
+          },
+          "interest_collections": {
+            "forecast_cents": 602606554,
+            "observed_cents": 618284311,
+            "error_cents": -15677757
+          },
+          "ending_pool": {
+            "forecast_cents": 63426726905,
+            "observed_cents": 62434715968,
+            "error_cents": 992010937
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-05-31",
+        "origin_date": "2026-05-01",
+        "source_period": "2026-03-31",
+        "source_accepted": "2026-04-15T16:04:06+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-06-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9905073824899138,
+          "uncapped_collection_ratio": 0.9905073824899138,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 109212469,
+            "observed_cents": 181724328,
+            "error_cents": -72511859
+          },
+          "principal_collections": {
+            "forecast_cents": 2569745871,
+            "observed_cents": 2531033076,
+            "error_cents": 38712795
+          },
+          "interest_collections": {
+            "forecast_cents": 588047319,
+            "observed_cents": 595344968,
+            "error_cents": -7297649
+          },
+          "ending_pool": {
+            "forecast_cents": 59855961978,
+            "observed_cents": 59721958564,
+            "error_cents": 134003414
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-05-31",
+        "origin_date": "2026-05-01",
+        "source_period": "2026-03-31",
+        "source_accepted": "2026-04-15T16:04:06+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-06-15",
+        "assumptions": {
+          "annual_default_rate": 0.04837853886274683,
+          "annual_prepayment_rate": 0.12673299856599904,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9905073824899138,
+          "uncapped_collection_ratio": 0.9905073824899138,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 258161758,
+            "observed_cents": 181724328,
+            "error_cents": 76437430
+          },
+          "principal_collections": {
+            "forecast_cents": 2166274801,
+            "observed_cents": 2531033076,
+            "error_cents": -364758275
+          },
+          "interest_collections": {
+            "forecast_cents": 591947430,
+            "observed_cents": 595344968,
+            "error_cents": -3397538
+          },
+          "ending_pool": {
+            "forecast_cents": 60387572200,
+            "observed_cents": 59721958564,
+            "error_cents": 665613636
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-06-30",
+        "origin_date": "2026-06-01",
+        "source_period": "2026-04-30",
+        "source_accepted": "2026-05-15T14:12:49+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-07-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.988860336407642,
+          "uncapped_collection_ratio": 0.988860336407642,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 104382603,
+            "observed_cents": 278102992,
+            "error_cents": -173720389
+          },
+          "principal_collections": {
+            "forecast_cents": 2499173893,
+            "observed_cents": 2392443254,
+            "error_cents": 106730639
+          },
+          "interest_collections": {
+            "forecast_cents": 561968193,
+            "observed_cents": 561566368,
+            "error_cents": 401825
+          },
+          "ending_pool": {
+            "forecast_cents": 57148762190,
+            "observed_cents": 57051412318,
+            "error_cents": 97349872
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-06-30",
+        "origin_date": "2026-06-01",
+        "source_period": "2026-04-30",
+        "source_accepted": "2026-05-15T14:12:49+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-07-15",
+        "assumptions": {
+          "annual_default_rate": 0.05204934895745527,
+          "annual_prepayment_rate": 0.12741812438476652,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.988860336407642,
+          "uncapped_collection_ratio": 0.988860336407642,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 265820395,
+            "observed_cents": 278102992,
+            "error_cents": -12282597
+          },
+          "principal_collections": {
+            "forecast_cents": 2116425649,
+            "observed_cents": 2392443254,
+            "error_cents": -276017605
+          },
+          "interest_collections": {
+            "forecast_cents": 565366005,
+            "observed_cents": 561566368,
+            "error_cents": 3799637
+          },
+          "ending_pool": {
+            "forecast_cents": 57611489800,
+            "observed_cents": 57051412318,
+            "error_cents": 560077482
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-07-31",
+        "origin_date": "2026-07-01",
+        "source_period": "2026-05-31",
+        "source_accepted": "2026-06-15T14:10:40+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-08-17",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9939837636383941,
+          "uncapped_collection_ratio": 0.9939837636383941,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 99807657,
+            "observed_cents": 227591864,
+            "error_cents": -127784207
+          },
+          "principal_collections": {
+            "forecast_cents": 2432737500,
+            "observed_cents": 2464284571,
+            "error_cents": -31547071
+          },
+          "interest_collections": {
+            "forecast_cents": 541031426,
+            "observed_cents": 560784435,
+            "error_cents": -19753009
+          },
+          "ending_pool": {
+            "forecast_cents": 54583012333,
+            "observed_cents": 54359535883,
+            "error_cents": 223476450
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-07-31",
+        "origin_date": "2026-07-01",
+        "source_period": "2026-05-31",
+        "source_accepted": "2026-06-15T14:10:40+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-08-17",
+        "assumptions": {
+          "annual_default_rate": 0.062047471514270994,
+          "annual_prepayment_rate": 0.12802868877951534,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9939837636383941,
+          "uncapped_collection_ratio": 0.9939837636383941,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 304155141,
+            "observed_cents": 227591864,
+            "error_cents": 76563277
+          },
+          "principal_collections": {
+            "forecast_cents": 2066950969,
+            "observed_cents": 2464284571,
+            "error_cents": -397333602
+          },
+          "interest_collections": {
+            "forecast_cents": 543533117,
+            "observed_cents": 560784435,
+            "error_cents": -17251318
+          },
+          "ending_pool": {
+            "forecast_cents": 54921029055,
+            "observed_cents": 54359535883,
+            "error_cents": 561493172
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-08-31",
+        "origin_date": "2026-08-01",
+        "source_period": "2026-06-30",
+        "source_accepted": "2026-07-15T14:35:03+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-09-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9783866457324331,
+          "uncapped_collection_ratio": 0.9783866457324331,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 95284859,
+            "observed_cents": 206102707,
+            "error_cents": -110817848
+          },
+          "principal_collections": {
+            "forecast_cents": 2367099831,
+            "observed_cents": 2355969544,
+            "error_cents": 11130287
+          },
+          "interest_collections": {
+            "forecast_cents": 509122392,
+            "observed_cents": 522578715,
+            "error_cents": -13456323
+          },
+          "ending_pool": {
+            "forecast_cents": 52056998413,
+            "observed_cents": 51797463632,
+            "error_cents": 259534781
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "target_period": "2026-08-31",
+        "origin_date": "2026-08-01",
+        "source_period": "2026-06-30",
+        "source_accepted": "2026-07-15T14:35:03+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-09-15",
+        "assumptions": {
+          "annual_default_rate": 0.06376807332451505,
+          "annual_prepayment_rate": 0.12901143357732817,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9783866457324331,
+          "uncapped_collection_ratio": 0.9783866457324331,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 298584236,
+            "observed_cents": 206102707,
+            "error_cents": 92481529
+          },
+          "principal_collections": {
+            "forecast_cents": 2022390292,
+            "observed_cents": 2355969544,
+            "error_cents": -333579252
+          },
+          "interest_collections": {
+            "forecast_cents": 511286737,
+            "observed_cents": 522578715,
+            "error_cents": -11291978
+          },
+          "ending_pool": {
+            "forecast_cents": 52353400346,
+            "observed_cents": 51797463632,
+            "error_cents": 555936714
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-02-28",
+        "origin_date": "2026-02-01",
+        "source_period": "2025-12-31",
+        "source_accepted": "2026-01-15T13:36:49+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-03-16",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.993548433826822,
+          "uncapped_collection_ratio": 0.993548433826822,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 170772358,
+            "observed_cents": 74339005,
+            "error_cents": 96433353
+          },
+          "principal_collections": {
+            "forecast_cents": 3567950145,
+            "observed_cents": 3297592659,
+            "error_cents": 270357486
+          },
+          "interest_collections": {
+            "forecast_cents": 756149911,
+            "observed_cents": 738556725,
+            "error_cents": 17593186
+          },
+          "ending_pool": {
+            "forecast_cents": 94263393717,
+            "observed_cents": 94753436350,
+            "error_cents": -490042633
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-02-28",
+        "origin_date": "2026-02-01",
+        "source_period": "2025-12-31",
+        "source_accepted": "2026-01-15T13:36:49+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-03-16",
+        "assumptions": {
+          "annual_default_rate": 0.0174376710529269,
+          "annual_prepayment_rate": 0.14375329980216442,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.993548433826822,
+          "uncapped_collection_ratio": 0.993548433826822,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 143429696,
+            "observed_cents": 74339005,
+            "error_cents": 69090691
+          },
+          "principal_collections": {
+            "forecast_cents": 3097512724,
+            "observed_cents": 3297592659,
+            "error_cents": -200079935
+          },
+          "interest_collections": {
+            "forecast_cents": 762342228,
+            "observed_cents": 738556725,
+            "error_cents": 23785503
+          },
+          "ending_pool": {
+            "forecast_cents": 95297020198,
+            "observed_cents": 94753436350,
+            "error_cents": 543583848
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-03-31",
+        "origin_date": "2026-03-01",
+        "source_period": "2026-01-31",
+        "source_accepted": "2026-02-17T14:14:17+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-04-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 1.0,
+          "uncapped_collection_ratio": 1.0255275970964062,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 164469979,
+            "observed_cents": 81502153,
+            "error_cents": 82967826
+          },
+          "principal_collections": {
+            "forecast_cents": 3465310655,
+            "observed_cents": 3750686782,
+            "error_cents": -285376127
+          },
+          "interest_collections": {
+            "forecast_cents": 733588355,
+            "observed_cents": 743485889,
+            "error_cents": -9897534
+          },
+          "ending_pool": {
+            "forecast_cents": 90749527378,
+            "observed_cents": 90921247415,
+            "error_cents": -171720037
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-03-31",
+        "origin_date": "2026-03-01",
+        "source_period": "2026-01-31",
+        "source_accepted": "2026-02-17T14:14:17+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-04-15",
+        "assumptions": {
+          "annual_default_rate": 0.019491451351320473,
+          "annual_prepayment_rate": 0.14370297248474925,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 1.0,
+          "uncapped_collection_ratio": 1.0255275970964062,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 154527752,
+            "observed_cents": 81502153,
+            "error_cents": 73025599
+          },
+          "principal_collections": {
+            "forecast_cents": 3011205722,
+            "observed_cents": 3750686782,
+            "error_cents": -739481060
+          },
+          "interest_collections": {
+            "forecast_cents": 739408357,
+            "observed_cents": 743485889,
+            "error_cents": -4077532
+          },
+          "ending_pool": {
+            "forecast_cents": 91713531354,
+            "observed_cents": 90921247415,
+            "error_cents": 792283939
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-04-30",
+        "origin_date": "2026-04-01",
+        "source_period": "2026-02-28",
+        "source_accepted": "2026-03-16T12:41:39+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-05-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9582921866891686,
+          "uncapped_collection_ratio": 0.9582921866891686,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 158788152,
+            "observed_cents": 87586488,
+            "error_cents": 71201664
+          },
+          "principal_collections": {
+            "forecast_cents": 3368880178,
+            "observed_cents": 3402830093,
+            "error_cents": -33949915
+          },
+          "interest_collections": {
+            "forecast_cents": 679583011,
+            "observed_cents": 717121753,
+            "error_cents": -37538742
+          },
+          "ending_pool": {
+            "forecast_cents": 87578226581,
+            "observed_cents": 87430830834,
+            "error_cents": 147395747
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-04-30",
+        "origin_date": "2026-04-01",
+        "source_period": "2026-02-28",
+        "source_accepted": "2026-03-16T12:41:39+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-05-15",
+        "assumptions": {
+          "annual_default_rate": 0.0175188767038634,
+          "annual_prepayment_rate": 0.14353140347152366,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9582921866891686,
+          "uncapped_collection_ratio": 0.9582921866891686,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 133993890,
+            "observed_cents": 87586488,
+            "error_cents": 46407402
+          },
+          "principal_collections": {
+            "forecast_cents": 2930230849,
+            "observed_cents": 3402830093,
+            "error_cents": -472599244
+          },
+          "interest_collections": {
+            "forecast_cents": 685163464,
+            "observed_cents": 717121753,
+            "error_cents": -31958289
+          },
+          "ending_pool": {
+            "forecast_cents": 88541162612,
+            "observed_cents": 87430830834,
+            "error_cents": 1110331778
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-05-31",
+        "origin_date": "2026-05-01",
+        "source_period": "2026-03-31",
+        "source_accepted": "2026-04-15T16:13:37+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-06-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9976377186195846,
+          "uncapped_collection_ratio": 0.9976377186195846,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 152346621,
+            "observed_cents": 79548180,
+            "error_cents": 72798441
+          },
+          "principal_collections": {
+            "forecast_cents": 3248781329,
+            "observed_cents": 3283220716,
+            "error_cents": -34439387
+          },
+          "interest_collections": {
+            "forecast_cents": 679638744,
+            "observed_cents": 687554514,
+            "error_cents": -7915770
+          },
+          "ending_pool": {
+            "forecast_cents": 84002669657,
+            "observed_cents": 84068061938,
+            "error_cents": -65392281
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-05-31",
+        "origin_date": "2026-05-01",
+        "source_period": "2026-03-31",
+        "source_accepted": "2026-04-15T16:13:37+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-06-15",
+        "assumptions": {
+          "annual_default_rate": 0.01706134885364098,
+          "annual_prepayment_rate": 0.14351599624998174,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9976377186195846,
+          "uncapped_collection_ratio": 0.9976377186195846,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 125179221,
+            "observed_cents": 79548180,
+            "error_cents": 45631041
+          },
+          "principal_collections": {
+            "forecast_cents": 2828215830,
+            "observed_cents": 3283220716,
+            "error_cents": -455004886
+          },
+          "interest_collections": {
+            "forecast_cents": 685261011,
+            "observed_cents": 687554514,
+            "error_cents": -2293503
+          },
+          "ending_pool": {
+            "forecast_cents": 84933142640,
+            "observed_cents": 84068061938,
+            "error_cents": 865080702
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-06-30",
+        "origin_date": "2026-06-01",
+        "source_period": "2026-04-30",
+        "source_accepted": "2026-05-15T14:38:06+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-07-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 1.0,
+          "uncapped_collection_ratio": 1.0014104798601624,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 146464230,
+            "observed_cents": 96470208,
+            "error_cents": 49994022
+          },
+          "principal_collections": {
+            "forecast_cents": 3143345886,
+            "observed_cents": 3089799010,
+            "error_cents": 53546876
+          },
+          "interest_collections": {
+            "forecast_cents": 655959272,
+            "observed_cents": 659421754,
+            "error_cents": -3462482
+          },
+          "ending_pool": {
+            "forecast_cents": 80737401579,
+            "observed_cents": 80881792720,
+            "error_cents": -144391141
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-06-30",
+        "origin_date": "2026-06-01",
+        "source_period": "2026-04-30",
+        "source_accepted": "2026-05-15T14:38:06+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-07-15",
+        "assumptions": {
+          "annual_default_rate": 0.017613692386675272,
+          "annual_prepayment_rate": 0.1432899124115863,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 1.0,
+          "uncapped_collection_ratio": 1.0014104798601624,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 124272086,
+            "observed_cents": 96470208,
+            "error_cents": 27801878
+          },
+          "principal_collections": {
+            "forecast_cents": 2737282310,
+            "observed_cents": 3089799010,
+            "error_cents": -352516700
+          },
+          "interest_collections": {
+            "forecast_cents": 661361051,
+            "observed_cents": 659421754,
+            "error_cents": 1939297
+          },
+          "ending_pool": {
+            "forecast_cents": 81627647952,
+            "observed_cents": 80881792720,
+            "error_cents": 745855232
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-07-31",
+        "origin_date": "2026-07-01",
+        "source_period": "2026-05-31",
+        "source_accepted": "2026-06-15T14:38:27+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-08-17",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9967616730694598,
+          "uncapped_collection_ratio": 0.9967616730694598,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 140796481,
+            "observed_cents": 93361360,
+            "error_cents": 47435121
+          },
+          "principal_collections": {
+            "forecast_cents": 3044639193,
+            "observed_cents": 3210207327,
+            "error_cents": -165568134
+          },
+          "interest_collections": {
+            "forecast_cents": 629449343,
+            "observed_cents": 646374257,
+            "error_cents": -16924914
+          },
+          "ending_pool": {
+            "forecast_cents": 77589915075,
+            "observed_cents": 77578224033,
+            "error_cents": 11691042
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-07-31",
+        "origin_date": "2026-07-01",
+        "source_period": "2026-05-31",
+        "source_accepted": "2026-06-15T14:38:27+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-08-17",
+        "assumptions": {
+          "annual_default_rate": 0.02177149193631739,
+          "annual_prepayment_rate": 0.1430326767950485,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9967616730694598,
+          "uncapped_collection_ratio": 0.9967616730694598,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 147902529,
+            "observed_cents": 93361360,
+            "error_cents": 54541169
+          },
+          "principal_collections": {
+            "forecast_cents": 2650954077,
+            "observed_cents": 3210207327,
+            "error_cents": -559253250
+          },
+          "interest_collections": {
+            "forecast_cents": 634320787,
+            "observed_cents": 646374257,
+            "error_cents": -12053470
+          },
+          "ending_pool": {
+            "forecast_cents": 78393924469,
+            "observed_cents": 77578224033,
+            "error_cents": 815700436
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-08-31",
+        "origin_date": "2026-08-01",
+        "source_period": "2026-06-30",
+        "source_accepted": "2026-07-15T15:02:52+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-09-15",
+        "assumptions": {
+          "annual_default_rate": 0.020895497399560342,
+          "annual_prepayment_rate": 0.1951543483026207,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9928890048061568,
+          "uncapped_collection_ratio": 0.9928890048061568,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "constant_baseline",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 135411580,
+            "observed_cents": 130941789,
+            "error_cents": 4469791
+          },
+          "principal_collections": {
+            "forecast_cents": 2953661743,
+            "observed_cents": 2950205828,
+            "error_cents": 3455915
+          },
+          "interest_collections": {
+            "forecast_cents": 603556619,
+            "observed_cents": 617378569,
+            "error_cents": -13821950
+          },
+          "ending_pool": {
+            "forecast_cents": 74598899553,
+            "observed_cents": 74497076416,
+            "error_cents": 101823137
+          }
+        }
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "target_period": "2026-08-31",
+        "origin_date": "2026-08-01",
+        "source_period": "2026-06-30",
+        "source_accepted": "2026-07-15T15:02:52+00:00",
+        "bridge_months": 2,
+        "forecast_distribution_date": "2026-09-15",
+        "assumptions": {
+          "annual_default_rate": 0.021246649558398976,
+          "annual_prepayment_rate": 0.14301042396877683,
+          "recovery_fraction": 0.41205651040597546,
+          "recovery_lag_months": 1,
+          "interest_collection_factor": 0.9928890048061568,
+          "uncapped_collection_ratio": 0.9928890048061568,
+          "reinstated_default_hazard_multiplier": 2.0
+        },
+        "method": "calibrated_model",
+        "metrics": {
+          "gross_defaults": {
+            "forecast_cents": 138789377,
+            "observed_cents": 130941789,
+            "error_cents": 7847588
+          },
+          "principal_collections": {
+            "forecast_cents": 2575337371,
+            "observed_cents": 2950205828,
+            "error_cents": -374868457
+          },
+          "interest_collections": {
+            "forecast_cents": 608270325,
+            "observed_cents": 617378569,
+            "error_cents": -9108244
+          },
+          "ending_pool": {
+            "forecast_cents": 75378982469,
+            "observed_cents": 74497076416,
+            "error_cents": 881906053
+          }
+        }
+      }
+    ],
+    "scores": [
+      {
+        "deal_id": "CAOT-2024-2",
+        "quantity": "gross_defaults",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 110393224.42857143,
+        "model_mae_cents": 83188601.57142857
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "quantity": "principal_collections",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 88233490.0,
+        "model_mae_cents": 402868168.4285714
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "quantity": "interest_collections",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 9659580.285714285,
+        "model_mae_cents": 8948982.0
+      },
+      {
+        "deal_id": "CAOT-2024-2",
+        "quantity": "ending_pool",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 226121395.2857143,
+        "model_mae_cents": 641407128.4285715
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "quantity": "gross_defaults",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 60757174.0,
+        "model_mae_cents": 46335052.571428575
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "quantity": "principal_collections",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 120956262.85714285,
+        "model_mae_cents": 450543361.71428573
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "quantity": "interest_collections",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 15307796.857142856,
+        "model_mae_cents": 12173691.142857144
+      },
+      {
+        "deal_id": "CAOT-2025-2",
+        "quantity": "ending_pool",
+        "unit": "USD cents",
+        "months": 7,
+        "baseline_mae_cents": 161779431.14285713,
+        "model_mae_cents": 822105998.2857143
+      }
+    ],
+    "limitations": [
+      "Both models use the same disclosed term/APR annuity and collection-factor assumptions; only event hazards differ.",
+      "Scores measure certificate cash errors and expose source-taxonomy/model error together. They do not resolve loan-tape cash reconciliation.",
+      "Recoveries from defaults before the forecast origin are not included in these short-window diagnostics; recovery forecasting is therefore not scored.",
+      "Reported origin collateral is the mapped positive tape balance; small certificate mismatches remain visible rather than normalized away.",
+      "Model superiority is metric-specific. A smaller default error does not establish better principal, interest or investment outcomes."
+    ]
+  },
+  "build_identity": {
+    "panel_rows": 3825715,
+    "panel_sha256": "7827fd0fd86aac8b9b0559d24e8ae3ebfe53cd7416d8efd014cfb071eabafbae",
+    "source_fingerprint": "039d61279d3371c35f6461adf608b439ce8df3bd234e7fac71fbc5ac616afd28",
+    "protocol_sha256": "174d0fe33fe60ece9464d474b1b9adf94b8d409118097774f4ee86b2034785cd",
+    "model_code_sha256": "b2e32cae92edd843d8e4be43ddab67550508576b3e472c07909b7a266902a4e2",
+    "cash_validation_code_sha256": "9ece8efc73bb2d7d9cf9837d8f8a4f9480d10abe0cb4950dc478e34ccb617463",
+    "projection_code_sha256": "6ff7407567fbac4334c216afeea6d6af0c4e03fffdbd3b701a87999794fd3521",
+    "certificate_sha256": "9d748039fa803452dcedae74f15852acacd8e09096baf1d9008c0d7c977968af"
+  }
+}

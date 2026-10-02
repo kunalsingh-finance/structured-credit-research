@@ -1,0 +1,14 @@
+{
+  "protocol_version": 1,
+  "frozen_before_first_fit": "2026-10-02",
+  "training_deal": "CAOT-2024-2",
+  "training_last_collection_month": "2025-06",
+  "calibration_collection_months": ["2025-09", "2025-10", "2025-11"],
+  "test_collection_months": ["2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08"],
+  "unseen_deal": "CAOT-2025-2",
+  "predictors": "Latest prior loan filing accepted before target collection month starts; at most four source periods lookback",
+  "outcomes": "First default, voluntary full payoff, or survival; repurchase is excluded and post-default rows cannot return to risk",
+  "hyperparameters": {"model_C": 1.0, "calibrator_C": 1.0, "max_iterations": 350, "random_seed": 7},
+  "uncertainty": "200 loan-cluster bootstrap draws, fixed seed20261002",
+  "interpretation": "Retrospective withheld evaluation of conditional monthly hazards. Observed beginning balances define exposure, not prospective live-fleet eligibility."
+}

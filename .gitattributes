@@ -1,0 +1,7 @@
+# Preserve source/evidence bytes so recorded SHA-256 values survive checkout.
+* -text
+*.pdf binary
+*.xlsx binary
+*.jpg binary
+*.png binary
+*.gz binary

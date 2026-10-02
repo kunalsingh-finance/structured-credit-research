@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+data/raw/
+data/loan_level/
+*.duckdb
+*.parquet
+node_modules/
+tmp/
+output/qa/
+*.inspect.ndjson
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+data/loan_panel.sqlite*
+

@@ -1,0 +1,97 @@
+{
+  "results_version": "2026-10-02T12:18:59.985073+00:00",
+  "results_sha256": "80394cb846a98088377fcbdc5fd6ac9471359eb20b7c3aa27cd3a6fa742c6686",
+  "verified_at": "2026-10-02T12:37:05.541956+00:00",
+  "artifact_sha256": {
+    "output/research_report.html": "e474d24483802a93b2da7ef9065fbb42dce3c4fd847c27995263909897d6183d",
+    "output/pdf/credit_memo.pdf": "77d1f1af48cf5f28153919c25d4a354b1624d3873b46f1c0379f1ee0eeee5942",
+    "output/outputs/credit_research/cashflow_workbook.xlsx": "11a9edf55a7095de994179572e84d65c430675b4941c302a56c97f391253af99"
+  },
+  "cached_formulas": 3280,
+  "missing_formula_caches": 0,
+  "saved_formula_errors": [],
+  "xlsx_sheets": [
+    "Summary",
+    "Controls",
+    "Cashflow",
+    "Exported CF",
+    "Actuals",
+    "Loan tape",
+    "Sources",
+    "Forecast checks",
+    "Audit"
+  ],
+  "input_validations": 5,
+  "native_chart_retained": true,
+  "pdf_pages": 2,
+  "pdf_source_links": [
+    "https://www.sec.gov/Archives/edgar/data/1259380/000119312525111714/d943115dex41.htm",
+    "https://www.sec.gov/Archives/edgar/data/2063979/000206397926000047/a2025-2ex991091526.htm"
+  ],
+  "negative_guards": [
+    {
+      "builder": "scripts/build_artifacts.py",
+      "invalid_input": "BUILDING",
+      "rejected": true
+    },
+    {
+      "builder": "scripts/build_workbook.mjs",
+      "invalid_input": "BUILDING",
+      "rejected": true
+    },
+    {
+      "builder": "scripts/build_artifacts.py",
+      "invalid_input": "hash_mismatch",
+      "rejected": true
+    },
+    {
+      "builder": "scripts/build_workbook.mjs",
+      "invalid_input": "hash_mismatch",
+      "rejected": true
+    }
+  ],
+  "negative_tests_left_outputs_unchanged": true,
+  "independent_numerical_checks": {
+    "input": "output\\platform_results.json",
+    "results_sha256": "80394cb846a98088377fcbdc5fd6ac9471359eb20b7c3aa27cd3a6fa742c6686",
+    "generated_at": "2026-10-02T12:18:59.985073+00:00",
+    "valuation_date": "2026-09-15",
+    "output_sha256": "11a9edf55a7095de994179572e84d65c430675b4941c302a56c97f391253af99",
+    "run_status": "SUCCESS",
+    "independent_pv_and_repaid_wal_verified": true,
+    "terminal_arrears_verified": true,
+    "yield_change_reduced_pv": true,
+    "price_change_recalculated_gap": true,
+    "scenario_selector_verified": true,
+    "retired_class_verified": true,
+    "baseline_pv_usd": 13152885.710422017,
+    "baseline_wal_years": 3.9901946300054667,
+    "sheets": [
+      "Summary",
+      "Controls",
+      "Cashflow",
+      "Exported CF",
+      "Actuals",
+      "Loan tape",
+      "Sources",
+      "Forecast checks",
+      "Audit"
+    ],
+    "output": "C:\\Users\\perso\\Documents\\GitHub\\structured-credit-research\\output\\outputs\\credit_research\\cashflow_workbook.xlsx"
+  },
+  "native_excel_invoked": false,
+  "visual_review": "Earlier full-sheet review retained for unchanged schedules; final Summary/Forecast checks, both memo pages, dashboard controls and supplemental sections reviewed after final rebuild",
+  "browser_checks": {
+    "severe_note_loss": "82.5M USD",
+    "central_D_value_at_8pct": 93.22,
+    "central_D_value_at_8_25pct": 92.45,
+    "inputs_restored": true,
+    "supplemental_sections_verified": true,
+    "javascript_errors": []
+  },
+  "artifact_builder_sha256": {
+    "scripts/build_artifacts.py": "67f8c1314dace73b35ad5ef9d48036fdac8afe9ea89894569f6e534144de40f0",
+    "scripts/build_workbook.mjs": "af0caf8886dda31ef2342d8ab0b425d027b043f34b9fd6189f0abf939f7d116c",
+    "scripts/verify_artifacts.py": "f3f025a0b543b37ffe456e1ce700096b37b6c69266062ff4d131a66a7a70d8b2"
+  }
+}

@@ -1,0 +1,4298 @@
+{
+  "schema_version": 1,
+  "database": "loan_panel.sqlite",
+  "row_count": 3825715,
+  "source_periods": [
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-04-30",
+      "acceptance_time": "2024-05-15T13:07:06.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-05-31",
+      "acceptance_time": "2024-06-17T13:03:29.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-06-30",
+      "acceptance_time": "2024-07-15T13:42:31.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-07-31",
+      "acceptance_time": "2024-08-15T12:44:26.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-08-31",
+      "acceptance_time": "2024-09-16T12:58:50.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-09-30",
+      "acceptance_time": "2024-10-15T13:50:54.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-10-31",
+      "acceptance_time": "2024-11-15T12:49:30.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-11-30",
+      "acceptance_time": "2024-12-16T14:40:36.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-12-31",
+      "acceptance_time": "2025-01-15T15:18:55.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-01-31",
+      "acceptance_time": "2025-02-18T13:41:23.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-02-28",
+      "acceptance_time": "2025-03-17T12:33:08.000Z",
+      "row_count": 85550
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-03-31",
+      "acceptance_time": "2025-04-15T13:06:34.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-04-30",
+      "acceptance_time": "2025-05-15T13:52:20.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-05-31",
+      "acceptance_time": "2025-06-16T13:14:10.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-06-30",
+      "acceptance_time": "2025-07-15T12:30:39.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-07-31",
+      "acceptance_time": "2025-08-15T14:15:22.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-08-31",
+      "acceptance_time": "2025-09-15T14:13:35.000Z",
+      "row_count": 85548
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-09-30",
+      "acceptance_time": "2025-10-15T12:39:18.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-10-31",
+      "acceptance_time": "2025-11-17T14:43:00.000Z",
+      "row_count": 85547
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-11-30",
+      "acceptance_time": "2025-12-15T12:35:45.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-12-31",
+      "acceptance_time": "2026-01-15T13:31:23.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-01-31",
+      "acceptance_time": "2026-02-17T14:04:36.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-02-28",
+      "acceptance_time": "2026-03-16T12:36:30.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-03-31",
+      "acceptance_time": "2026-04-15T16:04:06.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-04-30",
+      "acceptance_time": "2026-05-15T14:12:49.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-05-31",
+      "acceptance_time": "2026-06-15T14:10:40.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-06-30",
+      "acceptance_time": "2026-07-15T14:35:03.000Z",
+      "row_count": 85551
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-07-31",
+      "acceptance_time": "2026-08-17T15:48:12.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-08-31",
+      "acceptance_time": "2026-09-15T13:38:20.000Z",
+      "row_count": 85552
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-04-30",
+      "acceptance_time": "2025-05-15T14:23:16.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-05-31",
+      "acceptance_time": "2025-06-16T13:41:47.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-06-30",
+      "acceptance_time": "2025-07-15T12:52:05.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-07-31",
+      "acceptance_time": "2025-08-15T14:33:00.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-08-31",
+      "acceptance_time": "2025-09-15T14:18:05.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-09-30",
+      "acceptance_time": "2025-10-15T12:43:14.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-10-31",
+      "acceptance_time": "2025-11-17T14:46:54.000Z",
+      "row_count": 79101
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-11-30",
+      "acceptance_time": "2025-12-15T12:39:18.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-12-31",
+      "acceptance_time": "2026-01-15T13:36:49.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-01-31",
+      "acceptance_time": "2026-02-17T14:14:17.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-02-28",
+      "acceptance_time": "2026-03-16T12:41:39.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-03-31",
+      "acceptance_time": "2026-04-15T16:13:37.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-04-30",
+      "acceptance_time": "2026-05-15T14:38:06.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-05-31",
+      "acceptance_time": "2026-06-15T14:38:27.000Z",
+      "row_count": 79101
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-06-30",
+      "acceptance_time": "2026-07-15T15:02:52.000Z",
+      "row_count": 79101
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-07-31",
+      "acceptance_time": "2026-08-17T15:52:50.000Z",
+      "row_count": 79102
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-08-31",
+      "acceptance_time": "2026-09-15T14:08:21.000Z",
+      "row_count": 79101
+    }
+  ],
+  "version_policy": "Canonical panel uses first accepted filing; amendments retained separately and not silently substituted.",
+  "event_definitions": {
+    "default": "First observed positive chargedoffPrincipalAmount or zeroBalanceCode4 per deal/loan.",
+    "prepayment": "Code1 zero-balance before current scheduled maturity; exclude previous default, repurchase and repeat zero-balance rows.",
+    "maturity": "Code1 zero-balance at/after current maturity month.",
+    "repurchase": "Code3 with zero-balance effective month matching reporting month.",
+    "censoring": "End of observation, missed row, transfer/sale or unknown code are not inferred payoffs.",
+    "recovery": "Source recoveredAmount is period flow; NULL preserved separately from reported0.",
+    "public_availability": "Every row retains actual filing acceptance_time; features must be lagged until accepted."
+  },
+  "comparisons": [
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-04-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-04-30",
+        "row_count": 85551,
+        "positive_balance_count": 84027,
+        "raw_begin_balance_cents": 161206800347,
+        "raw_end_balance_cents": 156112985751,
+        "positive_begin_balance_cents": 161206800347,
+        "positive_end_balance_cents": 156112985751,
+        "principal_cents": 5098862957,
+        "interest_cents": 1301190993,
+        "raw_chargeoff_cents": 0,
+        "recovery_cents": 0,
+        "adjustment_cents": -5048361,
+        "first_defaults": 9,
+        "prepayments": 1400,
+        "maturities": 0
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 84027,
+          "reported": 84026,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 161206800347,
+          "reported": 161209140006,
+          "residual": -2339659,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 156112985751,
+          "reported": 156113035098,
+          "residual": -49347,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 5098862957,
+          "reported": 5096104908,
+          "residual": 2758049,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1301190993,
+          "reported": 1430055535,
+          "residual": -128864542,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 0,
+          "reported": 0,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 0,
+          "reported": 0,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-05-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-05-31",
+        "row_count": 85551,
+        "positive_balance_count": 82448,
+        "raw_begin_balance_cents": 156112985751,
+        "raw_end_balance_cents": 151008816296,
+        "positive_begin_balance_cents": 156112985751,
+        "positive_end_balance_cents": 151008816296,
+        "principal_cents": 5094395994,
+        "interest_cents": 1329502531,
+        "raw_chargeoff_cents": 14596459,
+        "recovery_cents": 10666242,
+        "adjustment_cents": -4822998,
+        "first_defaults": 5,
+        "prepayments": 1427,
+        "maturities": 8
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 82448,
+          "reported": 82444,
+          "residual": 4,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 156112985751,
+          "reported": 156113035098,
+          "residual": -49347,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 151008816296,
+          "reported": 151009446101,
+          "residual": -629805,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 5094395994,
+          "reported": 5088992538,
+          "residual": 5403456,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1329502531,
+          "reported": 1446345612,
+          "residual": -116843081,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 14596459,
+          "reported": 14596459,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 10666242,
+          "reported": 10575742,
+          "residual": 90500,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-06-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-06-30",
+        "row_count": 85551,
+        "positive_balance_count": 80433,
+        "raw_begin_balance_cents": 151008816296,
+        "raw_end_balance_cents": 146278813072,
+        "positive_begin_balance_cents": 151008816296,
+        "positive_end_balance_cents": 146278818359,
+        "principal_cents": 4700406052,
+        "interest_cents": 1270134323,
+        "raw_chargeoff_cents": 36819596,
+        "recovery_cents": 17713546,
+        "adjustment_cents": -7222424,
+        "first_defaults": 15,
+        "prepayments": 1419,
+        "maturities": 433
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 80433,
+          "reported": 80433,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 151008816296,
+          "reported": 151009446101,
+          "residual": -629805,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 146278818359,
+          "reported": 146279232964,
+          "residual": -414605,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4700406052,
+          "reported": 4693393541,
+          "residual": 7012511,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1270134323,
+          "reported": 1381267876,
+          "residual": -111133553,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 36819596,
+          "reported": 36819596,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 17713546,
+          "reported": 17698546,
+          "residual": 15000,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-07-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-07-31",
+        "row_count": 85552,
+        "positive_balance_count": 78175,
+        "raw_begin_balance_cents": 146278813072,
+        "raw_end_balance_cents": 141366783492,
+        "positive_begin_balance_cents": 146278818359,
+        "positive_end_balance_cents": 141366789132,
+        "principal_cents": 4704155225,
+        "interest_cents": 1218687740,
+        "raw_chargeoff_cents": 214494833,
+        "recovery_cents": 49081569,
+        "adjustment_cents": -6620478,
+        "first_defaults": 87,
+        "prepayments": 1488,
+        "maturities": 519
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 78175,
+          "reported": 78171,
+          "residual": 4,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 146278818359,
+          "reported": 146279232964,
+          "residual": -414605,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 141366789132,
+          "reported": 141367222502,
+          "residual": -433370,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4704155225,
+          "reported": 4697515629,
+          "residual": 6639596,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1218687740,
+          "reported": 1325840902,
+          "residual": -107153162,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 214494833,
+          "reported": 214494833,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 49081569,
+          "reported": 49081569,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-08-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-08-31",
+        "row_count": 85552,
+        "positive_balance_count": 75851,
+        "raw_begin_balance_cents": 141366783492,
+        "raw_end_balance_cents": 136337051365,
+        "positive_begin_balance_cents": 141366789132,
+        "positive_end_balance_cents": 136337051836,
+        "principal_cents": 4702646298,
+        "interest_cents": 1225110792,
+        "raw_chargeoff_cents": 353844223,
+        "recovery_cents": 62336485,
+        "adjustment_cents": -26758394,
+        "first_defaults": 127,
+        "prepayments": 1491,
+        "maturities": 494
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 75851,
+          "reported": 75851,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 141366789132,
+          "reported": 141367222502,
+          "residual": -433370,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 136337051836,
+          "reported": 136337534038,
+          "residual": -482202,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4702646298,
+          "reported": 4697888318,
+          "residual": 4757980,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1225110792,
+          "reported": 1337761539,
+          "residual": -112650747,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 353844223,
+          "reported": 331800146,
+          "residual": 22044077,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 62336485,
+          "reported": 62143980,
+          "residual": 192505,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-09-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-09-30",
+        "row_count": 85552,
+        "positive_balance_count": 73506,
+        "raw_begin_balance_cents": 136337051365,
+        "raw_end_balance_cents": 132018127722,
+        "positive_begin_balance_cents": 136337051836,
+        "positive_end_balance_cents": 132018128301,
+        "principal_cents": 4068497307,
+        "interest_cents": 1154340743,
+        "raw_chargeoff_cents": 311220298,
+        "recovery_cents": 76593953,
+        "adjustment_cents": -60793962,
+        "first_defaults": 107,
+        "prepayments": 1252,
+        "maturities": 821
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 73506,
+          "reported": 73506,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 136337051836,
+          "reported": 136337534038,
+          "residual": -482202,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 132018128301,
+          "reported": 132018426564,
+          "residual": -298263,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4068497307,
+          "reported": 4068014598,
+          "residual": 482709,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1154340743,
+          "reported": 1255707521,
+          "residual": -101366778,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 311220298,
+          "reported": 251092876,
+          "residual": 60127422,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 76593953,
+          "reported": 76521795,
+          "residual": 72158,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-10-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-10-31",
+        "row_count": 85551,
+        "positive_balance_count": 70943,
+        "raw_begin_balance_cents": 132018127722,
+        "raw_end_balance_cents": 127300181913,
+        "positive_begin_balance_cents": 132018128301,
+        "positive_end_balance_cents": 127300214597,
+        "principal_cents": 4417379080,
+        "interest_cents": 1104542525,
+        "raw_chargeoff_cents": 362533162,
+        "recovery_cents": 97251774,
+        "adjustment_cents": -61966433,
+        "first_defaults": 142,
+        "prepayments": 1343,
+        "maturities": 890
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 70943,
+          "reported": 70942,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 132018128301,
+          "reported": 132018426564,
+          "residual": -298263,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 127300214597,
+          "reported": 127300547774,
+          "residual": -333177,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4417379080,
+          "reported": 4412322769,
+          "residual": 5056311,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1104542525,
+          "reported": 1205690379,
+          "residual": -101147854,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 362533162,
+          "reported": 305556021,
+          "residual": 56977141,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 97251774,
+          "reported": 97238708,
+          "residual": 13066,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-11-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-11-30",
+        "row_count": 85552,
+        "positive_balance_count": 68718,
+        "raw_begin_balance_cents": 127300181913,
+        "raw_end_balance_cents": 123018388379,
+        "positive_begin_balance_cents": 127300214597,
+        "positive_end_balance_cents": 123018396670,
+        "principal_cents": 3999332728,
+        "interest_cents": 1070261678,
+        "raw_chargeoff_cents": 354164749,
+        "recovery_cents": 97018405,
+        "adjustment_cents": -71703943,
+        "first_defaults": 130,
+        "prepayments": 1083,
+        "maturities": 867
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 68718,
+          "reported": 68718,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 127300214597,
+          "reported": 127300547774,
+          "residual": -333177,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 123018396670,
+          "reported": 123018539622,
+          "residual": -142952,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3999332728,
+          "reported": 3994948407,
+          "residual": 4384321,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1070261678,
+          "reported": 1170720144,
+          "residual": -100458466,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 354164749,
+          "reported": 287059745,
+          "residual": 67105004,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 97018405,
+          "reported": 96530140,
+          "residual": 488265,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2024-12-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2024-12-31",
+        "row_count": 85552,
+        "positive_balance_count": 67033,
+        "raw_begin_balance_cents": 123018388379,
+        "raw_end_balance_cents": 118880479646,
+        "positive_begin_balance_cents": 123018396670,
+        "positive_end_balance_cents": 118880487883,
+        "principal_cents": 3887541302,
+        "interest_cents": 1033111884,
+        "raw_chargeoff_cents": 342053851,
+        "recovery_cents": 85668308,
+        "adjustment_cents": -91686420,
+        "first_defaults": 126,
+        "prepayments": 1048,
+        "maturities": 327
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 67033,
+          "reported": 67032,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 123018396670,
+          "reported": 123018539622,
+          "residual": -142952,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 118880487883,
+          "reported": 118880585649,
+          "residual": -97766,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3887541302,
+          "reported": 3887114155,
+          "residual": 427147,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1033111884,
+          "reported": 1130545174,
+          "residual": -97433290,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 342053851,
+          "reported": 250839818,
+          "residual": 91214033,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 85668308,
+          "reported": 85239990,
+          "residual": 428318,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-01-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-01-31",
+        "row_count": 85552,
+        "positive_balance_count": 65219,
+        "raw_begin_balance_cents": 118880479646,
+        "raw_end_balance_cents": 114491782800,
+        "positive_begin_balance_cents": 118880487883,
+        "positive_end_balance_cents": 114491808875,
+        "principal_cents": 4141049866,
+        "interest_cents": 1046493277,
+        "raw_chargeoff_cents": 363075485,
+        "recovery_cents": 90707656,
+        "adjustment_cents": -115428505,
+        "first_defaults": 128,
+        "prepayments": 1208,
+        "maturities": 282
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 65219,
+          "reported": 65217,
+          "residual": 2,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 118880487883,
+          "reported": 118880585649,
+          "residual": -97766,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 114491808875,
+          "reported": 114491712802,
+          "residual": 96073,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4141049866,
+          "reported": 4141032679,
+          "residual": 17187,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 1046493277,
+          "reported": 1150906281,
+          "residual": -104413004,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 363075485,
+          "reported": 247840168,
+          "residual": 115235317,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 90707656,
+          "reported": 89344069,
+          "residual": 1363587,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-02-28",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-02-28",
+        "row_count": 85550,
+        "positive_balance_count": 63525,
+        "raw_begin_balance_cents": 114491782800,
+        "raw_end_balance_cents": 110498853407,
+        "positive_begin_balance_cents": 114491808875,
+        "positive_end_balance_cents": 110498879391,
+        "principal_cents": 3752293274,
+        "interest_cents": 962651076,
+        "raw_chargeoff_cents": 340530135,
+        "recovery_cents": 112242325,
+        "adjustment_cents": -99894016,
+        "first_defaults": 117,
+        "prepayments": 1236,
+        "maturities": 247
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 63525,
+          "reported": 63524,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 114491808875,
+          "reported": 114491712802,
+          "residual": 96073,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 110498879391,
+          "reported": 110498767714,
+          "residual": 111677,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3752293274,
+          "reported": 3747988330,
+          "residual": 4304944,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 962651076,
+          "reported": 1055960108,
+          "residual": -93309032,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 340530135,
+          "reported": 244956758,
+          "residual": 95573377,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 112242325,
+          "reported": 112059825,
+          "residual": 182500,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-03-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-03-31",
+        "row_count": 85552,
+        "positive_balance_count": 61533,
+        "raw_begin_balance_cents": 110498853407,
+        "raw_end_balance_cents": 106197163146,
+        "positive_begin_balance_cents": 110498879391,
+        "positive_end_balance_cents": 106197171747,
+        "principal_cents": 4007955684,
+        "interest_cents": 890732781,
+        "raw_chargeoff_cents": 389691293,
+        "recovery_cents": 91438928,
+        "adjustment_cents": -95956716,
+        "first_defaults": 146,
+        "prepayments": 1340,
+        "maturities": 420
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 61533,
+          "reported": 61532,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 110498879391,
+          "reported": 110498767714,
+          "residual": 111677,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 106197171747,
+          "reported": 106196986027,
+          "residual": 185720,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4007955684,
+          "reported": 4008108415,
+          "residual": -152731,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 890732781,
+          "reported": 985646913,
+          "residual": -94914132,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 389691293,
+          "reported": 293673272,
+          "residual": 96018021,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 91438928,
+          "reported": 91481428,
+          "residual": -42500,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-04-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-04-30",
+        "row_count": 85552,
+        "positive_balance_count": 59605,
+        "raw_begin_balance_cents": 106197163146,
+        "raw_end_balance_cents": 102206728852,
+        "positive_begin_balance_cents": 106197171747,
+        "positive_end_balance_cents": 102206737458,
+        "principal_cents": 3700729816,
+        "interest_cents": 878775678,
+        "raw_chargeoff_cents": 381590268,
+        "recovery_cents": 121959284,
+        "adjustment_cents": -91885790,
+        "first_defaults": 140,
+        "prepayments": 1211,
+        "maturities": 447
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 59605,
+          "reported": 59604,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 106197171747,
+          "reported": 106196986027,
+          "residual": 185720,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 102206737458,
+          "reported": 102206416545,
+          "residual": 320913,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3700729816,
+          "reported": 3703147438,
+          "residual": -2417622,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 878775678,
+          "reported": 969370123,
+          "residual": -90594445,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 381590268,
+          "reported": 287422044,
+          "residual": 94168224,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 121959284,
+          "reported": 121860534,
+          "residual": 98750,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-05-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-05-31",
+        "row_count": 85551,
+        "positive_balance_count": 57823,
+        "raw_begin_balance_cents": 102206728852,
+        "raw_end_balance_cents": 98362998156,
+        "positive_begin_balance_cents": 102206737458,
+        "positive_end_balance_cents": 98363021808,
+        "principal_cents": 3562371021,
+        "interest_cents": 869097619,
+        "raw_chargeoff_cents": 365954174,
+        "recovery_cents": 88050819,
+        "adjustment_cents": -84594499,
+        "first_defaults": 142,
+        "prepayments": 1095,
+        "maturities": 421
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 57823,
+          "reported": 57823,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 102206737458,
+          "reported": 102206416545,
+          "residual": 320913,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 98363021808,
+          "reported": 98362599702,
+          "residual": 422106,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3562371021,
+          "reported": 3560018949,
+          "residual": 2352072,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 869097619,
+          "reported": 961425421,
+          "residual": -92327802,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 365954174,
+          "reported": 283797894,
+          "residual": 82156280,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 88050819,
+          "reported": 88395949,
+          "residual": -345130,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-06-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-06-30",
+        "row_count": 85552,
+        "positive_balance_count": 56042,
+        "raw_begin_balance_cents": 98362998156,
+        "raw_end_balance_cents": 94669715470,
+        "positive_begin_balance_cents": 98363021808,
+        "positive_end_balance_cents": 94670137547,
+        "principal_cents": 3366333980,
+        "interest_cents": 831225610,
+        "raw_chargeoff_cents": 475095317,
+        "recovery_cents": 132403879,
+        "adjustment_cents": -148146611,
+        "first_defaults": 170,
+        "prepayments": 992,
+        "maturities": 459
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 56042,
+          "reported": 56042,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 98363021808,
+          "reported": 98362599702,
+          "residual": 422106,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 94670137547,
+          "reported": 94669255377,
+          "residual": 882170,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3366333980,
+          "reported": 3366085626,
+          "residual": 248354,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 831225610,
+          "reported": 917738923,
+          "residual": -86513313,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 475095317,
+          "reported": 327258699,
+          "residual": 147836618,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 132403879,
+          "reported": 132421067,
+          "residual": -17188,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-07-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-07-31",
+        "row_count": 85552,
+        "positive_balance_count": 54248,
+        "raw_begin_balance_cents": 94669715470,
+        "raw_end_balance_cents": 90746364536,
+        "positive_begin_balance_cents": 94670137547,
+        "positive_end_balance_cents": 90746786289,
+        "principal_cents": 3639579874,
+        "interest_cents": 802004855,
+        "raw_chargeoff_cents": 414510645,
+        "recovery_cents": 134025297,
+        "adjustment_cents": -130739585,
+        "first_defaults": 165,
+        "prepayments": 1079,
+        "maturities": 377
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 54248,
+          "reported": 54246,
+          "residual": 2,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 94670137547,
+          "reported": 94669255377,
+          "residual": 882170,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 90746786289,
+          "reported": 90746173519,
+          "residual": 612770,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3639579874,
+          "reported": 3637914769,
+          "residual": 1665105,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 802004855,
+          "reported": 886531264,
+          "residual": -84526409,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 414510645,
+          "reported": 285167089,
+          "residual": 129343556,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 134025297,
+          "reported": 133574654,
+          "residual": 450643,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-08-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-08-31",
+        "row_count": 85548,
+        "positive_balance_count": 52434,
+        "raw_begin_balance_cents": 90746364536,
+        "raw_end_balance_cents": 87079671955,
+        "positive_begin_balance_cents": 90746786289,
+        "positive_end_balance_cents": 87080085674,
+        "principal_cents": 3359675160,
+        "interest_cents": 787092289,
+        "raw_chargeoff_cents": 421441255,
+        "recovery_cents": 113801224,
+        "adjustment_cents": -114423834,
+        "first_defaults": 168,
+        "prepayments": 1119,
+        "maturities": 414
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 52434,
+          "reported": 52434,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 90746786289,
+          "reported": 90746173519,
+          "residual": 612770,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 87080085674,
+          "reported": 87079210785,
+          "residual": 874889,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3359675160,
+          "reported": 3362074389,
+          "residual": -2399229,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 787092289,
+          "reported": 870647464,
+          "residual": -83555175,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 421441255,
+          "reported": 304888345,
+          "residual": 116552910,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 113801224,
+          "reported": 113576341,
+          "residual": 224883,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-09-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-09-30",
+        "row_count": 85551,
+        "positive_balance_count": 50535,
+        "raw_begin_balance_cents": 87079671955,
+        "raw_end_balance_cents": 83747895662,
+        "positive_begin_balance_cents": 87080085674,
+        "positive_end_balance_cents": 83748042907,
+        "principal_cents": 3015604730,
+        "interest_cents": 733773617,
+        "raw_chargeoff_cents": 482967062,
+        "recovery_cents": 136201989,
+        "adjustment_cents": -166795499,
+        "first_defaults": 166,
+        "prepayments": 966,
+        "maturities": 668
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 50535,
+          "reported": 50535,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 87080085674,
+          "reported": 87079210785,
+          "residual": 874889,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 83748042907,
+          "reported": 83747413751,
+          "residual": 629156,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3015604730,
+          "reported": 3017260367,
+          "residual": -1655637,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 733773617,
+          "reported": 815526159,
+          "residual": -81752542,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 482967062,
+          "reported": 314536667,
+          "residual": 168430395,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 136201989,
+          "reported": 118330805,
+          "residual": 17871184,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-10-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-10-31",
+        "row_count": 85547,
+        "positive_balance_count": 48742,
+        "raw_begin_balance_cents": 83747895662,
+        "raw_end_balance_cents": 80399949765,
+        "positive_begin_balance_cents": 83748042907,
+        "positive_end_balance_cents": 80400174548,
+        "principal_cents": 3017554218,
+        "interest_cents": 771837876,
+        "raw_chargeoff_cents": 460975979,
+        "recovery_cents": 88818130,
+        "adjustment_cents": -130584300,
+        "first_defaults": 180,
+        "prepayments": 864,
+        "maturities": 676
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 48742,
+          "reported": 48740,
+          "residual": 2,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 83748042907,
+          "reported": 83747413751,
+          "residual": 629156,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 80400174548,
+          "reported": 80399595668,
+          "residual": 578880,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3017554218,
+          "reported": 3018855428,
+          "residual": -1301210,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 771837876,
+          "reported": 779241772,
+          "residual": -7403896,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 460975979,
+          "reported": 328962655,
+          "residual": 132013324,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 88818130,
+          "reported": 103982412,
+          "residual": -15164282,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-11-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-11-30",
+        "row_count": 85551,
+        "positive_balance_count": 47251,
+        "raw_begin_balance_cents": 80399949765,
+        "raw_end_balance_cents": 77409953460,
+        "positive_begin_balance_cents": 80400174548,
+        "positive_end_balance_cents": 77410178434,
+        "principal_cents": 2730116554,
+        "interest_cents": 760891732,
+        "raw_chargeoff_cents": 444324970,
+        "recovery_cents": 142095402,
+        "adjustment_cents": -184445219,
+        "first_defaults": 155,
+        "prepayments": 674,
+        "maturities": 557
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 47251,
+          "reported": 47251,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 80400174548,
+          "reported": 80399595668,
+          "residual": 578880,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 77410178434,
+          "reported": 77409669099,
+          "residual": 509335,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2730116554,
+          "reported": 2730957835,
+          "residual": -841281,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 760891732,
+          "reported": 767881926,
+          "residual": -6990194,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 444324970,
+          "reported": 258968734,
+          "residual": 185356236,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 142095402,
+          "reported": 141713805,
+          "residual": 381597,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2025-12-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2025-12-31",
+        "row_count": 85551,
+        "positive_balance_count": 46057,
+        "raw_begin_balance_cents": 77409953460,
+        "raw_end_balance_cents": 74339496273,
+        "positive_begin_balance_cents": 77410178434,
+        "positive_end_balance_cents": 74339512842,
+        "principal_cents": 2796767888,
+        "interest_cents": 716476691,
+        "raw_chargeoff_cents": 380741119,
+        "recovery_cents": 111844546,
+        "adjustment_cents": -107051820,
+        "first_defaults": 164,
+        "prepayments": 703,
+        "maturities": 241
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 46057,
+          "reported": 46057,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 77410178434,
+          "reported": 77409669099,
+          "residual": 509335,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 74339512842,
+          "reported": 74339270108,
+          "residual": 242734,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2796767888,
+          "reported": 2797505627,
+          "residual": -737739,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 716476691,
+          "reported": 722346593,
+          "residual": -5869902,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 380741119,
+          "reported": 272893364,
+          "residual": 107847755,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 111844546,
+          "reported": 109563694,
+          "residual": 2280852,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-01-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-01-31",
+        "row_count": 85551,
+        "positive_balance_count": 44993,
+        "raw_begin_balance_cents": 74339496273,
+        "raw_end_balance_cents": 71351488851,
+        "positive_begin_balance_cents": 74339512842,
+        "positive_end_balance_cents": 71351490166,
+        "principal_cents": 2721696133,
+        "interest_cents": 726106409,
+        "raw_chargeoff_cents": 370937379,
+        "recovery_cents": 92517485,
+        "adjustment_cents": -104626090,
+        "first_defaults": 146,
+        "prepayments": 701,
+        "maturities": 124
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 44993,
+          "reported": 44992,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 74339512842,
+          "reported": 74339270108,
+          "residual": 242734,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 71351490166,
+          "reported": 71351298747,
+          "residual": 191419,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2721696133,
+          "reported": 2725713919,
+          "residual": -4017786,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 726106409,
+          "reported": 733017170,
+          "residual": -6910761,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 370937379,
+          "reported": 262257442,
+          "residual": 108679937,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 92517485,
+          "reported": 93903721,
+          "residual": -1386236,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-02-28",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-02-28",
+        "row_count": 85551,
+        "positive_balance_count": 44012,
+        "raw_begin_balance_cents": 71351488851,
+        "raw_end_balance_cents": 68531201021,
+        "positive_begin_balance_cents": 71351490166,
+        "positive_end_balance_cents": 68531218275,
+        "principal_cents": 2629156941,
+        "interest_cents": 649754932,
+        "raw_chargeoff_cents": 321852466,
+        "recovery_cents": 92470241,
+        "adjustment_cents": -130721577,
+        "first_defaults": 113,
+        "prepayments": 699,
+        "maturities": 91
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 44012,
+          "reported": 44012,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 71351490166,
+          "reported": 71351298747,
+          "residual": 191419,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 68531218275,
+          "reported": 68530977735,
+          "residual": 240540,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2629156941,
+          "reported": 2629299143,
+          "residual": -142202,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 649754932,
+          "reported": 655077358,
+          "residual": -5322426,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 321852466,
+          "reported": 191021869,
+          "residual": 130830597,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 92470241,
+          "reported": 92162666,
+          "residual": 307575,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-03-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-03-31",
+        "row_count": 85552,
+        "positive_balance_count": 42883,
+        "raw_begin_balance_cents": 68531201021,
+        "raw_end_balance_cents": 65302448646,
+        "positive_begin_balance_cents": 68531218275,
+        "positive_end_balance_cents": 65302449946,
+        "principal_cents": 2934747529,
+        "interest_cents": 641665817,
+        "raw_chargeoff_cents": 377668096,
+        "recovery_cents": 117733096,
+        "adjustment_cents": -83663250,
+        "first_defaults": 157,
+        "prepayments": 834,
+        "maturities": 51
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 42883,
+          "reported": 42880,
+          "residual": 3,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 68531218275,
+          "reported": 68530977735,
+          "residual": 240540,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 65302449946,
+          "reported": 65302162437,
+          "residual": 287509,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2934747529,
+          "reported": 2936355370,
+          "residual": -1607841,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 641665817,
+          "reported": 648805916,
+          "residual": -7140099,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 377668096,
+          "reported": 292459928,
+          "residual": 85208168,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 117733096,
+          "reported": 111025846,
+          "residual": 6707250,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-04-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-04-30",
+        "row_count": 85552,
+        "positive_balance_count": 41905,
+        "raw_begin_balance_cents": 65302448646,
+        "raw_end_balance_cents": 62435024418,
+        "positive_begin_balance_cents": 65302449946,
+        "positive_end_balance_cents": 62435029076,
+        "principal_cents": 2701274362,
+        "interest_cents": 611653479,
+        "raw_chargeoff_cents": 262981329,
+        "recovery_cents": 88396418,
+        "adjustment_cents": -96831463,
+        "first_defaults": 113,
+        "prepayments": 706,
+        "maturities": 53
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 41905,
+          "reported": 41905,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 65302449946,
+          "reported": 65302162437,
+          "residual": 287509,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 62435029076,
+          "reported": 62434715968,
+          "residual": 313108,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2701274362,
+          "reported": 2704344794,
+          "residual": -3070432,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 611653479,
+          "reported": 618284311,
+          "residual": -6630832,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 262981329,
+          "reported": 163101675,
+          "residual": 99879654,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 88396418,
+          "reported": 95221575,
+          "residual": -6825157,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-05-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-05-31",
+        "row_count": 85551,
+        "positive_balance_count": 40969,
+        "raw_begin_balance_cents": 62435024418,
+        "raw_end_balance_cents": 59722122932,
+        "positive_begin_balance_cents": 62435029076,
+        "positive_end_balance_cents": 59722127402,
+        "principal_cents": 2525995956,
+        "interest_cents": 589210572,
+        "raw_chargeoff_cents": 274227733,
+        "recovery_cents": 89325753,
+        "adjustment_cents": -87322203,
+        "first_defaults": 135,
+        "prepayments": 689,
+        "maturities": 34
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 40969,
+          "reported": 40969,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 62435029076,
+          "reported": 62434715968,
+          "residual": 313108,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 59722127402,
+          "reported": 59721958564,
+          "residual": 168838,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2525995956,
+          "reported": 2531033076,
+          "residual": -5037120,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 589210572,
+          "reported": 595344968,
+          "residual": -6134396,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 274227733,
+          "reported": 181724328,
+          "residual": 92503405,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 89325753,
+          "reported": 88815298,
+          "residual": 510455,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-06-30",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-06-30",
+        "row_count": 85551,
+        "positive_balance_count": 40065,
+        "raw_begin_balance_cents": 59722122932,
+        "raw_end_balance_cents": 57051588028,
+        "positive_begin_balance_cents": 59722127402,
+        "positive_end_balance_cents": 57051592401,
+        "principal_cents": 2392024124,
+        "interest_cents": 556225489,
+        "raw_chargeoff_cents": 363855573,
+        "recovery_cents": 87576635,
+        "adjustment_cents": -85344793,
+        "first_defaults": 153,
+        "prepayments": 626,
+        "maturities": 28
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 40065,
+          "reported": 40065,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 59722127402,
+          "reported": 59721958564,
+          "residual": 168838,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 57051592401,
+          "reported": 57051412318,
+          "residual": 180083,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2392024124,
+          "reported": 2392443254,
+          "residual": -419130,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 556225489,
+          "reported": 561566368,
+          "residual": -5340879,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 363855573,
+          "reported": 278102992,
+          "residual": 85752581,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 87576635,
+          "reported": 76206607,
+          "residual": 11370028,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-07-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-07-31",
+        "row_count": 85552,
+        "positive_balance_count": 39147,
+        "raw_begin_balance_cents": 57051588028,
+        "raw_end_balance_cents": 54359657974,
+        "positive_begin_balance_cents": 57051592401,
+        "positive_end_balance_cents": 54359666882,
+        "principal_cents": 2462413697,
+        "interest_cents": 554579645,
+        "raw_chargeoff_cents": 314925482,
+        "recovery_cents": 76016883,
+        "adjustment_cents": -85409125,
+        "first_defaults": 131,
+        "prepayments": 634,
+        "maturities": 23
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 39147,
+          "reported": 39145,
+          "residual": 2,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 57051592401,
+          "reported": 57051412318,
+          "residual": 180083,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 54359666882,
+          "reported": 54359535883,
+          "residual": 130999,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2462413697,
+          "reported": 2464284571,
+          "residual": -1870874,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 554579645,
+          "reported": 560784435,
+          "residual": -6204790,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 314925482,
+          "reported": 227591864,
+          "residual": 87333618,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 76016883,
+          "reported": 86966834,
+          "residual": -10949951,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2024-2",
+      "period_end": "2026-08-31",
+      "statistics": {
+        "deal_id": "CAOT-2024-2",
+        "period_end": "2026-08-31",
+        "row_count": 85552,
+        "positive_balance_count": 38216,
+        "raw_begin_balance_cents": 54359657974,
+        "raw_end_balance_cents": 51797556703,
+        "positive_begin_balance_cents": 54359666882,
+        "positive_end_balance_cents": 51797727197,
+        "principal_cents": 2353001561,
+        "interest_cents": 516252159,
+        "raw_chargeoff_cents": 317860753,
+        "recovery_cents": 88677058,
+        "adjustment_cents": -108761043,
+        "first_defaults": 134,
+        "prepayments": 654,
+        "maturities": 24
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 38216,
+          "reported": 38216,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 54359666882,
+          "reported": 54359535883,
+          "residual": 130999,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 51797727197,
+          "reported": 51797463632,
+          "residual": 263565,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2353001561,
+          "reported": 2355969544,
+          "residual": -2967983,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 516252159,
+          "reported": 522578715,
+          "residual": -6326556,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 317860753,
+          "reported": 206102707,
+          "residual": 111758046,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 88677058,
+          "reported": 88358039,
+          "residual": 319019,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-04-30",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-04-30",
+        "row_count": 79102,
+        "positive_balance_count": 77605,
+        "raw_begin_balance_cents": 141057942174,
+        "raw_end_balance_cents": 136066783077,
+        "positive_begin_balance_cents": 141057942174,
+        "positive_end_balance_cents": 136066783077,
+        "principal_cents": 4993556297,
+        "interest_cents": 998694810,
+        "raw_chargeoff_cents": 0,
+        "recovery_cents": 0,
+        "adjustment_cents": -2397200,
+        "first_defaults": 10,
+        "prepayments": 1367,
+        "maturities": 0
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 77605,
+          "reported": 77605,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 141057942174,
+          "reported": 141057942174,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 136066783077,
+          "reported": 136066292391,
+          "residual": 490686,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4993556297,
+          "reported": 4991649783,
+          "residual": 1906514,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 998694810,
+          "reported": 1068494818,
+          "residual": -69800008,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 0,
+          "reported": 0,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 0,
+          "reported": 0,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-05-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-05-31",
+        "row_count": 79102,
+        "positive_balance_count": 76108,
+        "raw_begin_balance_cents": 136066783077,
+        "raw_end_balance_cents": 131423992235,
+        "positive_begin_balance_cents": 136066783077,
+        "positive_end_balance_cents": 131423992235,
+        "principal_cents": 4649298750,
+        "interest_cents": 979601240,
+        "raw_chargeoff_cents": 2372361,
+        "recovery_cents": 0,
+        "adjustment_cents": -8880269,
+        "first_defaults": 2,
+        "prepayments": 1365,
+        "maturities": 19
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 76108,
+          "reported": 76107,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 136066783077,
+          "reported": 136066292391,
+          "residual": 490686,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 131423992235,
+          "reported": 131423519147,
+          "residual": 473088,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4649298750,
+          "reported": 4640400883,
+          "residual": 8897867,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 979601240,
+          "reported": 1050654129,
+          "residual": -71052889,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 2372361,
+          "reported": 2372361,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 0,
+          "reported": 0,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-06-30",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-06-30",
+        "row_count": 79102,
+        "positive_balance_count": 74232,
+        "raw_begin_balance_cents": 131423992235,
+        "raw_end_balance_cents": 127052464914,
+        "positive_begin_balance_cents": 131423992235,
+        "positive_end_balance_cents": 127052465003,
+        "principal_cents": 4358381986,
+        "interest_cents": 958511650,
+        "raw_chargeoff_cents": 21999039,
+        "recovery_cents": 6783677,
+        "adjustment_cents": -8853704,
+        "first_defaults": 10,
+        "prepayments": 1372,
+        "maturities": 306
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 74232,
+          "reported": 74231,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 131423992235,
+          "reported": 131423519147,
+          "residual": 473088,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 127052465003,
+          "reported": 127052028828,
+          "residual": 436175,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4358381986,
+          "reported": 4349491280,
+          "residual": 8890706,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 958511650,
+          "reported": 1023318033,
+          "residual": -64806383,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 21999039,
+          "reported": 21999039,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 6783677,
+          "reported": 6751663,
+          "residual": 32014,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-07-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-07-31",
+        "row_count": 79102,
+        "positive_balance_count": 71895,
+        "raw_begin_balance_cents": 127052464914,
+        "raw_end_balance_cents": 122105023050,
+        "positive_begin_balance_cents": 127052465003,
+        "positive_end_balance_cents": 122105023176,
+        "principal_cents": 4860537657,
+        "interest_cents": 922081906,
+        "raw_chargeoff_cents": 91864412,
+        "recovery_cents": 16820311,
+        "adjustment_cents": -4960205,
+        "first_defaults": 52,
+        "prepayments": 1644,
+        "maturities": 456
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 71895,
+          "reported": 71894,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 127052465003,
+          "reported": 127052028828,
+          "residual": 436175,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 122105023176,
+          "reported": 122104520524,
+          "residual": 502652,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4860537657,
+          "reported": 4857125596,
+          "residual": 3412061,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 922081906,
+          "reported": 988312388,
+          "residual": -66230482,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 91864412,
+          "reported": 90382708,
+          "residual": 1481704,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 16820311,
+          "reported": 16820311,
+          "residual": 0,
+          "units": "cents",
+          "status": "PASS",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-08-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-08-31",
+        "row_count": 79102,
+        "positive_balance_count": 69559,
+        "raw_begin_balance_cents": 122105023050,
+        "raw_end_balance_cents": 117607034591,
+        "positive_begin_balance_cents": 122105023176,
+        "positive_end_balance_cents": 117607198914,
+        "principal_cents": 4397979638,
+        "interest_cents": 907469064,
+        "raw_chargeoff_cents": 116677800,
+        "recovery_cents": 28175277,
+        "adjustment_cents": -16668979,
+        "first_defaults": 49,
+        "prepayments": 1600,
+        "maturities": 562
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 69559,
+          "reported": 69558,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 122105023176,
+          "reported": 122104520524,
+          "residual": 502652,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 117607198914,
+          "reported": 117606364734,
+          "residual": 834180,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 4397979638,
+          "reported": 4392326486,
+          "residual": 5653152,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 907469064,
+          "reported": 973795169,
+          "residual": -66326105,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 116677800,
+          "reported": 105829304,
+          "residual": 10848496,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 28175277,
+          "reported": 28115954,
+          "residual": 59323,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-09-30",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-09-30",
+        "row_count": 79102,
+        "positive_balance_count": 66964,
+        "raw_begin_balance_cents": 117607034591,
+        "raw_end_balance_cents": 113492557973,
+        "positive_begin_balance_cents": 117607198914,
+        "positive_end_balance_cents": 113492721910,
+        "principal_cents": 3988289764,
+        "interest_cents": 850051082,
+        "raw_chargeoff_cents": 147942298,
+        "recovery_cents": 30485042,
+        "adjustment_cents": -21755444,
+        "first_defaults": 59,
+        "prepayments": 1463,
+        "maturities": 961
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 66964,
+          "reported": 66964,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 117607198914,
+          "reported": 117606364734,
+          "residual": 834180,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 113492721910,
+          "reported": 113492429551,
+          "residual": 292359,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3988289764,
+          "reported": 3988321835,
+          "residual": -32071,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 850051082,
+          "reported": 916379375,
+          "residual": -66328293,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 147942298,
+          "reported": 125613348,
+          "residual": 22328950,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 30485042,
+          "reported": 29684325,
+          "residual": 800717,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-10-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-10-31",
+        "row_count": 79101,
+        "positive_balance_count": 64347,
+        "raw_begin_balance_cents": 113492557973,
+        "raw_end_balance_cents": 109400066380,
+        "positive_begin_balance_cents": 113492721910,
+        "positive_end_balance_cents": 109400170147,
+        "principal_cents": 3976038111,
+        "interest_cents": 864014701,
+        "raw_chargeoff_cents": 154664333,
+        "recovery_cents": 46002553,
+        "adjustment_cents": -38210851,
+        "first_defaults": 67,
+        "prepayments": 1397,
+        "maturities": 1038
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 64347,
+          "reported": 64346,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 113492721910,
+          "reported": 113492429551,
+          "residual": 292359,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 109400170147,
+          "reported": 109400126460,
+          "residual": 43687,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3976038111,
+          "reported": 3975878345,
+          "residual": 159766,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 864014701,
+          "reported": 869082756,
+          "residual": -5068055,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 154664333,
+          "reported": 116424746,
+          "residual": 38239587,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 46002553,
+          "reported": 46359518,
+          "residual": -356965,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-11-30",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-11-30",
+        "row_count": 79102,
+        "positive_balance_count": 62052,
+        "raw_begin_balance_cents": 109400066380,
+        "raw_end_balance_cents": 105617199508,
+        "positive_begin_balance_cents": 109400170147,
+        "positive_end_balance_cents": 105617203800,
+        "principal_cents": 3677837420,
+        "interest_cents": 861527073,
+        "raw_chargeoff_cents": 149498974,
+        "recovery_cents": 57838720,
+        "adjustment_cents": -44469522,
+        "first_defaults": 57,
+        "prepayments": 1089,
+        "maturities": 1019
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 62052,
+          "reported": 62052,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 109400170147,
+          "reported": 109400126460,
+          "residual": 43687,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 105617203800,
+          "reported": 105617277756,
+          "residual": -73956,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3677837420,
+          "reported": 3676487633,
+          "residual": 1349787,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 861527073,
+          "reported": 866736410,
+          "residual": -5209337,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 149498974,
+          "reported": 106361071,
+          "residual": 43137903,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 57838720,
+          "reported": 57335162,
+          "residual": 503558,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2025-12-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2025-12-31",
+        "row_count": 79102,
+        "positive_balance_count": 60442,
+        "raw_begin_balance_cents": 105617199508,
+        "raw_end_balance_cents": 101861715739,
+        "positive_begin_balance_cents": 105617203800,
+        "positive_end_balance_cents": 101861716161,
+        "principal_cents": 3655430942,
+        "interest_cents": 817851442,
+        "raw_chargeoff_cents": 135064930,
+        "recovery_cents": 37036547,
+        "adjustment_cents": -35012103,
+        "first_defaults": 64,
+        "prepayments": 1157,
+        "maturities": 279
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 60442,
+          "reported": 60442,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 105617203800,
+          "reported": 105617277756,
+          "residual": -73956,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 101861716161,
+          "reported": 101861755503,
+          "residual": -39342,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3655430942,
+          "reported": 3654940838,
+          "residual": 490104,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 817851442,
+          "reported": 822318917,
+          "residual": -4467475,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 135064930,
+          "reported": 100581415,
+          "residual": 34483515,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 37036547,
+          "reported": 36378184,
+          "residual": 658363,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-01-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-01-31",
+        "row_count": 79102,
+        "positive_balance_count": 58881,
+        "raw_begin_balance_cents": 101861715739,
+        "raw_end_balance_cents": 98125297399,
+        "positive_begin_balance_cents": 101861716161,
+        "positive_end_balance_cents": 98125298082,
+        "principal_cents": 3617772288,
+        "interest_cents": 814271410,
+        "raw_chargeoff_cents": 158137348,
+        "recovery_cents": 46107613,
+        "adjustment_cents": -39491296,
+        "first_defaults": 72,
+        "prepayments": 1146,
+        "maturities": 236
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 58881,
+          "reported": 58880,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 101861716161,
+          "reported": 101861755503,
+          "residual": -39342,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 98125298082,
+          "reported": 98125368014,
+          "residual": -69932,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3617772288,
+          "reported": 3616413703,
+          "residual": 1358585,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 814271410,
+          "reported": 819696049,
+          "residual": -5424639,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 158137348,
+          "reported": 119973786,
+          "residual": 38163562,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 46107613,
+          "reported": 45854593,
+          "residual": 253020,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-02-28",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-02-28",
+        "row_count": 79102,
+        "positive_balance_count": 57334,
+        "raw_begin_balance_cents": 98125297399,
+        "raw_end_balance_cents": 94753310129,
+        "positive_begin_balance_cents": 98125298082,
+        "positive_end_balance_cents": 94753310506,
+        "principal_cents": 3300638697,
+        "interest_cents": 733724694,
+        "raw_chargeoff_cents": 143700346,
+        "recovery_cents": 49083395,
+        "adjustment_cents": -72351773,
+        "first_defaults": 48,
+        "prepayments": 1134,
+        "maturities": 242
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 57334,
+          "reported": 57334,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 98125298082,
+          "reported": 98125368014,
+          "residual": -69932,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 94753310506,
+          "reported": 94753436350,
+          "residual": -125844,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3300638697,
+          "reported": 3297592659,
+          "residual": 3046038,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 733724694,
+          "reported": 738556725,
+          "residual": -4832031,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 143700346,
+          "reported": 74339005,
+          "residual": 69361341,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 49083395,
+          "reported": 48092194,
+          "residual": 991201,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-03-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-03-31",
+        "row_count": 79102,
+        "positive_balance_count": 55500,
+        "raw_begin_balance_cents": 94753310129,
+        "raw_end_balance_cents": 90921100037,
+        "positive_begin_balance_cents": 94753310506,
+        "positive_end_balance_cents": 90921112263,
+        "principal_cents": 3751325653,
+        "interest_cents": 737560059,
+        "raw_chargeoff_cents": 119199295,
+        "recovery_cents": 45973163,
+        "adjustment_cents": -38314856,
+        "first_defaults": 62,
+        "prepayments": 1222,
+        "maturities": 375
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 55500,
+          "reported": 55496,
+          "residual": 4,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 94753310506,
+          "reported": 94753436350,
+          "residual": -125844,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 90921112263,
+          "reported": 90921247415,
+          "residual": -135152,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3751325653,
+          "reported": 3750686782,
+          "residual": 638871,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 737560059,
+          "reported": 743485889,
+          "residual": -5925830,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 119199295,
+          "reported": 81502153,
+          "residual": 37697142,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 45973163,
+          "reported": 42256443,
+          "residual": 3716720,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-04-30",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-04-30",
+        "row_count": 79102,
+        "positive_balance_count": 53727,
+        "raw_begin_balance_cents": 90921100037,
+        "raw_end_balance_cents": 87430721731,
+        "positive_begin_balance_cents": 90921112263,
+        "positive_end_balance_cents": 87430733914,
+        "principal_cents": 3402039871,
+        "interest_cents": 711667143,
+        "raw_chargeoff_cents": 119798306,
+        "recovery_cents": 49402442,
+        "adjustment_cents": -31459871,
+        "first_defaults": 55,
+        "prepayments": 1212,
+        "maturities": 369
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 53727,
+          "reported": 53726,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 90921112263,
+          "reported": 90921247415,
+          "residual": -135152,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 87430733914,
+          "reported": 87430830834,
+          "residual": -96920,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3402039871,
+          "reported": 3402830093,
+          "residual": -790222,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 711667143,
+          "reported": 717121753,
+          "residual": -5454610,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 119798306,
+          "reported": 87586488,
+          "residual": 32211818,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 49402442,
+          "reported": 52008393,
+          "residual": -2605951,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-05-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-05-31",
+        "row_count": 79101,
+        "positive_balance_count": 52114,
+        "raw_begin_balance_cents": 87430721731,
+        "raw_end_balance_cents": 84067951644,
+        "positive_begin_balance_cents": 87430733914,
+        "positive_end_balance_cents": 84067964324,
+        "principal_cents": 3284502303,
+        "interest_cents": 681700611,
+        "raw_chargeoff_cents": 94181884,
+        "recovery_cents": 37016267,
+        "adjustment_cents": -15914100,
+        "first_defaults": 50,
+        "prepayments": 1074,
+        "maturities": 374
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 52114,
+          "reported": 52114,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 87430733914,
+          "reported": 87430830834,
+          "residual": -96920,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 84067964324,
+          "reported": 84068061938,
+          "residual": -97614,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3284502303,
+          "reported": 3283220716,
+          "residual": 1281587,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 681700611,
+          "reported": 687554514,
+          "residual": -5853903,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 94181884,
+          "reported": 79548180,
+          "residual": 14633704,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 37016267,
+          "reported": 36856139,
+          "residual": 160128,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-06-30",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-06-30",
+        "row_count": 79101,
+        "positive_balance_count": 50695,
+        "raw_begin_balance_cents": 84067951644,
+        "raw_end_balance_cents": 80881669502,
+        "positive_begin_balance_cents": 84067964324,
+        "positive_end_balance_cents": 80881682089,
+        "principal_cents": 3094327142,
+        "interest_cents": 654602870,
+        "raw_chargeoff_cents": 124295221,
+        "recovery_cents": 36855023,
+        "adjustment_cents": -32340221,
+        "first_defaults": 66,
+        "prepayments": 964,
+        "maturities": 270
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 50695,
+          "reported": 50694,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 84067964324,
+          "reported": 84068061938,
+          "residual": -97614,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 80881682089,
+          "reported": 80881792720,
+          "residual": -110631,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3094327142,
+          "reported": 3089799010,
+          "residual": 4528132,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 654602870,
+          "reported": 659421754,
+          "residual": -4818884,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 124295221,
+          "reported": 96470208,
+          "residual": 27825013,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 36855023,
+          "reported": 33074335,
+          "residual": 3780688,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-07-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-07-31",
+        "row_count": 79102,
+        "positive_balance_count": 49190,
+        "raw_begin_balance_cents": 80881669502,
+        "raw_end_balance_cents": 77578101012,
+        "positive_begin_balance_cents": 80881682089,
+        "positive_end_balance_cents": 77578174046,
+        "principal_cents": 3211271110,
+        "interest_cents": 641248077,
+        "raw_chargeoff_cents": 126399059,
+        "recovery_cents": 45877273,
+        "adjustment_cents": -34101679,
+        "first_defaults": 59,
+        "prepayments": 1016,
+        "maturities": 276
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 49190,
+          "reported": 49189,
+          "residual": 1,
+          "units": "loans",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 80881682089,
+          "reported": 80881792720,
+          "residual": -110631,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 77578174046,
+          "reported": 77578224033,
+          "residual": -49987,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 3211271110,
+          "reported": 3210207327,
+          "residual": 1063783,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 641248077,
+          "reported": 646374257,
+          "residual": -5126180,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 126399059,
+          "reported": 93361360,
+          "residual": 33037699,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 45877273,
+          "reported": 48703425,
+          "residual": -2826152,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    },
+    {
+      "deal_id": "CAOT-2025-2",
+      "period_end": "2026-08-31",
+      "statistics": {
+        "deal_id": "CAOT-2025-2",
+        "period_end": "2026-08-31",
+        "row_count": 79101,
+        "positive_balance_count": 47562,
+        "raw_begin_balance_cents": 77578101012,
+        "raw_end_balance_cents": 74497011895,
+        "positive_begin_balance_cents": 77578174046,
+        "positive_end_balance_cents": 74497025215,
+        "principal_cents": 2950961488,
+        "interest_cents": 612423281,
+        "raw_chargeoff_cents": 165952654,
+        "recovery_cents": 35066699,
+        "adjustment_cents": -35825025,
+        "first_defaults": 73,
+        "prepayments": 1077,
+        "maturities": 333
+      },
+      "checks": [
+        {
+          "check": "outstanding_loan_count",
+          "observed": 47562,
+          "reported": 47562,
+          "residual": 0,
+          "units": "loans",
+          "status": "PASS",
+          "explanation": "Count strictly positive balances; tapes also retain paid/charged-off rows."
+        },
+        {
+          "check": "pool_begin",
+          "observed": 77578174046,
+          "reported": 77578224033,
+          "residual": -49987,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "pool_end",
+          "observed": 74497025215,
+          "reported": 74497076416,
+          "residual": -51201,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Sum max(balance,0); small negative credit balances are not outstanding receivables."
+        },
+        {
+          "check": "principal_collected",
+          "observed": 2950961488,
+          "reported": 2950205828,
+          "residual": 755660,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw loan principal includes non-cash reductions per issuer explanatory exhibit; certificate cash taxonomy differs."
+        },
+        {
+          "check": "interest_collected",
+          "observed": 612423281,
+          "reported": 617378569,
+          "residual": -4955288,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw tape net interest compared with certificate finance-charge collections; unexplained differences remain visible."
+        },
+        {
+          "check": "gross_chargeoffs_raw",
+          "observed": 165952654,
+          "reported": 130941789,
+          "residual": 35010865,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Raw chargedoffPrincipalAmount can recur following reinstatement; do not relabel every row a new default."
+        },
+        {
+          "check": "recoveries",
+          "observed": 35066699,
+          "reported": 34571596,
+          "residual": 495103,
+          "units": "cents",
+          "status": "UNRESOLVED_DIFFERENCE",
+          "explanation": "Recovered amounts are monthly flows, not cumulative; omitted fields remain SQL NULL and sum treats no reported flow as zero."
+        }
+      ]
+    }
+  ],
+  "unresolved_comparisons": 287
+}

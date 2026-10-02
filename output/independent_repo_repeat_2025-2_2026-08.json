@@ -1,0 +1,112 @@
+{
+  "repo": {
+    "current_sum": 469737478,
+    "previous_matched_sum": 441317614,
+    "net_change_sum": 28419864,
+    "unchanged_nonzero_count": 379,
+    "unchanged_nonzero_current_sum": 437574127,
+    "unchanged_nonzero_change_sum": 0,
+    "new_nonzero_count": 37,
+    "new_nonzero_current_sum": 28533824,
+    "new_nonzero_change_sum": 28533824,
+    "changed_existing_count": 5,
+    "changed_existing_current_sum": 3629527,
+    "changed_existing_change_sum": -113960
+  },
+  "recovery": {
+    "current_sum": 35066699,
+    "same_as_previous_count": 7,
+    "same_as_previous_sum": 146052,
+    "current_nonzero_count": 79
+  },
+  "new_repo_examples": [
+    {
+      "assetNumber": "CPupJdSXbApJfC5l0UKcHA==",
+      "zeroBalanceEffectiveDate": "04/2026",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "8000.00",
+      "recoveredAmount": "8000.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": null
+    },
+    {
+      "assetNumber": "s2LndR/iuH6Og4SNz99XKg==",
+      "zeroBalanceEffectiveDate": "03/2026",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "2679.60",
+      "recoveredAmount": "3600.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": null
+    },
+    {
+      "assetNumber": "6Gds9k5X8uZfOeDadUYvXw==",
+      "zeroBalanceEffectiveDate": "10/2025",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "2687.00",
+      "recoveredAmount": "3600.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": null
+    },
+    {
+      "assetNumber": "LSySsm80aaAg331evDybWg==",
+      "zeroBalanceEffectiveDate": "06/2026",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "1026.20",
+      "recoveredAmount": "2600.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": "4107.37"
+    },
+    {
+      "assetNumber": "L86nB1JuPC5rR9GFzJcc7w==",
+      "zeroBalanceEffectiveDate": "05/2026",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "25337.00",
+      "recoveredAmount": "26500.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": null
+    },
+    {
+      "assetNumber": "Xvj5piVuwKALQviCpaKIZQ==",
+      "zeroBalanceEffectiveDate": "06/2026",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "12500.00",
+      "recoveredAmount": "13352.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": "19020.65"
+    },
+    {
+      "assetNumber": "wvj+1Mca6swXJo23b3DKfQ==",
+      "zeroBalanceEffectiveDate": "08/2025",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "990.60",
+      "recoveredAmount": "2000.00",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": null
+    },
+    {
+      "assetNumber": "0KYXJ2YWGqtSeAVrqRGt6w==",
+      "zeroBalanceEffectiveDate": "06/2026",
+      "zeroBalanceCode": "4",
+      "repossessedIndicator": "true",
+      "repossessedProceedsAmount": "6864.60",
+      "recoveredAmount": "8038.05",
+      "actualInterestCollectedAmount": "0.00",
+      "actualPrincipalCollectedAmount": "0.00",
+      "chargedoffPrincipalAmount": "19192.06"
+    }
+  ]
+}
