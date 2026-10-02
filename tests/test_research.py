@@ -8,7 +8,9 @@ import json
 import sys
 import tempfile
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -126,6 +128,28 @@ class ResearchIntegrationTests(unittest.TestCase):
             self.assertEqual(json.loads((output / "run_status.json").read_text())["status"], "ERROR")
             for name in ("research_results.json", "research_report.html", "replay_comparison.csv", "reconciliation_checks.csv"):
                 self.assertNotIn("STALE_RESULT", (output / name).read_text(encoding="utf-8"))
+
+    def test_document_links_resolve_from_selected_report_folder(self):
+        class Links(HTMLParser):
+            references = None
+
+            def __init__(self):
+                super().__init__()
+                self.references = []
+
+            def handle_starttag(self, tag, attrs):
+                if tag == "a":
+                    self.references.append(dict(attrs)["href"])
+
+        pack = runner.build(self.fixture)
+        for relative in ("output", "output/bounded_fixture", "tmp/review #1/report"):
+            output = ROOT / relative
+            parser = Links()
+            parser.feed(runner.render(pack, output))
+            project_links = parser.references[-4:-2]
+            targets = [(output / unquote(urlsplit(link).path)).resolve() for link in project_links]
+            self.assertEqual(targets, [ROOT / "README.md", ROOT / "docs/RESEARCH_DESIGN.md"])
+            self.assertTrue(all(path.is_file() for path in targets))
 
     def test_strict_gate_returns_two_for_unresolved_difference(self):
         with tempfile.TemporaryDirectory(prefix="structured_credit_test_") as directory:

@@ -1,6 +1,6 @@
 {
   "status": "REVIEW REQUIRED",
-  "generated_at": "2026-10-02T14:41:55.544101+00:00",
+  "generated_at": "2026-10-02T15:13:52.834535+00:00",
   "arithmetic_summary": {
     "PASS": 14,
     "FAIL": 0,
@@ -917,6 +917,6 @@
     "credit_research/projections.py": "6ff7407567fbac4334c216afeea6d6af0c4e03fffdbd3b701a87999794fd3521",
     "credit_research/reconcile.py": "40621a0e45a8358d4b4b1a6c41ef8a6c613d75ab098c2530ebd044345dff636b",
     "credit_research/waterfall.py": "b88b643d6f461115b7d8302f6d5840f52741490fd5c027662c187a4096ca9524",
-    "scripts/run_research.py": "e805498dc334d0357f982ee634d6e0fde7205079bda1b7e1d9daa39aaac44eaf"
+    "scripts/run_research.py": "55fc9d0b6095647a9d7c449b28abcd1343869aa4680dc12a57da8666103d689e"
   }
 }

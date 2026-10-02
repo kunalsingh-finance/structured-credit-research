@@ -2,7 +2,7 @@
 
 The executed OC formula remains the primary rule. This separate diagnostic measures the consequence of substituting the reported dollar target under identical collateral cash assumptions. It does not decide which target legally governs, reconcile the loan tapes or change any primary release gate.
 
-Generated `2026-10-02T14:41:25.193798+00:00` from primary results `2026-10-02T14:39:27.073613+00:00`; primary SHA-256 `67e4fb89e51e132e32042fde3c3e0d9af631f5fa3863143b792d0b3ebd0ba7aa`. Machine evidence: [oc_sensitivity.json](../output/oc_sensitivity.json).
+Generated `2026-10-02T15:17:38.729014+00:00` from primary results `2026-10-02T15:16:45.637751+00:00`; primary SHA-256 `bd6475f9603fbc244589ef3ed55183cdcfcdedd9e61c0b43f07216f8631a6a1d`. Machine evidence: [oc_sensitivity.json](../output/oc_sensitivity.json).
 
 ## Authoritative formula and hypothetical alternative
 

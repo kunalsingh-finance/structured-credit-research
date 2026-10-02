@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-02T14:39:27.073613+00:00",
+  "generated_at": "2026-10-02T15:16:45.637751+00:00",
   "status": "DEVELOPMENT RESEARCH WITH UNRESOLVED SOURCE EXCEPTIONS",
   "build_identity": {
     "panel_rows": 3825715,
@@ -23,7 +23,7 @@
     "credit_research/waterfall.py": "b88b643d6f461115b7d8302f6d5840f52741490fd5c027662c187a4096ca9524",
     "credit_research/__init__.py": "402288d4727b53fd8008dfcb4863dda4f708d089d8a620b0544338d7e65a381f",
     "scripts/run_platform.py": "81f733d6e1aac634dca379434c3e26a21291a677fb5a45cf058ef78bfd31409c",
-    "scripts/run_research.py": "e805498dc334d0357f982ee634d6e0fde7205079bda1b7e1d9daa39aaac44eaf"
+    "scripts/run_research.py": "55fc9d0b6095647a9d7c449b28abcd1343869aa4680dc12a57da8666103d689e"
   },
   "platform": {
     "deal_name": "CarMax Auto Owner Trust 2025-2",
